@@ -8,8 +8,11 @@ identity documents, clean Portuguese prose, degraded scans, and an English contr
 The headline: no class wins outright — an OCR engine (**Surya**, **0.921** field-value
 recall on IDs) and a vision-language model (**Qwen2.5-VL**, **0.97** on forms and
 **97.53** NED on degraded scans) lead every axis. This repository re-scores the
-committed per-engine outputs offline and **asserts** the regenerated numbers are
-identical to the paper's.
+committed per-engine outputs offline, **asserts** the regenerated numbers are
+identical to the paper's, and **emits every table of the paper** as readable
+output. Two reproduce paths are provided: **(A)** a one-command, no-GPU path from
+the pre-computed run of record, and **(B)** an optional GPU path that rebuilds the
+per-engine outputs from scratch.
 
 > **Paper:** "Reading Brazil: A Local Cost-versus-Precision Benchmark" (under review).
 > Target venue: SBSeg/SBRC Salão de Ferramentas (artifact track).
@@ -23,6 +26,8 @@ are not required to grant the seals.
 | Section | What it covers |
 |---|---|
 | [Considered seals](#considered-seals) | why each of the four seals holds |
+| [Two reproduce paths](#two-reproduce-paths) | A (no GPU, one command, all tables) and B (GPU, from scratch) |
+| [Make targets](#make-targets) | modular entry points |
 | [Human validation](#human-validation-of-the-forms-gold) | two-annotator check of the reconstructed forms gold |
 | [Basic information](#basic-information) | OS, runtime, RAM, disk, GPU |
 | [Dependencies](#dependencies) | how the environment and inputs are obtained |
@@ -36,9 +41,11 @@ are not required to grant the seals.
 
 - **Disponível (SeloD):** public repository with an open MIT license and a DOI-able
   archive at camera-ready; everything needed to run is in the repository.
-- **Funcional (SeloF):** one command (`./scripts/reproduce_from_results.sh`) scores the
-  committed run of record end to end and prints the per-task table and per-degradation
-  matrix; unit tests cover the metric logic.
+- **Funcional (SeloF):** one command (`./scripts/reproduce_from_results.sh`, or
+  `make reproduce`) scores the committed run of record end to end, asserts the
+  regenerated numbers against the paper, and prints **every table of the paper**
+  (accuracy by engine, the local cost axis, and the per-degradation matrix); unit
+  tests cover the metric logic and the table-vs-macro consistency.
 - **Sustentável (SeloS):** packaged `src/` layout, one concern per module, typed public
   functions, pinned dependencies (`pyproject.toml` + committed `uv.lock`), tests and
   lint config; nothing is hardcoded to a host (all paths come from the environment).
@@ -48,6 +55,55 @@ are not required to grant the seals.
   **asserts** every data-driven macro matches the paper's reference macro file at the
   printed precision; deterministic seeds (bootstrap seed `20260609`) make the confidence
   intervals exactly reproducible. No raw PII is needed or present.
+
+## Two reproduce paths
+
+The artifact has two modular paths to the same numbers; a reviewer only needs **A**.
+
+- **Path A — from pre-computed results (no GPU, one command, emits every table).**
+  `make reproduce` (= `./scripts/reproduce_from_results.sh`) re-scores the committed
+  ESTER-Pt outputs live, regenerates the forms/IDs/EN/cost numbers and the four
+  paired significance tests from the committed PII-free run of record, **asserts**
+  every data-driven macro matches the paper's reference macro file, then prints the
+  per-degradation matrix and **every table of the paper** (Tables 1–4) as readable
+  output. Pure CPU, no network, ~1–4 min. The tables are built from the same
+  consolidated results the macros come from, so there is a single source of truth.
+
+- **Path B — from scratch (GPU, gated).** `make from-scratch`
+  (= `./scripts/run_from_scratch.sh`) rebuilds the per-engine transcriptions from the
+  models and documents on a CUDA GPU, then hands off to Path A to score and assert.
+  A reviewer does **not** need this; the committed run of record reproduces every
+  number and every table offline.
+
+Every paper table is emitted by Path A:
+
+| Table | Content | Source |
+|---|---|---|
+| Table 1 | positioning vs related OCR benchmarks (qualitative) | `results/positioning.json` |
+| Table 2 | accuracy by engine (forms/IDs FVR, RIB/HYB NED%, 95% CIs), VLM \| OCR-engine | scored run of record |
+| Table 3 | local cost axis — per-page latency (forms/IDs) with params + device, two panels | scored run of record |
+| Table 4 | per-degradation NED matrix (14 engines × 8 DocCreator types) | scored run of record |
+
+Standalone, the tables are also available with `make tables` (= `uv run ocr-bench
+tables`); the LaTeX bodies the paper compiles come from `uv run ocr-bench tables --latex`.
+
+## Make targets
+
+A `Makefile` at the repo root wraps the scripts and CLI; each target is one line.
+
+```
+make help          # list the targets
+make reproduce     # Path A: re-score, assert macros, print matrix + all tables (no GPU)
+make tables        # print every paper table (Tables 1-4) from the committed results
+make matrix        # print the per-degradation NED matrix (HYB axis)
+make macros        # regenerate the data-driven LaTeX macros
+make score         # score the run of record -> results/consolidated_results.json
+make figure        # regenerate fig_frontier.pdf (adds the [figure] extra)
+make from-scratch  # Path B: rebuild per-engine outputs on a GPU, then reproduce
+make test          # run the unit + integration tests
+make lint          # run ruff over src and tests
+make all           # reproduce + tables + test
+```
 
 ## Human validation of the forms gold
 
@@ -149,14 +205,15 @@ uv sync
 
 ## Minimal test
 
-One command re-scores the committed run of record, regenerates the paper's LaTeX macros,
-and asserts they match the paper reference, then prints the per-degradation matrix:
+One command (Path A) re-scores the committed run of record, regenerates the paper's
+LaTeX macros, asserts they match the paper reference, then prints the per-degradation
+matrix **and every table of the paper**:
 
 ```bash
-./scripts/reproduce_from_results.sh
+make reproduce          # or: ./scripts/reproduce_from_results.sh
 ```
 
-Expected tail of the output (the assertion is the proof of reproduction):
+Expected output includes the assertion (the proof of reproduction):
 
 ```
       OK: all <N> regenerated macros match results_macros.reference.tex
@@ -164,16 +221,20 @@ Expected tail of the output (the assertion is the proof of reproduction):
 PASS: reproduced the paper's numbers from the committed run of record.
 ```
 
-followed by the per-engine x 8-degradation NED matrix (12 of the 14 engines now carry
-the breakdown — MinerU included; only Qwen3-VL and GLM-OCR report an overall HYB NED
-without a per-degradation split). **Expected time: ~1-2 min** (pure CPU, single
-thread). A non-zero exit means at least one regenerated number differs from the paper
-and the mismatch is printed.
+then the per-engine × 8-degradation NED matrix (12 of the 14 engines carry the
+breakdown — MinerU included; only Qwen3-VL and GLM-OCR report an overall HYB NED
+without a per-degradation split), and finally the four paper tables (positioning,
+accuracy by engine with 95% CIs, the local cost axis, and the per-degradation
+matrix). **Expected time: ~1-2 min** (pure CPU, single thread). A non-zero exit
+means at least one regenerated number differs from the paper and the mismatch is
+printed. The tables alone are reprintable with `make tables`.
 
 ## Experiments
 
 All claims are reproduced from the **same** committed run of record by the single
-`reproduce` command; the individual numbers below are fields of the results it writes to
+no-GPU `reproduce` command (Path A), which **reproduces every table of the paper**
+(Tables 1–4, printed as readable output and assertable as LaTeX). The individual
+numbers below are fields of the results it writes to
 `results/consolidated_results.json`, not separate runs.
 
 ### Main claim — no OCR class wins outright; the leaders are document-type dependent
@@ -193,10 +254,12 @@ All claims are reproduced from the **same** committed run of record by the singl
   ./scripts/reproduce_from_results.sh
   ```
 - **Expected time:** ~1-2 min. **Expected resources:** < 1 GB RAM, ~32 MB read, no GPU.
-- **Expected result:** `PASS: reproduced the paper's numbers ...` and the printed
-  per-degradation matrix. Every data-driven macro in
-  `results/results_macros.generated.tex` equals the committed
-  `results/results_macros.reference.tex` (the file the paper compiles).
+- **Expected result:** `PASS: reproduced the paper's numbers ...`, the printed
+  per-degradation matrix, and **all four paper tables** (positioning, accuracy by
+  engine, the local cost axis, the per-degradation matrix). Every data-driven macro
+  in `results/results_macros.generated.tex` equals the committed
+  `results/results_macros.reference.tex` (the file the paper compiles), and every
+  table cell is built from the same consolidated results (single source of truth).
 
 ### Significance claims — four paired document-level bootstraps
 
@@ -245,7 +308,7 @@ All claims are reproduced from the **same** committed run of record by the singl
 - **Execution:**
   ```bash
   ./scripts/fetch_data.sh        # download XFUND PT, FUNSD, ESTER-Pt (BRIDP: request)
-  ./scripts/run_from_scratch.sh  # serve engines, then re-score and assert
+  make from-scratch              # (= ./scripts/run_from_scratch.sh) serve engines, re-score, assert
   ```
   `fetch_data.sh` is idempotent and sha256-verified; it fetches XFUND (CC BY-NC-SA 4.0),
   FUNSD (research-only) and ESTER-Pt (CC BY 4.0) from source and prints how to request

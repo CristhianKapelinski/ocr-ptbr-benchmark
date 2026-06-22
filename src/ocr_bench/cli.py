@@ -3,6 +3,7 @@
 Subcommands:
   score      Score the run of record; write results/consolidated_results.json.
   macros     Regenerate the data-driven LaTeX macros from the scored results.
+  tables     Emit every paper table (readable; --latex for the LaTeX bodies).
   matrix     Print the per-degradation NED matrix (HYB axis).
   figure     Regenerate fig_frontier.pdf (needs the [figure] extra).
   reproduce  Run the full no-GPU path and ASSERT the regenerated numbers match
@@ -23,6 +24,7 @@ from .bootstrap import (
 )
 from .config import DEGRADATION_ORDER, ENGINES, data_root
 from .macros import build_macros, render_tex
+from .tables import render_all
 from .verify import compare, compare_pair, parse_reference
 
 RESULTS_DIR = Path(__file__).resolve().parents[2] / "results"
@@ -54,6 +56,12 @@ def _cmd_macros(_: argparse.Namespace) -> int:
     out = RESULTS_DIR / "results_macros.generated.tex"
     _write(out, render_tex(results, pair_macros))
     print(f"wrote {out}")
+    return 0
+
+
+def _cmd_tables(args: argparse.Namespace) -> int:
+    results = consolidate()
+    print(render_all(results, latex=args.latex), end="")
     return 0
 
 
@@ -162,6 +170,9 @@ def build_parser() -> argparse.ArgumentParser:
     sub = p.add_subparsers(dest="command", required=True)
     sub.add_parser("score", help="score the run of record").set_defaults(func=_cmd_score)
     sub.add_parser("macros", help="regenerate LaTeX macros").set_defaults(func=_cmd_macros)
+    tb = sub.add_parser("tables", help="emit every paper table (readable / --latex)")
+    tb.add_argument("--latex", action="store_true", help="emit the LaTeX tabular bodies")
+    tb.set_defaults(func=_cmd_tables)
     sub.add_parser("matrix", help="print per-degradation NED matrix").set_defaults(func=_cmd_matrix)
     sub.add_parser("figure", help="regenerate fig_frontier.pdf").set_defaults(func=_cmd_figure)
     rp = sub.add_parser("reproduce", help="score, regenerate, and assert against the paper")

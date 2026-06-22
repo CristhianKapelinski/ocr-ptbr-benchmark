@@ -1,0 +1,45 @@
+{
+  "_comment": "Table 1 (qualitative): how this benchmark is positioned against prior OCR evaluation work. Not data-driven; the cells are qualitative dimensions the paper sets out in its related-work discussion. Each column is rendered by ocr_bench.tables.table_positioning. Kept anonymous and free of personal data.",
+  "columns": [
+    {"key": "benchmark", "title": "Benchmark"},
+    {"key": "pt_br", "title": "PT-BR"},
+    {"key": "doc_types", "title": "Document types"},
+    {"key": "degradation", "title": "Degradation axis"},
+    {"key": "cost_axis", "title": "Local cost axis"},
+    {"key": "open_wave", "title": "Open OCR wave"}
+  ],
+  "rows": [
+    {
+      "benchmark": "General OCR benchmarks",
+      "pt_br": "no",
+      "doc_types": "scene/printed text",
+      "degradation": "no",
+      "cost_axis": "no",
+      "open_wave": "partial"
+    },
+    {
+      "benchmark": "Document-understanding benchmarks",
+      "pt_br": "no",
+      "doc_types": "forms/receipts (EN/ZH)",
+      "degradation": "no",
+      "cost_axis": "no",
+      "open_wave": "partial"
+    },
+    {
+      "benchmark": "European-Portuguese OCR studies",
+      "pt_br": "EU-PT",
+      "doc_types": "prose/historical",
+      "degradation": "partial",
+      "cost_axis": "no",
+      "open_wave": "no"
+    },
+    {
+      "benchmark": "This benchmark",
+      "pt_br": "yes",
+      "doc_types": "forms/IDs/prose/scans",
+      "degradation": "yes (8 types)",
+      "cost_axis": "yes (consumer GPU)",
+      "open_wave": "yes (14 engines)"
+    }
+  ]
+}
