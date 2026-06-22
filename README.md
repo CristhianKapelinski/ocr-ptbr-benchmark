@@ -84,7 +84,11 @@ subset is committed. For licence and privacy reasons (see `data/DATA-LICENSES.md
   per-unit arrays (`data/ids_pair_hits.json`, `data/forms_pair_hits.json`,
   `data/ids_pair_hits_surya_rapidocr.json`: only `0/1` hits and integer document
   indices; `data/hyb_pair_ned.json`: per-page NED% floats) so the paired bootstraps
-  are recomputable too.
+  are recomputable too. MinerU's IDs FVR ships the same way: because BRIDP is never
+  redistributed, `data/ids_mineru_hits.json` records only the `0/1` per-field hit
+  (date-aware match) so the no-GPU path regenerates `\idsMineru` and its Wilson CI
+  offline. MinerU's RIB/HYB outputs, by contrast, are committed under `data/rib`,
+  `data/hyb` like every other engine (ESTER-Pt CC BY 4.0) and re-scored live.
 
 The reviewer therefore downloads nothing. The from-scratch path fetches the source
 inputs with `scripts/fetch_data.sh`; document **images** are never committed
@@ -99,13 +103,13 @@ inputs with `scripts/fetch_data.sh`; document **images** are never committed
   public-domain Portuguese literary text (ESTER-Pt, CC BY 4.0) and aggregate numbers
   (latency medians, per-engine scores). The forms/ids/en raw field values — which
   contain synthetic PII (names, CPFs, e-mails, addresses, dates of birth) — are **not**
-  redistributed; only their aggregate scores are. The paired-bootstrap inputs
+  redistributed; only their aggregate scores are. The significance-test inputs
   (`data/ids_pair_hits.json`, `data/forms_pair_hits.json`,
-  `data/ids_pair_hits_surya_rapidocr.json`, `data/hyb_pair_ned.json`) are likewise
-  PII-free: they hold only binary per-field hits (`0/1`) or per-page NED% floats and
-  integer document indices, never a field value or transcription. The
-  from-scratch path fetches the source inputs (`scripts/fetch_data.sh`) under each
-  dataset's own licence.
+  `data/ids_pair_hits_surya_rapidocr.json`, `data/hyb_pair_ned.json`) and MinerU's
+  IDs hit array (`data/ids_mineru_hits.json`) are likewise PII-free: they hold only
+  binary per-field hits (`0/1`) or per-page NED% floats and integer document
+  indices, never a field value or transcription. The from-scratch path fetches the
+  source inputs (`scripts/fetch_data.sh`) under each dataset's own licence.
 - No credentials or secrets are used or stored. The optional from-scratch path downloads
   open model weights from Hugging Face into a cache directory you choose via `$HF_CACHE`.
 
@@ -140,9 +144,11 @@ Expected tail of the output (the assertion is the proof of reproduction):
 PASS: reproduced the paper's numbers from the committed run of record.
 ```
 
-followed by the 14-engine x 8-degradation NED matrix. **Expected time: ~30-60 s**
-(pure CPU, single thread). A non-zero exit means at least one regenerated number differs
-from the paper and the mismatch is printed.
+followed by the per-engine x 8-degradation NED matrix (12 of the 14 engines now carry
+the breakdown — MinerU included; only Qwen3-VL and GLM-OCR report an overall HYB NED
+without a per-degradation split). **Expected time: ~1-2 min** (pure CPU, single
+thread). A non-zero exit means at least one regenerated number differs from the paper
+and the mismatch is printed.
 
 ## Experiments
 
@@ -157,12 +163,16 @@ All claims are reproduced from the **same** committed run of record by the singl
   cost (latency) table from the committed run of record, reproduces the paper's per-task
   accuracy and confirms Surya leads identity documents
   (**0.921**) ahead of every vision-language model while Qwen2.5-VL leads forms
-  (**0.97**) and degraded scans (**97.53** NED).
+  (**0.97**) and degraded scans (**97.53** NED). MinerU is no longer forms-only: it is
+  now scored on identity documents (IDs FVR **0.463** from the committed PII-free hit
+  array; 19 cards gave empty output, scored as genuine zeros), clean prose (RIB NED
+  **92.59**) and degraded scans (HYB NED **89.67**, with the full 8-way breakdown), so
+  the degradation matrix now covers every engine that reports one.
 - **Execution:**
   ```bash
   ./scripts/reproduce_from_results.sh
   ```
-- **Expected time:** ~30-60 s. **Expected resources:** < 1 GB RAM, ~32 MB read, no GPU.
+- **Expected time:** ~1-2 min. **Expected resources:** < 1 GB RAM, ~32 MB read, no GPU.
 - **Expected result:** `PASS: reproduced the paper's numbers ...` and the printed
   per-degradation matrix. Every data-driven macro in
   `results/results_macros.generated.tex` equals the committed

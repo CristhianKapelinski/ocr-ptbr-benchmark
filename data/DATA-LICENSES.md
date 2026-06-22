@@ -10,6 +10,7 @@ committed here. The rest is auto-fetched from source by `scripts/fetch_data.sh`.
 |---|---|---|---|
 | `data/rib/`, `data/hyb/` | ESTER-Pt clean (RIB) and degraded (HYB) reference transcriptions (`*.gold.txt`) and the per-engine OCR outputs scored against them | ESTER-Pt (Zenodo `7872951`) | **CC BY 4.0** |
 | `data/cost/_classical_latency.json` | Aggregate CPU latency medians (no document content) | this work | MIT |
+| `data/*_pair_*.json`, `data/ids_mineru_hits.json` | PII-free derived significance inputs: per-field `0/1` hit arrays and per-page NED% floats plus integer document indices (no field text, transcription or gold) | this work | MIT |
 | `results/run_of_record.json`, `results/consolidated_results.json` | Aggregate per-engine scores for **all** axes (numbers only, no raw field values) | this work | MIT |
 
 ESTER-Pt is public-domain Portuguese literature with **no personal data**, so its
@@ -41,5 +42,8 @@ download, so `fetch_data.sh` prints how to request it and skips it.
 
 No raw PII-bearing field value is committed anywhere in this repository. The
 committed tree contains only public-domain literary text (ESTER-Pt) and aggregate
-numbers (latency medians, per-engine scores). The no-GPU reproduce path reads only
-these and never touches forms/ids/en raw field values.
+numbers (latency medians, per-engine scores, and the PII-free `0/1` hit / NED%
+arrays that drive the significance tests and MinerU's IDs FVR). The no-GPU
+reproduce path reads only these and never touches forms/ids/en raw field values.
+MinerU's RIB/HYB outputs are the ESTER-Pt CC BY 4.0 transcriptions (the same
+public-domain literature already redistributed), not BRIDP.

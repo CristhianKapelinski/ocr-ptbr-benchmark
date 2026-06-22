@@ -144,13 +144,48 @@
       "fvr_excl_degen": 0.905,
       "degen_n": 0
     },
-    "ids": null,
+    "ids": {
+      "fvr": 0.463,
+      "ci": [
+        0.412,
+        0.515
+      ],
+      "recovered": 164,
+      "total": 354,
+      "empty_docs": 19
+    },
     "en": null,
-    "rib": null,
-    "hyb": null,
+    "rib": {
+      "ned": 92.59,
+      "ci": [
+        91.9,
+        93.16
+      ],
+      "n": 200,
+      "empty": 0
+    },
+    "hyb": {
+      "ned": 89.67,
+      "ci": [
+        88.09,
+        91.08
+      ],
+      "n": 224,
+      "empty": 0,
+      "by_degradation": {
+        "Bleed": 94.0,
+        "Blur_HYPERBOLA": 94.1,
+        "CharDeg": 92.2,
+        "Hole": 86.2,
+        "Noise_Gaussian": 94.2,
+        "Noise_SaltAndPepper": 91.0,
+        "Phantom_0.85": 94.5,
+        "Rot_color": 71.1
+      }
+    },
     "latency": {
       "forms_med": 3.62,
-      "ids_med": null,
+      "ids_med": 1.35,
       "rib_med": null,
       "hyb_med": null
     }

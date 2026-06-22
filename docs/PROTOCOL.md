@@ -108,3 +108,24 @@ receives the page image and a single transcription instruction and returns a
 full-page transcription. The classical pipelines run on CPU and Surya on GPU,
 each at its default backend. `scripts/run_from_scratch.sh` documents the roster
 and hands off to the no-GPU scoring path once outputs exist.
+
+### MinerU on the IDs / RIB / HYB axes (from-scratch driver)
+
+MinerU was initially run on forms only; it was later scored on the three extra
+axes (identity documents, clean prose, degraded scans) with the **same** scorers
+as every other engine, so its cells are directly comparable. The from-scratch
+driver `run_mineru_axes.py` serves `opendatalab/MinerU2.5-2509-1.2B` once (with
+the two-step `mineru_vl_utils:MinerULogitsProcessor`) and transcribes the BRID
+(IDs), ESTER-Pt RIB and ESTER-Pt HYB pages, writing one `<img>.mineru.txt` per
+page next to the inputs plus a `_run50_mineru_*.json` latency manifest. The
+companion aggregator `score_mineru_extra.py` then re-uses the existing axis
+scorers verbatim — `score_fvr50_axis_final.py` for the date-aware IDs FVR (micro
++ 95% Wilson), `score_ned_tesseract.py` for the RIB and HYB mean NED% (seeded
+bootstrap CI, `B = 10000`, seed `20260609`) and `--by-degradation` for the
+eight-way HYB breakdown — and records the IDs median seconds/page. The reviewer
+does **not** need this GPU path: the resulting RIB/HYB `<img>.mineru.txt` outputs
+are committed under the already-redistributed ESTER-Pt data (CC BY 4.0) and
+re-scored live, and a PII-free per-field IDs hit array (`data/ids_mineru_hits.json`,
+0/1 per scored field, no BRID text) lets the no-GPU path regenerate MinerU's IDs
+FVR + Wilson CI offline. The 19 ID cards that produced empty MinerU output are
+scored as genuine zeros (already 0 in the committed hit array).

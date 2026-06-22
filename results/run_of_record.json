@@ -150,7 +150,7 @@
     "hyb": null,
     "latency": {
       "forms_med": 3.62,
-      "ids_med": null,
+      "ids_med": 1.35,
       "rib_med": null,
       "hyb_med": null
     }

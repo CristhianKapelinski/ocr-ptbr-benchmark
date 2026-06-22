@@ -101,10 +101,18 @@ DEGRADATION_ORDER: tuple[str, ...] = (
 )
 
 # Which axes each engine class is scored on (drives null cells in the macros).
-# MinerU is forms-only; the EN control is VLM-only; HYB excludes MinerU and the
-# two engines whose HYB run is partial (qwen3vl, glmocr carry no per-degradation
-# breakdown but do have an overall NED).
-FORMS_ONLY = frozenset({"mineru"})
+# The EN control is VLM-only; HYB excludes the two engines whose HYB run is
+# partial (qwen3vl, glmocr carry no per-degradation breakdown but do have an
+# overall NED). MinerU is scored on every axis except the EN control: its
+# RIB/HYB are re-scored live from the committed ESTER-Pt outputs and its IDs FVR
+# is recomputed from a committed PII-free hit array (see ocr_bench.mineru_ids),
+# so it is no longer forms-only.
+EN_NOT_SCORED = frozenset({"mineru"})
 EN_SCORED = frozenset({"paddleocrvl", "hunyuanocr", "deepseekocr", "dotsocr",
                        "qwen3vl", "qwen25vl", "glmocr"})
 HYB_NO_BREAKDOWN = frozenset({"qwen3vl", "glmocr"})
+
+# MinerU's IDs FVR is the one restricted-axis cell that is *not* read from the
+# frozen run of record: it is recomputed offline from the committed PII-free hit
+# array, since BRIDP itself is never redistributed.
+IDS_FROM_HITS = frozenset({"mineru"})

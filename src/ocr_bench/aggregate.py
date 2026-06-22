@@ -20,13 +20,14 @@ from .config import (
     AXIS_BY_KEY,
     EN_SCORED,
     ENGINES,
-    FORMS_ONLY,
     HYB_NO_BREAKDOWN,
+    IDS_FROM_HITS,
     data_root,
 )
 from .degradation import per_degradation
 from .frozen import restricted_block
 from .io import load_fvr_pairs, load_ned_pairs
+from .mineru_ids import score_ids as score_mineru_ids
 from .scoring import (
     alnum_norm,
     bootstrap_ci,
@@ -131,27 +132,27 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
     restricted forms/ids/en axes (and their forms/ids latency medians) are
     re-scored live only when their raw data is present (a from-scratch run);
     otherwise they are read from the committed run of record so no raw PII-bearing
-    field value is ever touched.
+    field value is ever touched. MinerU's IDs FVR is the sole exception: BRIDP is
+    never redistributed, so it is always recomputed from the committed PII-free
+    hit array (:mod:`ocr_bench.mineru_ids`), not from raw field values.
     """
     forms_raw = _has_raw("forms")
 
     # RIB / HYB: clean CC BY 4.0 ESTER-Pt, always re-scored from committed outputs.
-    rib = None if engine in FORMS_ONLY else score_ned("rib", engine)
+    rib = score_ned("rib", engine)
     hyb_block = None
-    if engine not in FORMS_ONLY:
-        hyb = score_ned("hyb", engine)
-        if hyb is not None:
-            hyb_block = dict(hyb)
-            if engine not in HYB_NO_BREAKDOWN:
-                bd = per_degradation(data_root() / "hyb", engine)
-                if bd:
-                    hyb_block["by_degradation"] = bd
+    hyb = score_ned("hyb", engine)
+    if hyb is not None:
+        hyb_block = dict(hyb)
+        if engine not in HYB_NO_BREAKDOWN:
+            bd = per_degradation(data_root() / "hyb", engine)
+            if bd:
+                hyb_block["by_degradation"] = bd
 
     if forms_raw:
         # From-scratch path: the restricted raw axes are present, re-score them.
         forms = score_forms(engine)
-        ids = (None if engine in FORMS_ONLY
-               else score_fvr("ids", engine, date_aware=True, drop_short=True))
+        ids = score_fvr("ids", engine, date_aware=True, drop_short=True)
         en = (score_fvr("en", engine, date_aware=False, drop_short=False)
               if engine in EN_SCORED else None)
         if etype == "classical":
@@ -161,9 +162,9 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
         else:
             lat = {
                 "forms_med": latency.gpu_latency("forms", engine),
-                "ids_med": None if engine in FORMS_ONLY else latency.gpu_latency("ids", engine),
-                "rib_med": None if engine in FORMS_ONLY else latency.gpu_latency("rib", engine),
-                "hyb_med": None if engine in FORMS_ONLY else latency.gpu_latency("hyb", engine),
+                "ids_med": latency.gpu_latency("ids", engine),
+                "rib_med": latency.gpu_latency("rib", engine),
+                "hyb_med": latency.gpu_latency("hyb", engine),
             }
     else:
         # Reviewer default: the restricted axes are not redistributed; take their
@@ -176,8 +177,14 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
             lat["rib_med"] = None
             lat["hyb_med"] = None
         else:
-            lat["rib_med"] = None if engine in FORMS_ONLY else latency.gpu_latency("rib", engine)
-            lat["hyb_med"] = None if engine in FORMS_ONLY else latency.gpu_latency("hyb", engine)
+            lat["rib_med"] = latency.gpu_latency("rib", engine)
+            lat["hyb_med"] = latency.gpu_latency("hyb", engine)
+
+    # MinerU's IDs FVR + Wilson CI is recomputed from the committed PII-free hit
+    # array on both paths (BRIDP raw is never present), overriding whatever the
+    # frozen/raw branch produced for it.
+    if engine in IDS_FROM_HITS:
+        ids = score_mineru_ids()
 
     return {"forms": forms, "ids": ids, "en": en, "rib": rib,
             "hyb": hyb_block, "latency": lat}

@@ -94,8 +94,14 @@ def build_macros(results: dict[str, dict[str, Any]]) -> dict[str, str]:
         lat = r.get("latency", {})
         if lat.get("forms_med") is not None or e.type != "classical":
             m[f"latF{tag}"] = _fnum(lat.get("forms_med"))
-        if lat.get("ids_med") is not None or e.key not in {"mineru"}:
+        if lat.get("ids_med") is not None:
             m[f"latI{tag}"] = _fnum(lat.get("ids_med"))
+
+    # Count of ID cards that returned empty MinerU output (scored as genuine
+    # zeros). A standalone prose macro, sourced from the MinerU IDs hit block.
+    mineru_ids = results.get("mineru", {}).get("ids") or {}
+    if mineru_ids.get("empty_docs") is not None:
+        m["minerEmptyIDs"] = str(mineru_ids["empty_docs"])
     return m
 
 
@@ -143,6 +149,9 @@ def render_tex(results: dict[str, dict[str, Any]],
             name = tmpl.format(tag=tag)
             if name in m:
                 lines.append(_cmd(name, m[name]))
+    if "minerEmptyIDs" in m:
+        lines.append("% ----- MinerU empty-output ID cards (scored as genuine zeros) -----")
+        lines.append(_cmd("minerEmptyIDs", m["minerEmptyIDs"]))
     if pair_macros:
         lines.append("% ----- IDs paired document-level bootstrap significance test -----")
         for name in _PAIR_MACRO_ORDER:

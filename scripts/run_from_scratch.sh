@@ -60,6 +60,13 @@ and receives the page image plus a single transcription instruction.
 OCR engines: Tesseract, EasyOCR, docTR, RapidOCR, PaddleOCR (CPU), Surya (GPU),
 each at its vendor default backend.
 
+MinerU is scored on every axis except the English control. Its extra IDs/RIB/HYB
+pass is driven by run_mineru_axes.py (serve MinerU once, transcribe the BRID/RIB/
+HYB pages) and aggregated by score_mineru_extra.py, which re-uses the same axis
+scorers as every other engine (date-aware IDs FVR + Wilson, RIB/HYB mean NED% with
+the B=10000 seed-20260609 bootstrap, and the 8-way HYB breakdown). See the
+"MinerU on the IDs / RIB / HYB axes" section of docs/PROTOCOL.md.
+
 The full serving + inference recipe (per-engine prompts, MinerU's two-step
 logits processor, classical Docker entries) is documented in docs/PROTOCOL.md.
 This repository ships the resulting outputs as the committed run of record; the

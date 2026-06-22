@@ -25,3 +25,22 @@ def test_axis_document_counts():
     assert results["qwen25vl"]["hyb"]["n"] == 224
     # IDs axis micro denominator is 354 scored fields.
     assert results["surya"]["ids"]["total"] == 354
+
+
+def test_mineru_scored_on_every_axis_and_degradation_set_covers_all_engines():
+    results = consolidate()
+    # MinerU is no longer forms-only: it now carries IDs/RIB/HYB cells.
+    mineru = results["mineru"]
+    assert mineru["ids"]["total"] == 354  # from the committed PII-free hit array
+    assert mineru["rib"]["n"] == 200
+    assert mineru["hyb"]["n"] == 224
+    assert mineru["en"] is None  # EN control was not run for MinerU
+    # The degradation breakdown now covers all 14 engines except the two whose
+    # HYB run is partial (qwen3vl, glmocr carry an overall NED but no breakdown).
+    no_breakdown = {"qwen3vl", "glmocr"}
+    covered = sum(
+        1 for k, r in results.items()
+        if (r.get("hyb") or {}).get("by_degradation")
+    )
+    assert covered == len(results) - len(no_breakdown) == 12
+    assert "by_degradation" in mineru["hyb"]
