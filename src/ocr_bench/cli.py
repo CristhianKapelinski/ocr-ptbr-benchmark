@@ -18,12 +18,8 @@ from typing import Any
 
 from .aggregate import consolidate
 from .bootstrap import (
-    build_pair_macros,
-    load_doc_hits,
-    paired_bootstrap,
-)
-from .bootstrap import (
-    summary as pair_summary,
+    all_pair_macros,
+    all_pair_summaries,
 )
 from .config import DEGRADATION_ORDER, ENGINES, data_root
 from .macros import build_macros, render_tex
@@ -39,10 +35,9 @@ def _write(path: Path, text: str) -> None:
 
 def _consolidated_payload(results: dict[str, Any]) -> dict[str, Any]:
     """Compose the on-disk consolidated results: per-engine blocks plus the
-    paired IDs bootstrap summary, kept under a reserved ``_``-prefixed key so the
+    paired-bootstrap summaries, kept under a reserved ``_``-prefixed key so the
     macro/figure layers (which iterate engine keys) never see it."""
-    docs, meta = load_doc_hits()
-    return {**results, "_ids_pair_bootstrap": pair_summary(paired_bootstrap(docs), meta)}
+    return {**results, "_paired_bootstrap": all_pair_summaries()}
 
 
 def _cmd_score(_: argparse.Namespace) -> int:
@@ -55,7 +50,7 @@ def _cmd_score(_: argparse.Namespace) -> int:
 
 def _cmd_macros(_: argparse.Namespace) -> int:
     results = consolidate()
-    pair_macros = build_pair_macros(paired_bootstrap())
+    pair_macros = all_pair_macros()
     out = RESULTS_DIR / "results_macros.generated.tex"
     _write(out, render_tex(results, pair_macros))
     print(f"wrote {out}")
@@ -100,17 +95,24 @@ def _cmd_reproduce(args: argparse.Namespace) -> int:
     print(f"[1/5] scoring run of record at {data_root()} ...")
     results = consolidate()
 
-    print("[2/5] recomputing the paired IDs document-level bootstrap ...")
-    docs, meta = load_doc_hits()
-    pair = paired_bootstrap(docs)
-    pair_macros = build_pair_macros(pair)
-    payload = {**results, "_ids_pair_bootstrap": pair_summary(pair, meta)}
+    print("[2/5] recomputing the paired document-level bootstraps ...")
+    summaries = all_pair_summaries()
+    pair_macros = all_pair_macros()
+    payload = {**results, "_paired_bootstrap": summaries}
     _write(RESULTS_DIR / "consolidated_results.json",
            json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
-    print(f"      Surya {pair.fvr_a:.3f} vs DeepSeek-OCR {pair.fvr_b:.3f}; "
-          f"diff {pair_macros['idsPairDiff']} "
+    print(f"      IDs Surya vs DeepSeek-OCR:  diff {pair_macros['idsPairDiff']} "
           f"95% CI [{pair_macros['idsPairLo']}, {pair_macros['idsPairHi']}] "
-          f"(B={pair.b}, seed={pair.seed}), excludes 0: {pair.excludes_zero}")
+          f"(excludes 0: {summaries['ids_surya_vs_deepseek']['ci_excludes_zero']})")
+    print(f"      FORMS Qwen2.5-VL vs GLM-OCR: diff {pair_macros['formsPairDiff']} "
+          f"95% CI [{pair_macros['formsPairLo']}, {pair_macros['formsPairHi']}] "
+          f"(excludes 0: {summaries['forms_qwen25vl_vs_glmocr']['ci_excludes_zero']})")
+    print(f"      IDs Surya vs RapidOCR:      diff {pair_macros['idsPairRapidDiff']} "
+          f"95% CI [{pair_macros['idsPairRapidLo']}, {pair_macros['idsPairRapidHi']}] "
+          f"(excludes 0: {summaries['ids_surya_vs_rapidocr']['ci_excludes_zero']})")
+    print(f"      HYB Qwen2.5-VL vs Surya:    diff {pair_macros['hybPairDiff']} "
+          f"95% CI [{pair_macros['hybPairLo']}, {pair_macros['hybPairHi']}] "
+          f"(excludes 0: {summaries['hyb_qwen25vl_vs_surya']['ci_excludes_zero']})")
 
     print("[3/5] regenerating data-driven LaTeX macros ...")
     _write(RESULTS_DIR / "results_macros.generated.tex",
@@ -129,10 +131,20 @@ def _cmd_reproduce(args: argparse.Namespace) -> int:
           "results_macros.reference.tex")
     print("      (point estimates exact; CI bounds within the stated tolerance, "
           "see docs/PROTOCOL.md)")
-    if not pair.excludes_zero:
-        print("\nFAIL: the IDs paired bootstrap CI no longer excludes 0.",
-              file=sys.stderr)
-        return 1
+    # The three significance claims whose CI must exclude 0 (the FORMS pair is
+    # deliberately NOT significant and is asserted as such).
+    significant = {
+        "ids_surya_vs_deepseek": True,
+        "ids_surya_vs_rapidocr": True,
+        "hyb_qwen25vl_vs_surya": True,
+        "forms_qwen25vl_vs_glmocr": False,
+    }
+    for name, expected in significant.items():
+        if summaries[name]["ci_excludes_zero"] != expected:
+            verb = "no longer excludes" if expected else "now spuriously excludes"
+            print(f"\nFAIL: the {name} paired bootstrap CI {verb} 0.",
+                  file=sys.stderr)
+            return 1
 
     if args.figure:
         print("[5/5] regenerating fig_frontier.pdf ...")

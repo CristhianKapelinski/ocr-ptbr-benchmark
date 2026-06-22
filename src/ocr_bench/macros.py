@@ -111,10 +111,15 @@ _ENGINE_MACRO_ORDER = (
 )
 
 
-# The IDs paired-bootstrap macros, in the order the paper lists them. Passed in
-# from the bootstrap layer so this module stays free of the resampling logic.
+# The paired-bootstrap macros, in the order the paper lists them. Passed in from
+# the bootstrap layer so this module stays free of the resampling logic. Covers
+# all four document-level significance tests: IDs Surya-vs-DeepSeek, FORMS
+# Qwen2.5-VL-vs-GLM-OCR, IDs Surya-vs-RapidOCR, and HYB Qwen2.5-VL-vs-Surya.
 _PAIR_MACRO_ORDER = (
     "idsPairSurya", "idsPairDeepSeek", "idsPairDiff", "idsPairLo", "idsPairHi",
+    "formsPairDiff", "formsPairLo", "formsPairHi",
+    "idsPairRapidDiff", "idsPairRapidLo", "idsPairRapidHi",
+    "hybPairDiff", "hybPairLo", "hybPairHi",
 )
 
 

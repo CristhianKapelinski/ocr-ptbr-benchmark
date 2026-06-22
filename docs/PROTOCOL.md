@@ -25,35 +25,38 @@ reported number is computed, so the no-GPU reproduction is auditable.
     DocCreator degradation (`pageNNN_<Type>_<idx>.png`); pages are grouped into
     the eight types (28 pages each) and the mean NED% is reported per group.
 
-## IDs significance test (paired document-level bootstrap)
+## Significance tests (paired document-level bootstrap)
 
-To establish that Surya's identity-document FVR lead over the best vision-language
-model (DeepSeek-OCR) is statistically real, the IDs axis carries a **paired,
-clustered (document-level) bootstrap** of the FVR difference:
+Four head-to-head claims carry a **paired, clustered bootstrap** of the axis difference.
+Each resamples the scored units (documents for FVR, pages for NED%) with replacement
+`B = 10000` times (seed `20260609`), recomputes the per-resample axis value of each engine,
+and reports the 95% **percentile** CI of the difference (A − B). For FVR the per-unit pair
+is the binary hit `[a_hit, b_hit]` (each `0/1`, from the exact date-aware substring rule
+above); for NED% it is the per-page `[a_ned, b_ned]` value pair. Only the integers/floats
+are committed (PII-free: no field value, transcription or gold text); the per-field match
+and per-page NED were applied once on the GPU host that holds the raw data.
 
-- For every scored IDs gold field, the per-field hit pair `[surya_hit, deepseek_hit]`
-  (each `0/1`, from the exact date-aware substring rule above) is recorded with its
-  source-document index. Only the integers are committed, in `data/ids_pair_hits.json`
-  (PII-free: no field value, transcription or gold text); the per-field match was applied
-  once on the GPU host that holds the raw BRIDP data.
-- Resample the **50 documents** with replacement `B = 10000` times (seed `20260609`).
-  On each resample, recompute the micro-averaged FVR of each engine over the resampled
-  documents and take the difference (Surya minus DeepSeek-OCR). The 95% **percentile**
-  CI of that resampled difference is reported.
-- Result: marginals Surya **0.921** / DeepSeek-OCR **0.864**, point lead **+0.057**,
-  95% CI **[0.023, 0.089]**, which **excludes 0** (one-sided empirical p < 0.001). Because
-  the resampling is recomputed from the committed hit array with a fixed seed, the point
-  lead and **both CI bounds reproduce exactly** (no tolerance), unlike the per-engine
-  Wilson/NED bounds below. The macros `\idsPairSurya`, `\idsPairDeepSeek`, `\idsPairDiff`,
-  `\idsPairLo`, `\idsPairHi` are asserted by `ocr-bench reproduce`.
+| Axis | A vs B | Marginals | Diff | 95% CI | Excl. 0 | Array | Macros |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| IDs FVR | Surya vs DeepSeek-OCR | 0.921 / 0.864 | **+0.057** | [0.023, 0.089] | yes | `ids_pair_hits.json` | `\idsPair{Surya,DeepSeek,Diff,Lo,Hi}` |
+| FORMS FVR | Qwen2.5-VL vs GLM-OCR | 0.970 / 0.965 | **+0.005** | [-0.010, 0.019] | **no** | `forms_pair_hits.json` | `\formsPair{Diff,Lo,Hi}` |
+| IDs FVR | Surya vs RapidOCR | 0.921 / 0.870 | **+0.051** | [0.023, 0.079] | yes | `ids_pair_hits_surya_rapidocr.json` | `\idsPairRapid{Diff,Lo,Hi}` |
+| HYB NED% | Qwen2.5-VL vs Surya | 97.5 / 93.9 | **+3.6** | [1.9, 5.6] | yes | `hyb_pair_ned.json` | `\hybPair{Diff,Lo,Hi}` |
+
+The FORMS pair is a **statistical tie** (the CI straddles 0): the two best VLMs are
+indistinguishable on Brazilian-forms FVR. Because every resampling is recomputed from the
+committed array with a fixed seed, each point estimate and **both CI bounds reproduce
+exactly** (no tolerance), unlike the per-engine Wilson/NED bounds below. FVR diffs are
+asserted to 3 dp, the NED diff to 1 dp, and CI bounds to the paper's printed precision. All
+14 paired-bootstrap macros are asserted by `ocr-bench reproduce`.
 
 ## Determinism
 
 - Bootstrap: `B = 10000` resamples, seed `20260609`, percentile interval over
-  per-document means (per-engine NED CIs) or over the per-document FVR difference
-  (the paired IDs test). The seed and `B` match the original harness. The paired
-  IDs bootstrap is recomputed from the committed hit array, so it reproduces
-  **exactly**; the per-engine NED CIs are reproducible up to the resampling **order**.
+  per-document means (per-engine NED CIs) or over the per-unit difference (the four
+  paired tests). The seed and `B` match the original harness. The paired bootstraps
+  are recomputed from the committed arrays, so they reproduce **exactly**; the
+  per-engine NED CIs are reproducible up to the resampling **order**.
 - The Levenshtein distance is computed with rapidfuzz's C backend, which returns
   the identical integer distance to the bundled pure-stdlib reference
   (`scoring._levenshtein_py`); a unit test pins this equivalence.

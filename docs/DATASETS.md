@@ -16,11 +16,15 @@ redistributable subset and **auto-fetches** the rest from source.
   `../results/run_of_record.json` (numbers only); the no-GPU path regenerates and
   asserts their macros from that file. The from-scratch path fetches their raw
   inputs with `scripts/fetch_data.sh`.
-- **Committed, PII-free derived input:** `ids_pair_hits.json` — for every scored
-  IDs field, the binary hit pair `[surya_hit, deepseek_hit]` (`0/1`) plus an
-  integer document index, derived once from the raw BRIDP outputs on the GPU host.
-  It contains no field value, transcription or gold text, and drives the paired
-  document-level bootstrap significance test in the no-GPU path.
+- **Committed, PII-free derived inputs:** four paired-bootstrap arrays drive the
+  significance tests in the no-GPU path. The FVR arrays — `ids_pair_hits.json`
+  (Surya vs DeepSeek-OCR), `forms_pair_hits.json` (Qwen2.5-VL vs GLM-OCR) and
+  `ids_pair_hits_surya_rapidocr.json` (Surya vs RapidOCR) — store, for every scored
+  field, the binary hit pair `[a_hit, b_hit]` (`0/1`) plus an integer document index.
+  The NED array `hyb_pair_ned.json` (Qwen2.5-VL vs Surya) stores, per HYB page, the
+  `[a_ned, b_ned]` NED% floats plus an integer index. All four are derived once from
+  the raw outputs on the GPU host and contain no field value, transcription or gold
+  text — only integers/floats.
 - Document **images** are never committed (licence + size).
 
 | Axis (`data/` dir) | Role | n | Lang | Gold | Source licence | In repo |

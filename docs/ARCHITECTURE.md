@@ -17,7 +17,7 @@ config  ──┐
 |---|---|
 | `config` | engine roster, axes, degradation order, protocol constants; resolves `$OCR_BENCH_DATA` |
 | `scoring` | FVR / NED primitives: normalization, Levenshtein, Wilson, seeded bootstrap, date-aware candidates |
-| `bootstrap` | paired document-level bootstrap of the IDs FVR difference from the committed PII-free hit array |
+| `bootstrap` | four paired document-level bootstraps (IDs/FORMS FVR diffs, HYB NED% diff) from the committed PII-free arrays |
 | `io` | read per-document prediction/gold pairs and latency manifests from the run of record |
 | `degradation` | group HYB pages by DocCreator type and report per-type mean NED% |
 | `latency` | per-page median latency (recomputed from manifests for GPU engines; constants for CPU engines) |

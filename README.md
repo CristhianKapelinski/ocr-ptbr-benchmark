@@ -43,7 +43,7 @@ are not required to grant the seals.
   lint config; nothing is hardcoded to a host (all paths come from the environment).
 - **Reprodutível (SeloR):** the no-GPU path re-scores the committed ESTER-Pt outputs
   live, regenerates the forms/IDs/EN numbers from the committed run of record, and
-  recomputes the IDs paired significance test from a committed PII-free hit array, then
+  recomputes four paired significance tests from committed PII-free arrays, then
   **asserts** every data-driven macro matches the paper's reference macro file at the
   printed precision; deterministic seeds (bootstrap seed `20260609`) make the confidence
   intervals exactly reproducible. No raw PII is needed or present.
@@ -80,9 +80,11 @@ subset is committed. For licence and privacy reasons (see `data/DATA-LICENSES.md
   Their **aggregate scores** are committed as the run of record
   (`results/run_of_record.json`, numbers only); the no-GPU path regenerates and
   **asserts** their macros from that file. These committed scores are the run of
-  record for those axes. The IDs significance test additionally ships a PII-free
-  per-field hit array (`data/ids_pair_hits.json`: only `0/1` hits and integer
-  document indices, no field values) so the paired bootstrap is recomputable too.
+  record for those axes. The four significance tests additionally ship PII-free
+  per-unit arrays (`data/ids_pair_hits.json`, `data/forms_pair_hits.json`,
+  `data/ids_pair_hits_surya_rapidocr.json`: only `0/1` hits and integer document
+  indices; `data/hyb_pair_ned.json`: per-page NED% floats) so the paired bootstraps
+  are recomputable too.
 
 The reviewer therefore downloads nothing. The from-scratch path fetches the source
 inputs with `scripts/fetch_data.sh`; document **images** are never committed
@@ -97,9 +99,11 @@ inputs with `scripts/fetch_data.sh`; document **images** are never committed
   public-domain Portuguese literary text (ESTER-Pt, CC BY 4.0) and aggregate numbers
   (latency medians, per-engine scores). The forms/ids/en raw field values — which
   contain synthetic PII (names, CPFs, e-mails, addresses, dates of birth) — are **not**
-  redistributed; only their aggregate scores are. The IDs paired-bootstrap input
-  (`data/ids_pair_hits.json`) is likewise PII-free: it holds only binary per-field hits
-  (`0/1`) and integer document indices, never a field value or transcription. The
+  redistributed; only their aggregate scores are. The paired-bootstrap inputs
+  (`data/ids_pair_hits.json`, `data/forms_pair_hits.json`,
+  `data/ids_pair_hits_surya_rapidocr.json`, `data/hyb_pair_ned.json`) are likewise
+  PII-free: they hold only binary per-field hits (`0/1`) or per-page NED% floats and
+  integer document indices, never a field value or transcription. The
   from-scratch path fetches the source inputs (`scripts/fetch_data.sh`) under each
   dataset's own licence.
 - No credentials or secrets are used or stored. The optional from-scratch path downloads
@@ -164,28 +168,33 @@ All claims are reproduced from the **same** committed run of record by the singl
   `results/results_macros.generated.tex` equals the committed
   `results/results_macros.reference.tex` (the file the paper compiles).
 
-### Significance claim — Surya's IDs lead over the best VLM is statistically real
+### Significance claims — four paired document-level bootstraps
 
-- **Description:** a **paired, document-level (clustered) bootstrap** on the identity-document
-  axis confirms that Surya's field-value recall lead over the best vision-language model
-  (**DeepSeek-OCR**) is not noise. Resampling the 50 documents with replacement
-  `B = 10000` times (seed `20260609`) and recomputing the micro-averaged FVR difference on
-  each resample yields a point lead of **+0.057** with a 95% percentile CI of
-  **[0.023, 0.089]** that **excludes 0** (marginals: Surya **0.921**, DeepSeek-OCR
-  **0.864**). The same `reproduce` command recomputes this from the committed PII-free hit
-  array `data/ids_pair_hits.json` (for every scored field, the pair
-  `[surya_hit, deepseek_hit]` in `{0,1}` plus an integer document index — no field values,
-  transcriptions or gold text) and **asserts** it regenerates `\idsPairDiff=0.057`,
-  `\idsPairLo=0.023`, `\idsPairHi=0.089` (with marginals `\idsPairSurya=0.921`,
-  `\idsPairDeepSeek=0.864`) exactly.
+- **Description:** four **paired, document-level (clustered) bootstraps** quantify the
+  reliability of the paper's head-to-head claims. Each resamples the scored units (documents
+  for FVR, pages for NED%) with replacement `B = 10000` times (seed `20260609`), recomputes
+  the per-resample axis difference (A − B), and reports the 95% percentile CI. All four are
+  recomputed by the `reproduce` command from committed PII-free arrays (binary `0/1` hits or
+  NED% floats plus integer document indices — no field values, transcriptions or gold text)
+  and the corresponding macros are **asserted** exactly:
+
+  | Axis | Comparison (A vs B) | Diff | 95% CI | Excl. 0 | Macros | Array |
+  | --- | --- | --- | --- | --- | --- | --- |
+  | IDs FVR | Surya vs DeepSeek-OCR | **+0.057** | [0.023, 0.089] | yes | `\idsPair{Diff,Lo,Hi}` (+ marginals `\idsPair{Surya,DeepSeek}`) | `data/ids_pair_hits.json` |
+  | FORMS FVR | Qwen2.5-VL vs GLM-OCR | **+0.005** | [-0.010, 0.019] | **no** | `\formsPair{Diff,Lo,Hi}` | `data/forms_pair_hits.json` |
+  | IDs FVR | Surya vs RapidOCR | **+0.051** | [0.023, 0.079] | yes | `\idsPairRapid{Diff,Lo,Hi}` | `data/ids_pair_hits_surya_rapidocr.json` |
+  | HYB NED% | Qwen2.5-VL vs Surya | **+3.6** | [1.9, 5.6] | yes | `\hybPair{Diff,Lo,Hi}` | `data/hyb_pair_ned.json` |
+
+  The FORMS pair is reported as a **statistical tie** (the CI straddles 0): the two best VLMs
+  are indistinguishable on the Brazilian-forms FVR axis. The other three CIs exclude 0.
 - **Execution:**
   ```bash
   ./scripts/reproduce_from_results.sh
   ```
-- **Expected result:** step `[2/5]` prints
-  `Surya 0.921 vs DeepSeek-OCR 0.864; diff 0.057 95% CI [0.023, 0.089] ... excludes 0: True`,
-  and the macro assertion in step `[4/5]` covers the five `\idsPair*` macros. A standalone
-  check is `uv run pytest tests/test_bootstrap.py`.
+- **Expected result:** step `[2/5]` prints one line per comparison with its diff, CI and
+  `excludes 0` flag, and the macro assertion in step `[4/5]` covers all 14 paired-bootstrap
+  macros (FVR diffs to 3 dp, NED diff to 1 dp, CI bounds to the paper's printed precision).
+  A standalone check is `uv run pytest tests/test_bootstrap.py`.
 
 ### Supporting claim — the cost frontier figure
 

@@ -813,20 +813,70 @@
       "hyb_med": 4.21
     }
   },
-  "_ids_pair_bootstrap": {
-    "engine_a": "surya",
-    "engine_b": "deepseekocr",
-    "n_docs": 50,
-    "n_fields": 354,
-    "fvr_a": 0.9209,
-    "fvr_b": 0.8644,
-    "diff_point": 0.0565,
-    "B": 10000,
-    "seed": 20260609,
-    "ci95_diff": [
-      0.0229,
-      0.0891
-    ],
-    "ci_excludes_zero": true
+  "_paired_bootstrap": {
+    "ids_surya_vs_deepseek": {
+      "engine_a": "surya",
+      "engine_b": "deepseekocr",
+      "n_docs": 50,
+      "n_fields": 354,
+      "fvr_a": 0.9209,
+      "fvr_b": 0.8644,
+      "diff_point": 0.0565,
+      "B": 10000,
+      "seed": 20260609,
+      "ci95_diff": [
+        0.0229,
+        0.0891
+      ],
+      "ci_excludes_zero": true
+    },
+    "forms_qwen25vl_vs_glmocr": {
+      "engine_a": "qwen25vl",
+      "engine_b": "glmocr",
+      "n_docs": 50,
+      "n_fields": 1428,
+      "fvr_a": 0.9699,
+      "fvr_b": 0.965,
+      "diff_point": 0.0049,
+      "B": 10000,
+      "seed": 20260609,
+      "ci95_diff": [
+        -0.01,
+        0.0188
+      ],
+      "ci_excludes_zero": false
+    },
+    "ids_surya_vs_rapidocr": {
+      "engine_a": "surya",
+      "engine_b": "rapidocr",
+      "n_docs": 50,
+      "n_fields": 354,
+      "fvr_a": 0.9209,
+      "fvr_b": 0.8701,
+      "diff_point": 0.0508,
+      "B": 10000,
+      "seed": 20260609,
+      "ci95_diff": [
+        0.0228,
+        0.0794
+      ],
+      "ci_excludes_zero": true
+    },
+    "hyb_qwen25vl_vs_surya": {
+      "engine_a": "qwen25vl",
+      "engine_b": "surya",
+      "metric": "ned_pct",
+      "n_pages": 224,
+      "ned_a": 97.5267,
+      "ned_b": 93.8923,
+      "diff_point": 3.6344,
+      "B": 10000,
+      "seed": 20260609,
+      "ci95_diff": [
+        1.8532,
+        5.5727
+      ],
+      "ci_excludes_zero": true
+    }
   }
 }

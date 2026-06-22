@@ -32,10 +32,17 @@ from typing import Any
 
 from .config import BOOT_N, BOOT_SEED
 
-# The committed PII-free run of record for the paired IDs test.
-HITS_FILE = (
-    Path(__file__).resolve().parents[2] / "data" / "ids_pair_hits.json"
-)
+_DATA = Path(__file__).resolve().parents[2] / "data"
+
+# The committed PII-free run of record for the paired IDs (Surya vs DeepSeek) test.
+HITS_FILE = _DATA / "ids_pair_hits.json"
+
+# The three additional paired-bootstrap run-of-record arrays. Same PII-free
+# schema as ``ids_pair_hits.json`` (integers/floats only, no field values): two
+# FVR hit arrays and one NED%-per-page array.
+FORMS_PAIR_FILE = _DATA / "forms_pair_hits.json"        # qwen25vl vs glmocr (forms)
+IDS_RAPID_PAIR_FILE = _DATA / "ids_pair_hits_surya_rapidocr.json"  # surya vs rapidocr (IDs)
+HYB_NED_PAIR_FILE = _DATA / "hyb_pair_ned.json"         # qwen25vl vs surya (HYB NED%)
 
 
 @dataclass(frozen=True)
@@ -187,4 +194,198 @@ def summary(result: PairBootstrap, meta: dict[str, Any] | None = None) -> dict[s
         "seed": result.seed,
         "ci95_diff": [round(result.ci_lo, 4), round(result.ci_hi, 4)],
         "ci_excludes_zero": result.excludes_zero,
+    }
+
+
+# --------------------------------------------------------------------------- #
+# Additional paired tests (same clustered doc-level bootstrap, B=10000, seed).
+#
+# Three more comparisons are recomputed from their own committed PII-free arrays
+# exactly as the IDs (Surya vs DeepSeek) test above:
+#   * FORMS FVR -- Qwen2.5-VL vs GLM-OCR     (forms_pair_hits.json)
+#   * IDs FVR   -- Surya vs RapidOCR          (ids_pair_hits_surya_rapidocr.json)
+#   * HYB NED%  -- Qwen2.5-VL vs Surya        (hyb_pair_ned.json)
+# The FVR pair files reuse :func:`load_doc_hits` / :func:`paired_bootstrap`
+# verbatim (the schema is identical); the NED pair has its own loader and a mean
+# (rather than micro) aggregator, but the resampling and percentile-CI procedure
+# are line-for-line the same.
+# --------------------------------------------------------------------------- #
+
+
+@dataclass(frozen=True)
+class DocNed:
+    """One document's per-page NED% for the two compared engines (paired)."""
+
+    ned_a: float
+    ned_b: float
+
+
+def load_doc_ned(path: Path = HYB_NED_PAIR_FILE) -> tuple[list[DocNed], dict[str, Any]]:
+    """Load a committed NED%-pair array, one resampling unit per scored page.
+
+    Each ``[doc_index, ned_a, ned_b]`` row is a page's NED% (0-100) for each
+    engine -- floats only, no transcription or gold text. Returns the per-page
+    pairs (the resampling unit) and the file metadata block.
+    """
+    meta = json.loads(path.read_text(encoding="utf-8"))
+    docs = [DocNed(float(na), float(nb)) for _doc, na, nb in meta["pairs"]]
+    return docs, meta
+
+
+def _mean_ned(docs: list[DocNed]) -> tuple[float, float]:
+    """Mean per-page NED% for each engine over a (possibly multiset) page list."""
+    n = len(docs)
+    if not n:
+        return 0.0, 0.0
+    a = sum(d.ned_a for d in docs) / n
+    b = sum(d.ned_b for d in docs) / n
+    return a, b
+
+
+@dataclass(frozen=True)
+class NedPairBootstrap:
+    """Result of the paired document-level bootstrap of a NED% difference."""
+
+    ned_a: float
+    ned_b: float
+    diff: float
+    ci_lo: float
+    ci_hi: float
+    excludes_zero: bool
+    n_pages: int
+    b: int
+    seed: int
+
+
+def paired_ned_bootstrap(
+    docs: list[DocNed] | None = None,
+    b: int = BOOT_N,
+    seed: int = BOOT_SEED,
+) -> NedPairBootstrap:
+    """Clustered paired bootstrap of the mean-NED% difference (A minus B).
+
+    Resamples the scored pages with replacement ``b`` times, recomputes each
+    engine's mean NED% per resample, and returns the observed marginals, the
+    observed difference, and the 95% percentile CI of the resampled difference.
+    Deterministic given ``seed``; mirrors :func:`paired_bootstrap` exactly.
+    """
+    if docs is None:
+        docs, _ = load_doc_ned()
+    n = len(docs)
+
+    na, nb = _mean_ned(docs)
+    diff_point = na - nb
+
+    rng = random.Random(seed)
+    diffs: list[float] = []
+    for _ in range(b):
+        sample = [docs[rng.randrange(n)] for _ in range(n)]
+        sna, snb = _mean_ned(sample)
+        diffs.append(sna - snb)
+    diffs.sort()
+    ci_lo = _percentile(diffs, 0.025)
+    ci_hi = _percentile(diffs, 0.975)
+
+    return NedPairBootstrap(
+        ned_a=na,
+        ned_b=nb,
+        diff=diff_point,
+        ci_lo=ci_lo,
+        ci_hi=ci_hi,
+        excludes_zero=(ci_lo > 0.0) or (ci_hi < 0.0),
+        n_pages=n,
+        b=b,
+        seed=seed,
+    )
+
+
+def build_forms_pair_macros(result: PairBootstrap) -> dict[str, str]:
+    """Map the FORMS Qwen2.5-VL-vs-GLM-OCR paired-bootstrap macros (3 dp).
+
+    ``\\formsPairDiff`` is the point lead and ``\\formsPairLo`` / ``\\formsPairHi``
+    the 95% CI of the per-document-resampled FVR difference. The CI straddles 0,
+    so the difference is NOT significant -- the macros record that honestly.
+    """
+    return {
+        "formsPairDiff": repr(round(result.diff, 3)),
+        "formsPairLo": repr(round(result.ci_lo, 3)),
+        "formsPairHi": repr(round(result.ci_hi, 3)),
+    }
+
+
+def build_ids_rapid_pair_macros(result: PairBootstrap) -> dict[str, str]:
+    """Map the IDs Surya-vs-RapidOCR paired-bootstrap macros (3 dp).
+
+    ``\\idsPairRapidDiff`` is the point lead and ``\\idsPairRapidLo`` /
+    ``\\idsPairRapidHi`` the 95% CI, which excludes 0 (Surya beats the best
+    classical engine on IDs FVR).
+    """
+    return {
+        "idsPairRapidDiff": repr(round(result.diff, 3)),
+        "idsPairRapidLo": repr(round(result.ci_lo, 3)),
+        "idsPairRapidHi": repr(round(result.ci_hi, 3)),
+    }
+
+
+def build_hyb_pair_macros(result: NedPairBootstrap) -> dict[str, str]:
+    """Map the HYB Qwen2.5-VL-vs-Surya NED% paired-bootstrap macros (1 dp).
+
+    ``\\hybPairDiff`` is the point lead and ``\\hybPairLo`` / ``\\hybPairHi`` the
+    95% CI of the per-page-resampled mean-NED% difference, which excludes 0 (the
+    best VLM beats the specialized engine on degraded scans).
+    """
+    return {
+        "hybPairDiff": repr(round(result.diff, 1)),
+        "hybPairLo": repr(round(result.ci_lo, 1)),
+        "hybPairHi": repr(round(result.ci_hi, 1)),
+    }
+
+
+def all_pair_macros() -> dict[str, str]:
+    """Regenerate every paired-bootstrap macro from the committed PII-free arrays.
+
+    Runs all four clustered document-level bootstraps (the original IDs
+    Surya-vs-DeepSeek test plus the three additional comparisons) and returns the
+    union of their macro maps, ready to be checked against the paper reference.
+    """
+    ids_docs, _ = load_doc_hits()
+    forms_docs, _ = load_doc_hits(FORMS_PAIR_FILE)
+    rapid_docs, _ = load_doc_hits(IDS_RAPID_PAIR_FILE)
+    hyb_docs, _ = load_doc_ned(HYB_NED_PAIR_FILE)
+    return {
+        **build_pair_macros(paired_bootstrap(ids_docs)),
+        **build_forms_pair_macros(paired_bootstrap(forms_docs)),
+        **build_ids_rapid_pair_macros(paired_bootstrap(rapid_docs)),
+        **build_hyb_pair_macros(paired_ned_bootstrap(hyb_docs)),
+    }
+
+
+def ned_summary(result: NedPairBootstrap, meta: dict[str, Any] | None = None) -> dict[str, Any]:
+    """A JSON-serializable summary block for a NED% paired test."""
+    return {
+        "engine_a": (meta or {}).get("engine_a", "qwen25vl"),
+        "engine_b": (meta or {}).get("engine_b", "surya"),
+        "metric": "ned_pct",
+        "n_pages": result.n_pages,
+        "ned_a": round(result.ned_a, 4),
+        "ned_b": round(result.ned_b, 4),
+        "diff_point": round(result.diff, 4),
+        "B": result.b,
+        "seed": result.seed,
+        "ci95_diff": [round(result.ci_lo, 4), round(result.ci_hi, 4)],
+        "ci_excludes_zero": result.excludes_zero,
+    }
+
+
+def all_pair_summaries() -> dict[str, Any]:
+    """JSON summary blocks for every paired test (for the consolidated results)."""
+    ids_docs, ids_meta = load_doc_hits()
+    forms_docs, forms_meta = load_doc_hits(FORMS_PAIR_FILE)
+    rapid_docs, rapid_meta = load_doc_hits(IDS_RAPID_PAIR_FILE)
+    hyb_docs, hyb_meta = load_doc_ned(HYB_NED_PAIR_FILE)
+    return {
+        "ids_surya_vs_deepseek": summary(paired_bootstrap(ids_docs), ids_meta),
+        "forms_qwen25vl_vs_glmocr": summary(paired_bootstrap(forms_docs), forms_meta),
+        "ids_surya_vs_rapidocr": summary(paired_bootstrap(rapid_docs), rapid_meta),
+        "hyb_qwen25vl_vs_surya": ned_summary(paired_ned_bootstrap(hyb_docs), hyb_meta),
     }

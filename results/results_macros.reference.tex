@@ -339,3 +339,27 @@
 \newcommand{\idsPairDiff}{0.057}
 \newcommand{\idsPairLo}{0.023}
 \newcommand{\idsPairHi}{0.089}
+
+% ---- FORMS paired bootstrap: Qwen2.5-VL vs GLM-OCR (NOT significant) ----
+% On the Brazilian forms FVR axis the best two VLMs are statistically tied:
+% the 95% CI of the per-document-resampled difference straddles 0.
+% Regenerated from data/forms_pair_hits.json (B=10000, seed=20260609).
+\newcommand{\formsPairDiff}{0.005}
+\newcommand{\formsPairLo}{-0.01}
+\newcommand{\formsPairHi}{0.019}
+
+% ---- IDs paired bootstrap: Surya vs RapidOCR (significant) ----
+% Surya also beats the best classical engine (RapidOCR) on IDs FVR; the 95% CI
+% of the per-document-resampled difference excludes 0.
+% Regenerated from data/ids_pair_hits_surya_rapidocr.json (B=10000, seed=20260609).
+\newcommand{\idsPairRapidDiff}{0.051}
+\newcommand{\idsPairRapidLo}{0.023}
+\newcommand{\idsPairRapidHi}{0.079}
+
+% ---- HYB paired bootstrap: Qwen2.5-VL vs Surya, NED% (significant) ----
+% On degraded scans (HYB) the best VLM beats the specialized engine on overall
+% mean NED%; the 95% CI of the per-page-resampled difference excludes 0.
+% Regenerated from data/hyb_pair_ned.json (B=10000, seed=20260609).
+\newcommand{\hybPairDiff}{3.6}
+\newcommand{\hybPairLo}{1.9}
+\newcommand{\hybPairHi}{5.6}
