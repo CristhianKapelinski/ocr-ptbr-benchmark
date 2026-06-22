@@ -329,3 +329,13 @@
 \newcommand{\suryaIdsFVR}{0.921}
 \newcommand{\suryaRibNED}{96.67}
 \newcommand{\suryaHybNED}{93.89}
+
+% ---- IDs paired document-level bootstrap significance test ----
+% Surya beats the best VLM (DeepSeek-OCR) on IDs FVR; the 95% CI of the
+% per-document-resampled difference excludes 0 (B=10000, seed=20260609).
+% Regenerated from data/ids_pair_hits.json by the no-GPU reproduce path.
+\newcommand{\idsPairSurya}{0.921}
+\newcommand{\idsPairDeepSeek}{0.864}
+\newcommand{\idsPairDiff}{0.057}
+\newcommand{\idsPairLo}{0.023}
+\newcommand{\idsPairHi}{0.089}

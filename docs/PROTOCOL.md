@@ -25,11 +25,35 @@ reported number is computed, so the no-GPU reproduction is auditable.
     DocCreator degradation (`pageNNN_<Type>_<idx>.png`); pages are grouped into
     the eight types (28 pages each) and the mean NED% is reported per group.
 
+## IDs significance test (paired document-level bootstrap)
+
+To establish that Surya's identity-document FVR lead over the best vision-language
+model (DeepSeek-OCR) is statistically real, the IDs axis carries a **paired,
+clustered (document-level) bootstrap** of the FVR difference:
+
+- For every scored IDs gold field, the per-field hit pair `[surya_hit, deepseek_hit]`
+  (each `0/1`, from the exact date-aware substring rule above) is recorded with its
+  source-document index. Only the integers are committed, in `data/ids_pair_hits.json`
+  (PII-free: no field value, transcription or gold text); the per-field match was applied
+  once on the GPU host that holds the raw BRIDP data.
+- Resample the **50 documents** with replacement `B = 10000` times (seed `20260609`).
+  On each resample, recompute the micro-averaged FVR of each engine over the resampled
+  documents and take the difference (Surya minus DeepSeek-OCR). The 95% **percentile**
+  CI of that resampled difference is reported.
+- Result: marginals Surya **0.921** / DeepSeek-OCR **0.864**, point lead **+0.057**,
+  95% CI **[0.023, 0.089]**, which **excludes 0** (one-sided empirical p < 0.001). Because
+  the resampling is recomputed from the committed hit array with a fixed seed, the point
+  lead and **both CI bounds reproduce exactly** (no tolerance), unlike the per-engine
+  Wilson/NED bounds below. The macros `\idsPairSurya`, `\idsPairDeepSeek`, `\idsPairDiff`,
+  `\idsPairLo`, `\idsPairHi` are asserted by `ocr-bench reproduce`.
+
 ## Determinism
 
 - Bootstrap: `B = 10000` resamples, seed `20260609`, percentile interval over
-  per-document means. The seed and `B` match the original harness, so the
-  intervals are reproducible up to the resampling **order**.
+  per-document means (per-engine NED CIs) or over the per-document FVR difference
+  (the paired IDs test). The seed and `B` match the original harness. The paired
+  IDs bootstrap is recomputed from the committed hit array, so it reproduces
+  **exactly**; the per-engine NED CIs are reproducible up to the resampling **order**.
 - The Levenshtein distance is computed with rapidfuzz's C backend, which returns
   the identical integer distance to the bundled pure-stdlib reference
   (`scoring._levenshtein_py`); a unit test pins this equivalence.

@@ -812,5 +812,21 @@
       "rib_med": 1.53,
       "hyb_med": 4.21
     }
+  },
+  "_ids_pair_bootstrap": {
+    "engine_a": "surya",
+    "engine_b": "deepseekocr",
+    "n_docs": 50,
+    "n_fields": 354,
+    "fvr_a": 0.9209,
+    "fvr_b": 0.8644,
+    "diff_point": 0.0565,
+    "B": 10000,
+    "seed": 20260609,
+    "ci95_diff": [
+      0.0229,
+      0.0891
+    ],
+    "ci_excludes_zero": true
   }
 }

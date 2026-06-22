@@ -82,3 +82,22 @@ def compare(results: dict[str, dict[str, Any]],
                 pass
         mismatches.append(Mismatch(name, gen, ref[name]))
     return mismatches
+
+
+def compare_pair(pair_macros: dict[str, str],
+                 reference: dict[str, str] | None = None) -> list[Mismatch]:
+    """Compare the IDs paired-bootstrap macros against the paper reference.
+
+    Unlike the NED/FVR interval bounds, the paired-bootstrap CI is recomputed
+    from the committed PII-free hit array with a fixed seed, so both the point
+    lead and the CI bounds reproduce **exactly** and are checked without
+    tolerance.
+    """
+    ref = reference if reference is not None else parse_reference()
+    mismatches: list[Mismatch] = []
+    for name, gen in pair_macros.items():
+        if name not in ref:
+            mismatches.append(Mismatch(name, gen, "<absent from reference>"))
+        elif _norm_value(gen) != _norm_value(ref[name]):
+            mismatches.append(Mismatch(name, gen, ref[name]))
+    return mismatches
