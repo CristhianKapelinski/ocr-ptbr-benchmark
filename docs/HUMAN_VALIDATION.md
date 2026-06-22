@@ -38,9 +38,10 @@ Both annotators found **no error**. Field-level gold accuracy is **1.00**, Wilso
 
 The annotators flagged a representation choice rather than a mistake: **checkbox answers are not
 encoded uniformly** across forms. A checked item is sometimes transcribed as the mark it carries
-(for example, one consent form's seven checklist items, each a `V`), and consensus settled that
-the mark is itself the answer. This is a prompt artifact of the gold correction, not a wrong
-value; it changes how an answer is written, not whether it is correct.
+(for example, one consent form's seven checklist items, each a `V`). The consensus was that the
+reconstructed value is **correct**, while noting that the same answer could equally be encoded
+another way (the marked option, or an `x`). This is a prompt artifact of the gold correction, not
+a wrong value; it changes how an answer is written, not whether it is correct.
 
 ## Provenance / licence
 
