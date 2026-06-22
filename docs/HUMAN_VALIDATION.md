@@ -36,12 +36,13 @@ Both annotators found **no error**. Field-level gold accuracy is **1.00**, Wilso
 
 ## One discussed non-error
 
-The annotators flagged a representation choice rather than a mistake: **checkbox answers are not
-encoded uniformly** across forms. A checked item is sometimes transcribed as the mark it carries
-(for example, one consent form's seven checklist items, each a `V`). The consensus was that the
-reconstructed value is **correct**, while noting that the same answer could equally be encoded
-another way (the marked option, or an `x`). This is a prompt artifact of the gold correction, not
-a wrong value; it changes how an answer is written, not whether it is correct.
+The annotators flagged a representation choice rather than a mistake: **marked-option answers are
+not encoded uniformly** across forms. An alternative shown as `Alternativa A (X)` can be encoded
+two equally valid ways: the full option text as the answer, or the option label as the field with
+the `X` as the answer (one consent form takes the second, recording seven checklist items each as
+a `V`). The consensus was that the reconstructed value is **correct**; the correction prompt
+simply does not standardize which encoding it uses. This is a prompt artifact of the gold
+correction, not a wrong value; it changes how an answer is written, not whether it is correct.
 
 ## Provenance / licence
 
