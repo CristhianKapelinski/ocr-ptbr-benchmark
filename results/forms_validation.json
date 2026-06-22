@@ -1,0 +1,24 @@
+{
+  "task": "human validation of the image-reconstructed forms gold",
+  "gold_corrected_by": "Claude Opus (large multimodal model, not among the evaluated engines)",
+  "sample": {
+    "selection": "reproducible uniform random sample over scored fields",
+    "script": "scripts/validation/sample_validation_fields.py",
+    "seed": 0,
+    "n_sampled": 250,
+    "n_pool": 1428,
+    "n_forms_touched": 46,
+    "unit": "scored field (non-empty value)"
+  },
+  "annotators": [
+    { "id": "rater-1", "reviewed": 250, "ok": 250, "wrong": 0 },
+    { "id": "rater-2", "reviewed": 250, "ok": 250, "wrong": 0 }
+  ],
+  "result": {
+    "errors_found": 0,
+    "accuracy": 1.0,
+    "wilson_ci_95": [0.985, 1.0],
+    "agreement": "full; both annotators independently marked every sampled field correct"
+  },
+  "notes": "Two annotators reviewed the same random sample independently, against the form images, in the browser tool (scripts/validation/gen_review_html.py; see docs/img/human_validation.png). One discussed non-error: checkbox answers are not encoded uniformly across forms. A checked item is sometimes transcribed as the mark it carries (e.g. one consent form's seven checklist items, each a 'V'); consensus settled that the mark is itself the answer. This is a representation choice from the gold-correction prompt, not a wrong value. The raw per-field annotations and the field values are not redistributed here: the underlying forms gold derives from XFUND (CC BY-NC-SA 4.0) and is fetched from source; this file records only PII-free counts."
+}
