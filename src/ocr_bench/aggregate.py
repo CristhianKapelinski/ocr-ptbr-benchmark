@@ -1,9 +1,15 @@
 """Score every engine on every axis and assemble the consolidated results.
 
-This is the analysis core of the no-GPU reproduce path. It walks the committed
-run of record, applies the FVR / NED scorers, recomputes per-page latency
-medians, and emits one nested dict mirroring the paper's results structure. The
-LaTeX-macro and figure layers consume this dict; nothing here writes files.
+This is the analysis core of the reproduce path. The clean ESTER-Pt RIB/HYB axis
+(CC BY 4.0, no PII) is always **re-scored live** from its committed per-engine
+outputs. The restricted forms/ids/en axes (XFUND / BRIDP / FUNSD) are not
+redistributed -- their raw outputs and gold carry synthetic PII under restrictive
+licences -- so when their raw data is absent (the reviewer default) their
+aggregate scores are taken from the committed run of record
+(``results/consolidated_results.json``). If a from-scratch run *has* placed those
+raw axes under ``$OCR_BENCH_DATA``, they are re-scored live instead, so the same
+code reproduces the run of record end to end. The LaTeX-macro and figure layers
+consume the assembled dict; nothing here writes files.
 """
 from __future__ import annotations
 
@@ -19,6 +25,7 @@ from .config import (
     data_root,
 )
 from .degradation import per_degradation
+from .frozen import restricted_block
 from .io import load_fvr_pairs, load_ned_pairs
 from .scoring import (
     alnum_norm,
@@ -27,6 +34,19 @@ from .scoring import (
     ned_pct,
     wilson_ci,
 )
+
+
+def _has_raw(axis_key: str) -> bool:
+    """True iff a from-scratch run has placed this axis's raw gold under the data root.
+
+    The restricted forms/ids/en axes are absent in the redistributed repository,
+    so this is ``False`` on the reviewer's clone and their scores are read from
+    the committed run of record instead of being re-derived from raw field values.
+    """
+    axis = AXIS_BY_KEY[axis_key]
+    pattern = "*.fields.json" if axis.metric == "fvr" else "*.gold.txt"
+    axis_dir = data_root() / axis.subdir
+    return axis_dir.is_dir() and any(axis_dir.glob(pattern))
 
 # A normalized prediction shorter than this is a degenerate (near-empty) output;
 # the excl-degenerate forms FVR drops those forms and is reported alongside raw.
@@ -105,12 +125,17 @@ def score_ned(axis_key: str, engine: str) -> dict[str, Any] | None:
 
 
 def score_engine(engine: str, etype: str) -> dict[str, Any]:
-    """Full per-axis result block for one engine."""
-    forms = score_forms(engine)
-    ids = (None if engine in FORMS_ONLY
-           else score_fvr("ids", engine, date_aware=True, drop_short=True))
-    en = (score_fvr("en", engine, date_aware=False, drop_short=False)
-          if engine in EN_SCORED else None)
+    """Full per-axis result block for one engine.
+
+    RIB/HYB are always re-scored live from the committed ESTER-Pt outputs. The
+    restricted forms/ids/en axes (and their forms/ids latency medians) are
+    re-scored live only when their raw data is present (a from-scratch run);
+    otherwise they are read from the committed run of record so no raw PII-bearing
+    field value is ever touched.
+    """
+    forms_raw = _has_raw("forms")
+
+    # RIB / HYB: clean CC BY 4.0 ESTER-Pt, always re-scored from committed outputs.
     rib = None if engine in FORMS_ONLY else score_ned("rib", engine)
     hyb_block = None
     if engine not in FORMS_ONLY:
@@ -122,18 +147,37 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
                 if bd:
                     hyb_block["by_degradation"] = bd
 
-    lat: dict[str, float | None] = {}
-    if etype == "classical":
-        cls = latency.classical_latency().get(engine, {})
-        lat = {"forms_med": cls.get("forms"), "ids_med": cls.get("ids"),
-               "rib_med": None, "hyb_med": None}
+    if forms_raw:
+        # From-scratch path: the restricted raw axes are present, re-score them.
+        forms = score_forms(engine)
+        ids = (None if engine in FORMS_ONLY
+               else score_fvr("ids", engine, date_aware=True, drop_short=True))
+        en = (score_fvr("en", engine, date_aware=False, drop_short=False)
+              if engine in EN_SCORED else None)
+        if etype == "classical":
+            cls = latency.classical_latency().get(engine, {})
+            lat = {"forms_med": cls.get("forms"), "ids_med": cls.get("ids"),
+                   "rib_med": None, "hyb_med": None}
+        else:
+            lat = {
+                "forms_med": latency.gpu_latency("forms", engine),
+                "ids_med": None if engine in FORMS_ONLY else latency.gpu_latency("ids", engine),
+                "rib_med": None if engine in FORMS_ONLY else latency.gpu_latency("rib", engine),
+                "hyb_med": None if engine in FORMS_ONLY else latency.gpu_latency("hyb", engine),
+            }
     else:
-        lat = {
-            "forms_med": latency.gpu_latency("forms", engine),
-            "ids_med": None if engine in FORMS_ONLY else latency.gpu_latency("ids", engine),
-            "rib_med": None if engine in FORMS_ONLY else latency.gpu_latency("rib", engine),
-            "hyb_med": None if engine in FORMS_ONLY else latency.gpu_latency("hyb", engine),
-        }
+        # Reviewer default: the restricted axes are not redistributed; take their
+        # aggregate scores (and forms/ids latency) from the committed run of record.
+        frozen = restricted_block(engine)
+        forms, ids, en = frozen["forms"], frozen["ids"], frozen["en"]
+        lat = dict(frozen["latency"])
+        # RIB/HYB latency is recomputed live from the committed ESTER-Pt manifests.
+        if etype == "classical":
+            lat["rib_med"] = None
+            lat["hyb_med"] = None
+        else:
+            lat["rib_med"] = None if engine in FORMS_ONLY else latency.gpu_latency("rib", engine)
+            lat["hyb_med"] = None if engine in FORMS_ONLY else latency.gpu_latency("hyb", engine)
 
     return {"forms": forms, "ids": ids, "en": en, "rib": rib,
             "hyb": hyb_block, "latency": lat}

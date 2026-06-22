@@ -41,10 +41,11 @@ are not required to grant the seals.
 - **Sustentável (SeloS):** packaged `src/` layout, one concern per module, typed public
   functions, pinned dependencies (`pyproject.toml` + committed `uv.lock`), tests and
   lint config; nothing is hardcoded to a host (all paths come from the environment).
-- **Reprodutível (SeloR):** the no-GPU path regenerates every paper number from the
-  committed per-engine outputs and **asserts** they match the paper's reference macro
-  file byte-for-byte at the printed precision; deterministic seeds (bootstrap seed
-  `20260609`) make the confidence intervals exactly reproducible.
+- **Reprodutível (SeloR):** the no-GPU path re-scores the committed ESTER-Pt outputs
+  live and regenerates the forms/IDs/EN numbers from the committed run of record, then
+  **asserts** every one of the 233 data-driven macros matches the paper's reference macro
+  file at the printed precision; deterministic seeds (bootstrap seed `20260609`) make the
+  confidence intervals exactly reproducible. No raw PII is needed or present.
 
 ## Basic information
 
@@ -54,7 +55,7 @@ are not required to grant the seals.
 | Runtime | Python >= 3.11, managed with `uv` |
 | CPU | AMD Ryzen 7 9700X (8 cores / 16 threads) |
 | RAM | 64 GB (the no-GPU path uses < 1 GB) |
-| Disk | ~120 MB for the clone (the run of record is ~32 MB) |
+| Disk | ~30 MB for the clone (the committed ESTER-Pt run of record is ~25 MB) |
 | GPU | **none needed** for the reproduce path. The optional from-scratch path needs one NVIDIA RTX 5080 16 GB (or any >= 16 GB CUDA card) |
 
 ## Dependencies
@@ -65,21 +66,38 @@ Levenshtein backend that returns the identical distance to the bundled pure-stdl
 reference); the figure extra adds **`matplotlib`**. All versions are pinned in
 `pyproject.toml` and frozen in the committed `uv.lock`.
 
-The **inputs** are bundled: the committed run of record (`data/`) holds the per-engine
-OCR transcriptions, the gold answer sets, and the per-page latency manifests, so the
-reviewer downloads nothing. The document **images** are not redistributed (license +
-size); see `docs/DATASETS.md` for fetching them, needed only by the from-scratch path.
+The **inputs the reviewer needs are bundled**, but only the cleanly redistributable
+subset is committed. For licence and privacy reasons (see `data/DATA-LICENSES.md`):
+
+- **Committed (CC BY 4.0, no PII):** the ESTER-Pt RIB/HYB axis under `data/rib` and
+  `data/hyb` (reference transcriptions, per-engine outputs, latency manifests). The
+  no-GPU path **re-scores** these live.
+- **Not redistributed:** the forms (XFUND), identity-document (BRIDP) and
+  English-control (FUNSD) raw outputs and gold. Their gold carries
+  synthetic-but-realistic PII (names, CPFs, e-mails, addresses, dates of birth) under
+  restrictive licences (XFUND CC BY-NC-SA 4.0, FUNSD research-only, BRIDP unstated).
+  Their **aggregate scores** are committed as the run of record
+  (`results/run_of_record.json`, numbers only); the no-GPU path regenerates and
+  **asserts** their macros from that file. These committed scores are the run of
+  record for those axes.
+
+The reviewer therefore downloads nothing. The from-scratch path fetches the source
+inputs with `scripts/fetch_data.sh`; document **images** are never committed
+(licence + size). See `docs/DATASETS.md`.
 
 ## Security concerns
 
 - The reproduce path runs entirely **locally and offline**: it reads only the committed
-  `data/` directory and writes only under `results/`. No network access, no GPU, no
-  external services.
+  `data/` directory and `results/run_of_record.json`, and writes only under `results/`.
+  No network access, no GPU, no external services.
+- **No personal data is committed anywhere.** The committed tree holds only
+  public-domain Portuguese literary text (ESTER-Pt, CC BY 4.0) and aggregate numbers
+  (latency medians, per-engine scores). The forms/ids/en raw field values — which
+  contain synthetic PII (names, CPFs, e-mails, addresses, dates of birth) — are **not**
+  redistributed; only their aggregate scores are. The from-scratch path fetches those
+  inputs from source (`scripts/fetch_data.sh`) under each dataset's own licence.
 - No credentials or secrets are used or stored. The optional from-scratch path downloads
   open model weights from Hugging Face into a cache directory you choose via `$HF_CACHE`.
-- The bundled gold and transcriptions contain only **synthetic or public** document
-  content (privacy-synthetic Brazilian IDs, public literary text, benchmark forms); no
-  real personal data.
 
 ## Installation
 
@@ -124,9 +142,10 @@ All claims are reproduced from the **same** committed run of record by the singl
 
 ### Main claim — no OCR class wins outright; the leaders are document-type dependent
 
-- **Description:** re-scoring the per-engine outputs reproduces the paper's per-task
-  accuracy (forms/IDs/EN field-value recall, clean/degraded NED), the cost (latency)
-  table, and the per-degradation matrix, and confirms Surya leads identity documents
+- **Description:** re-scoring the committed ESTER-Pt outputs (clean/degraded NED, the
+  per-degradation matrix) live, and regenerating the forms/IDs/EN field-value recall and
+  cost (latency) table from the committed run of record, reproduces the paper's per-task
+  accuracy and confirms Surya leads identity documents
   (**0.921**) ahead of every vision-language model while Qwen2.5-VL leads forms
   (**0.97**) and degraded scans (**97.53** NED).
 - **Execution:**
@@ -152,15 +171,26 @@ All claims are reproduced from the **same** committed run of record by the singl
 
 ### Optional — regenerate the outputs from scratch (GPU, gated)
 
-- **Description:** rebuild the per-engine transcriptions from the models and documents,
-  then score them with the path above. A reviewer does **not** need this.
+- **Description:** fetch the source datasets, rebuild the per-engine transcriptions from
+  the models and documents, then score them with the path above. A reviewer does **not**
+  need this; the no-GPU path reproduces every number offline.
 - **Execution:**
   ```bash
-  ./scripts/run_from_scratch.sh
+  ./scripts/fetch_data.sh        # download XFUND PT, FUNSD, ESTER-Pt (BRIDP: request)
+  ./scripts/run_from_scratch.sh  # serve engines, then re-score and assert
   ```
+  `fetch_data.sh` is idempotent and sha256-verified; it fetches XFUND (CC BY-NC-SA 4.0),
+  FUNSD (research-only) and ESTER-Pt (CC BY 4.0) from source and prints how to request
+  BRIDP (no public download). When the raw forms/ids/en data is present, the scorer
+  re-scores those axes live instead of reading the committed run of record, so the same
+  command reproduces the full run end to end.
 - **Expected time:** many hours (model downloads + 14 engines x 5 axes). **Expected
   resources:** one >= 16 GB CUDA GPU. See `docs/PROTOCOL.md` for the full serving recipe.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+Code is **MIT** — see [LICENSE](LICENSE). Data has its own terms — see
+[data/DATA-LICENSES.md](data/DATA-LICENSES.md): the redistributed ESTER-Pt RIB/HYB run
+of record is **CC BY 4.0** (attribute the ESTER-Pt authors); the other datasets are
+fetched from source under their own licences (XFUND CC BY-NC-SA 4.0, FUNSD research-only,
+BRIDP unstated) and are **not** redistributed here.

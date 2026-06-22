@@ -5,6 +5,13 @@
 # reproduce every number offline. Run this only to rebuild the predictions from
 # scratch on a CUDA machine.
 #
+# Inputs: the not-redistributed source datasets are fetched by
+#   ./scripts/fetch_data.sh
+# (XFUND PT, FUNSD, ESTER-Pt from source; BRIDP must be requested from its
+# authors). Run it first, or place the images under $WORK_DIR/<axis>/ yourself.
+# Once the raw forms/ids/en data is present, the scorer re-scores those axes live
+# instead of reading the committed run of record.
+#
 # Hardware: one consumer GPU (>=16 GB) for the vision-language models and Surya;
 # the classical pipelines run on CPU. Each engine is served one at a time and
 # torn down, so a single 16 GB card suffices.
@@ -25,10 +32,17 @@ HF_CACHE="${HF_CACHE:-$WORK_DIR/hf_cache}"
 VLLM_IMG="${VLLM_IMG:-vllm/vllm-openai:v0.22.1-cu129-ubuntu2404}"
 COMMON='--gpu-memory-utilization 0.92 --max-model-len 16384 --mm-processor-kwargs {"max_pixels":4000000} --limit-mm-per-prompt {"image":1} --max-num-seqs 2 --trust-remote-code'
 
+if [ ! -d "$WORK_DIR/forms" ] && [ ! -d "$WORK_DIR/rib" ]; then
+  echo ">> No source data under \$WORK_DIR. Fetch it first with:"
+  echo ">>   ./scripts/fetch_data.sh"
+  echo
+fi
+
 cat <<EOF
 This script documents the from-scratch generation of the run of record.
-It expects the input document images under \$WORK_DIR and writes per-engine
-*.txt transcriptions next to them, plus _run*.json latency manifests.
+It expects the input document images under \$WORK_DIR (fetch them with
+scripts/fetch_data.sh) and writes per-engine *.txt transcriptions next to them,
+plus _run*.json latency manifests.
 
 Vision-language roster (HF id | quantization | greedy decoding, temperature 0):
   PaddleOCR-VL  PaddlePaddle/PaddleOCR-VL          native

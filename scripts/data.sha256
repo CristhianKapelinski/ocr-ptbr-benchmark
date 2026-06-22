@@ -1,0 +1,20 @@
+# sha256 pins for scripts/fetch_data.sh (basename  ->  sha256).
+# Each entry was computed by downloading the file from its authoritative source
+# and hashing it (verified 2026-06-22). fetch_data.sh aborts on any mismatch.
+#
+# Format: "<sha256>  <basename>" (two spaces), one per line.
+#
+# XFUND PT split (github.com/doc-analysis/XFUND release v1.0, CC BY-NC-SA 4.0):
+fa5c0f1f1b0e1bb7f4c7b47207fc98ed1d0ba136f3ae0db077315b883ef6a0c2  pt.train.json
+8d5ce90523209efb3f915caaefe284b3a1068c9540131d5e40ed016f45084fda  pt.train.zip
+10fd07ef1d9f66b0d72e55cb329a0172eee408d62e6f1dd271e1ff1a95a06c7b  pt.val.json
+4c50146dfa75afa3dcacf4c850fb54359bf28e221ffb779eb4957c4d226535f6  pt.val.zip
+#
+# FUNSD (guillaumejaume.github.io/FUNSD, research-only):
+c31735649e4f441bcbb4fd0f379574f7520b42286e80b01d80b445649d54761f  dataset.zip
+#
+# ESTER-Pt (Zenodo record 7872951, CC BY 4.0) is intentionally NOT pinned here:
+# the single archive is ~19.6 GB and the reviewer never needs it (the clean
+# RIB/HYB run of record is committed). fetch_data.sh prints its computed sha256
+# on first download so a from-scratch user can pin it locally if desired.
+# ESTER-Pt.zip

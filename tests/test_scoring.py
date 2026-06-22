@@ -15,8 +15,10 @@ from ocr_bench.scoring import (
 
 
 def test_alnum_norm_strips_punctuation_and_case():
-    assert alnum_norm("171.613.476-53") == "17161347653"
-    assert alnum_norm("Hanna Zalc Berla") == "hannazalcberla"
+    # Synthetic, non-PII inputs that exercise the same punctuation/case stripping
+    # the FVR scorer applies to gold field values.
+    assert alnum_norm("AB.12-34/56") == "ab123456"
+    assert alnum_norm("Lorem Ipsum Dolor") == "loremipsumdolor"
     assert alnum_norm(None) == ""
 
 
