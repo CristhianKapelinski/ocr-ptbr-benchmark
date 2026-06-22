@@ -1,0 +1,53 @@
+FICHA CADASTRAL
+
+PESSOA FÍSICA
+
+X9
+
+investimentos
+
+<table><tr><td>Uso exclusivo da XP</td><td>Abertura Atualização</td><td>Código do Cliente 4560</td></tr></table>
+
+DADOS PESSOAIS
+
+<table><tr><td colspan="8">Nome Completo: Thiago S Azevedo</td><td colspan="2">CPF: 003.745.123-09</td></tr><tr><td colspan="5">Nome do pai: Tiago S Azevedo</td><td colspan="5">Nome da Mãe: Ana Azevedo</td></tr><tr><td colspan="2">Data de Nascimento: 10/5/1961</td><td colspan="3">Nacionalidade: Brasil</td><td colspan="5">Naturalidade: (municipio) Piracicaba</td></tr><tr><td colspan="2">Sexo: □Masculino □Feminino</td><td colspan="3">Estado Civil: casado</td><td colspan="5">Nome do cônjuge ou companheiro(a): Maria Azevedo</td></tr><tr><td colspan="4">Tipo de Documento: (RG, CNH, entidade de classe)</td><td rowspan="2" colspan="2">No de registrar: 1.234.543</td><td rowspan="2" colspan="2">Órgão emissor: SECRETARIA DE</td><td rowspan="2">UF: SP</td><td rowspan="2">Data de emissão: 10/10/1970</td></tr><tr><td colspan="4">RG</td></tr><tr><td>Telefone: (DDD+N°) (19) 9860-4990</td><td colspan="2">Celular: (DDD+N°) (19) 9860-1200</td><td colspan="4">E-mail: 5qp@media.com</td><td colspan="3">Mensagem Eletrônia: (msn ou outros) não</td></tr></table>
+
+DADOS DE ENDEREÇÃO PARA CORRESPONDÊNCIA
+
+Deverá serpresentado ocomprovante para o respectivo endereço
+
+<table><tr><td colspan="2">Logradouro: (rua, avenida) 
+Rua Quatro</td><td>Número: 1277</td><td>Complemento: esq</td></tr><tr><td>Bairro: 
+Jardim São Paulo</td><td>Cidade: 
+Juiz de Fora</td><td>UF: 
+SP</td><td>CEP: 15800-340</td></tr></table>
+
+DADOS DE ENDEREÇÃO COMERCIAL
+
+<table><tr><td colspan="2">Logradouro: (rua, avenida) Rua Quatro</td><td>Número: 1300</td><td>Complemento: esq</td></tr><tr><td>Bairro: Jardim São Paulo</td><td>Cidade: Piracicaba</td><td>UF: SP</td><td>CEP: 15970-3461</td></tr></table>
+
+DADOS PROFISSIONAIS
+
+<table><tr><td>Formação: (advocado,engenheiro, médico, etc.) professor</td><td>Ocupação: (gerente,analista,assistente auxiliar,autônomo,estudante,etc.) estudante</td></tr><tr><td colspan="2">Entidade para qual trabalho: Rua Quatro 19, São Paulo</td></tr></table>
+
+SITUÇÃO FINANCEIRA PATrimonIAL
+
+<table><tr><td>Renda mensal (salário, pré-labore, etc.)</td><td>R$ 3000</td></tr><tr><td>Bens MQves (carro, moto, lancha, etc.)</td><td>R$200</td></tr><tr><td>Bens imóveis (casa, terreno, Apartamento, etc.)</td><td>R$0</td></tr><tr><td>Aplicações financeiras / Contarente (montante em conta corrente, ações, títulos de renda fixa, fundos,etc.)</td><td>R$ 300</td></tr><tr><td>Outros rendimentos (aluguel, mesada, pensão, aposentadora, etc.)</td><td>R$400</td></tr></table>
+
+DADOS BANCÁRIOS
+
+Indique as contas bancarias para as suas movimentacoes financeiras na XP. Apenas uma conta podera ser marcada como principal.
+
+<table><tr><td>Conta Principal:</td><td>Cód./ Banco:</td><td>Agência:</td><td>No da Conta:</td><td>Conta Conjunta:</td><td>Nome do co-titular:</td><td>CPF:</td></tr><tr><td>1</td><td>banco do brasil</td><td>3344</td><td>543362485643</td><td>□</td><td></td><td>003.745.123-11</td></tr><tr><td>2</td><td>banco do brasil</td><td>8904</td><td>543362485643</td><td>□</td><td></td><td>003.799.121-09</td></tr><tr><td>□</td><td></td><td></td><td></td><td>□</td><td></td><td>003.435.912-19</td></tr></table>
+
+Atendimento ao cliente: 4003 3710 (capitals e regioes metropolitanas) e 0800 880 3710 (demais regioes).
+
+Dias uteis de segunda a sexta-feira das 9h as 19h
+
+Ouvidoria: 0800 722 3710
+
+Dias uteis de segunda a sexta-feira das 9h às 18h
+
+rubrica
+
+Página. 1/3

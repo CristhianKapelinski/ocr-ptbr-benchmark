@@ -1,0 +1,96 @@
+PROGRAMA NACIONAL DE CONTROLE DA DENGUE - PNCD
+RESUMO SEMANAL DO SERVIÇO ANTIVETORIAL
+
+01 Controle Digitação
+
+456002019
+
+<table><thead><tr><th>02</th><th>Município</th><th>03</th><th>Código e nome da localidade</th><th>04</th><th>Zona</th></tr></thead><tbody><tr><td></td><td>Embraer S.A.</td><td></td><td>7899</td><td></td><td>sul</td></tr></tbody></table>
+
+<table><thead><tr><th>05</th><th>Categ. localid.</th><th>06</th><th>Tipo</th><th>07</th><th>Ciclo/ano</th><th>08</th><th>Data início</th><th>09</th><th>Data final</th><th>10</th><th>Concluído?</th><th>11</th><th>Sem. Epidem.</th></tr></thead><tbody><tr><td></td><td>construção</td><td></td><td>1</td><td>1-sede<br>2-outros</td><td>3</td><td>/ 2018</td><td>12</td><td>/ 12</td><td>/2009</td><td>12</td><td>/ 12</td><td>/ 2019</td><td>s</td><td>S-sim<br>H-não</td><td>500</td><td>/ 564</td></tr></tbody></table>
+
+<table><thead><tr><th>12</th><th colspan="6">Atividade</th></tr></thead><tbody><tr><td rowspan="2">2</td><td>1-LI - Levantamento de índice</td><td>2-LI+T - Levantamento de índice+Tratamento</td><td>3-PE-Ponto Estratégico</td><td></td><td></td><td></td></tr><tr><td>4-T - Tratamento</td><td>5-DF-Delimitação de Foco</td><td>6-PVE-Pesquisa Vetoria Especial</td><td></td><td></td><td></td></tr></tbody></table>
+
+RESUMO DO TRABALHO DE CAMPO
+
+<table><thead><tr><th rowspan="2">13 Total quart. concli</th><th colspan="6">IIº Imóveis trabalhados por tipo</th><th colspan="6">IIº imóveis</th><th rowspan="2">23 Amostra Coletadas</th><th colspan="3">Pendência</th></tr><tr><th>14 Residência</th><th>15 Comércio</th><th>16 TB</th><th>17 PE</th><th>18 Outro</th><th>19 Total</th><th>20 Trat Focal</th><th>21 Trat Perifocal</th><th>22 Inspe- cionados</th><th>24 Recusa</th><th>25 Fechados</th><th>26 Recu- perados</th></tr></thead><tbody><tr><td>tb</td><td>12</td><td>10</td><td>12</td><td>20</td><td>15</td><td>69</td><td>10</td><td>12</td><td>34</td><td>7</td><td>sim</td><td>não</td><td>não</td></tr></tbody></table>
+
+TB - terreno baldío
+
+PE - Ponto Estratégico
+
+Nº depósitos inspecionados por tipo
+
+<table><thead><tr><th>27</th><th>A1</th><th>28</th><th>A2</th><th>29</th><th>B</th><th>30</th><th>C</th><th>31</th><th>D1</th><th>32</th><th>D2</th><th>33</th><th>E</th><th>34</th><th>Total</th></tr></thead><tbody><tr><td></td><td>10</td><td></td><td>2</td><td>3</td><td></td><td>5</td><td></td><td>5</td><td></td><td>20</td><td>10</td><td></td><td></td><td></td><td>55</td></tr></tbody></table>
+
+35 Depósito Eliminado
+
+sim
+
+<table><thead><tr><th colspan="6">Depósitos Tratados</th></tr><tr><th colspan="3">Larvicida (1)</th><th colspan="5">Larvicida (2)</th></tr><tr><th>36 Tipo</th><th>37 Qtde (Gramas)</th><th>38 Qt dep trat</th><th>39 Tipo</th><th>40 Qtde (Gramas)</th><th>41 Qt dep trat</th></tr></thead><tbody><tr><td>de tempo</td><td>32</td><td>34</td><td>à vista</td><td>23</td><td>33</td><td></td></tr></tbody></table>
+
+Adulticida
+
+<table><thead><tr><th>42 Tipo</th><th>43 Qtde (Cargas)</th></tr></thead><tbody><tr><td>44</td><td>9</td></tr></tbody></table>
+
+44 Total de Agentes na semana
+
+78
+
+45 total Dias Trabalhados na semana
+
+90
+
+RESUMO DO LABORATORIO
+
+Nº depósitos com espécimes por tipo
+
+<table><thead><tr><th>46 A1</th><th>47 A2</th><th>48 B</th><th>49 C</th><th>50 D1</th><th>51 D2</th><th>52 E</th><th>53 Total</th></tr></thead><tbody><tr><td>com Aedes aegypti</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>84</td></tr><tr><td>com Aedes albopictus</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>70</td></tr></tbody></table>
+
+A1 - caixa d'água (elevado)
+
+A2 - Outros depósitos de armazenamento de água (baixo)
+
+B - Pequenos depósitos móveis
+
+D1 - Pneus e outros materiais rodantes
+
+D2 - Lixo (recipientes plásticos, latas) sucatas, entulhos
+
+C - Depósitos fixos
+
+E - Depósitos naturais
+
+Nº de imóveis com espécimes, por tipo
+
+<table><thead><tr><th>54 Residência</th><th>55 Comércio</th><th>56 Terreno Baldío</th><th>57 Ponto Estratégico</th><th>58 Outros</th><th>59 Total</th></tr></thead><tbody><tr><td>com Aedes aegypti</td><td>10</td><td>10</td><td>10</td><td>10</td><td>50</td></tr><tr><td>com Aedes albopictus</td><td>10</td><td>10</td><td>10</td><td>10</td><td>50</td></tr><tr><td>outros</td><td>10</td><td>10</td><td>10</td><td>10</td><td>50</td></tr></tbody></table>
+
+Nº de exemplares
+
+<table><thead><tr><th>60 Larvas</th><th>61 Pupas</th><th>62 Exúvia de pupa</th><th>63 Adultos</th></tr></thead><tbody><tr><td>24</td><td>24</td><td>24</td><td>3</td></tr><tr><td>24</td><td>42</td><td>23</td><td>3</td></tr><tr><td>24</td><td>34</td><td>23</td><td>2</td></tr></tbody></table>
+
+64 Nº e seq. dos quarteirões com Aedes aegypti
+
+<table><thead><tr><th>12'A</th><th>10'b</th><th>4'C</th><th>66'D</th></tr></thead><tbody><tr><td>12'A</td><td>10'b</td><td>4'C</td><td>4'C</td></tr><tr><td>12'A</td><td>10'b</td><td>10'b</td><td>66'D</td></tr><tr><td>10'b</td><td>12'A</td><td>10'b</td><td>66'D</td></tr><tr><td>10'b</td><td>12'A</td><td>10'b</td><td>66'D</td></tr><tr><td>10'b</td><td>4'C</td><td>4'C</td><td>12'A</td></tr><tr><td>10'b</td><td>4'C</td><td>4'C</td><td>12'A</td></tr></tbody></table>
+
+65 Nº e seq. dos quarteirões com Aedes albopictus
+
+<table><thead><tr><th>4'C</th><th>12'A</th><th>4'C</th><th>10'b</th></tr></thead><tbody><tr><td>10'b</td><td>12'A</td><td>4'C</td><td>66'D</td></tr><tr><td>4'C</td><td>12'A</td><td>4'C</td><td>66'D</td></tr><tr><td>4'C</td><td>12'A</td><td>10'b</td><td>66'D</td></tr><tr><td>10'b</td><td>66'D</td><td>10'b</td><td>12'A</td></tr><tr><td>10'b</td><td>4'C</td><td>66'D</td><td>12'A</td></tr><tr><td>10'b</td><td>4'C</td><td>66'D</td><td>12'A</td></tr></tbody></table>
+
+66 Nº e seq. dos quarteirões com Aedes aegypti + Aedes albopictus
+
+<table><thead><tr><th>12'A</th><th>4'C</th><th>66'D</th><th>10'b</th></tr></thead><tbody><tr><td>4'C</td><td>10'b</td><td>12'A</td><td>66'D</td></tr><tr><td>10'b</td><td>4'C</td><td>12'A</td><td>66'D</td></tr><tr><td>10'b</td><td>4'C</td><td>12'A</td><td>66'D</td></tr><tr><td>10'b</td><td>4'C</td><td>12'A</td><td>66'D</td></tr><tr><td>10'b</td><td>12'A</td><td>4'C</td><td>10'b</td></tr><tr><td>10'b</td><td>12'A</td><td>66'D</td><td>10'b</td></tr></tbody></table>
+
+67
+
+Visto do Supervisor
+
+Ana Correia
+
+68
+
+Data do visto
+
+1/12、2019
+
+FAD07 - 20/09/2006 v.2.1

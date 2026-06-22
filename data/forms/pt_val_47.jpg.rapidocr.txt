@@ -1,0 +1,98 @@
+GOVERNODOESTADODO
+AMAZONAS
+RELATORIODE TESTESDEBOMBEAMENTOPARACAPTACAODEAGUASUBTERRANEA
+NdoProcessoouNdaLAU
+1-IDENTIFICACAO DO CONTRATANTE:
+1.1- Nome Completo:Enzo A Castro
+1.2- CNPJ/CPF:
+1.3- Tipo de Empreendimento:
+833.878.531-81
+1.4-Endereco do Empreendimento:
+Rua Bom Jesus 863
+1.5-Bairr0/CEP: 58306-060
+1.6-Municipio/UF Paraiba
+1.7-Fone:
+(83)39791-6371
+1.8-E-mail:
+cbju1bfij@temporary-mail.net
+1.9-Nome para Correspondencia:
+1.10-Telefone (83)3971-6371
+Luiza C Costa
+1.11-Endereco para Correspondencia:Rua Claudiomiro Jovanovichs 109
+1.12-Bairro/DistritoRua Claudiomiro Jovanovichs 109
+1.11- Complemento:
+Nao
+1.14- Municipio:
+1.13-CEP:  95112-205
+Rio Grande de Sul
+1.14-E-mail:
+65432@gmail.com
+2-RESPONSAVEL PELO TESTE DE BOMBEAMENTO
+2.1- Nome do Responsavel Técnico:
+Lucas O Castro
+2.2- Formacao:
+2.4-Registro no CREA:
+2.4-CPF: 615.577.907-44
+2.5- N° ART do Servico:
+46913216
+2.6-Endereco Rua Damasco 487
+2.7- Bairro:
+RuaDamasco487
+2.8- Municipio:
+Ceara
+2.9- Complemento:
+Nao
+2.10-CEP:
+60534-740
+2.11-Fone: (85)4654-5155
+2.12-E-mail:
+2356loc@gmail.com
+3-DADOS DO POCO
+3.1-Nomenclatura do Poco:
+3.2-Data de Perfuracao2/ 4/ 2020
+Poco grandes
+3.3-Profundidade total:
+23m
+3.4-Diametro:
+0.7m
+3.5-Empresa perfuradora:
+Empresa de Poco
+3.6-Localidade:
+Ceara
+3.7-Coordenadas: 12
+Longitude: 23
+Latitude:
+12
+3.8-Nivel Estatico (NE): _23 _m
+25
+3.9- Altura do tubo de boca:
+m
+3.10-Diametros de Perfuracao: 34
+m); 34
+m);35
+m);
+a
+a
+a
+3.11-Diametros de Perfuracao: 34 ( a _m); _35 ( a 
+m)
+—)98:(u
+a
+31.6
+3.13-Revestimentos:Extensao total:
+m.
+3.14-Tipo de Revestimento:
+PVC comum
+PVC geomecanico
+Aco
+2.15-Filtros: Extensao total: 35
+m.
+Av. ario piranga
+onteiro,2-Parque1deNovembro
+Fone:(2)212-66/Fax:212-66
+anaus-A-CEP6.
+eb:
+.ipaam.am.gov.br
+IPAAM
+Instituto de ProtecaoAmbental
+do Amazonas

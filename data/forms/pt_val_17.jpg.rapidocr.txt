@@ -1,0 +1,70 @@
+Bradesco
+Agencia|Dig.Conta
+Dig. CPF/CNPJ/MF
+526558651504387881.334.667-13
+MC
+CreditoImobiliario -DeclaracaoPessoal deSaude
+SeguroHabitacional em Apolices deMercado
+Para uso exclusivo da agencia
+Codigoda AgenciaFuncionario Responsavel
+E-mail do_Funcionario
+MC
+bgc657@gmail.com
+Bruno G Cunha
+Dados doProponente
+Nome
+Data deNascimento
+VitorABarbosa
+1975-8-17
+Estadofivil
+CPF/MF
+Sexo
+798.441.444-00
+A
+Masculino
+Feminino
+Profissao
+Sua profissao é sua principal Fonte de Renda?
+Sim
+Nao
+Em caso negativo, especifique:
+Medical Translator
+Valor deVenda
+FinalidadedoImovel
+Renda Liquida
+1 - Comercial 2 - Residencial
+3 -Lazer
+4-Lote
+Valor Financiado (Finan. + Desp. Iniciais)* Prazo AmortizacaoSistema de Amortizacao Escolhido (Prestacao Atualizada)
+1 -SAC -SistemadeAmortizacaoConstante
+2-TP-TabelaPrice
+* O Valor Financiado deve conter o valor do Financiamento + Despesas Iniciais se houver.
+Observacao:
+Aoresponder os quesitos abaixo,chamamos a sua atencaopara o dispostonos Artigos765 e 766 do Codigo
+Civil Brasileiro, que preveem: Art. 765 - O segurado e 0 segurador sao obrigados a guardar na conclusao e na
+execucao do contrato, a mais estrita boa-fé e veracidade, tanto a respeito do objeto como das circunstancias e
+declaracoes a ele concernentes. Art. 766 - Se o Segurado fizer declaracoes inexatas ou omitir circunstancias
+obrigado ao premio vencido.
+complementares, tais como laudos e exames medicos, estes serao solicitados pela seguradora e deverao ser
+encaminhados a mesma, de forma a permitir a analise e eventual aceitacao desta proposta.
+condicoes clinicas e funcionais atuais do proponente.
+Caso o proponente faca indicacao de uso de algum medicamento, somente podera ser definido o medico que
+devera fornecer laudo complementar apos a analise da DPS pela Consultoria Médica desta Seguradora, face a
+necessidade de identificacao da doenca relacionada ao medicamento utilizado. Informamos, ainda, que:
+1 - A apresentacao dos documentos nao implica na impossibilidade de se requerer outros documentos (laudos e/
+ou exames complementares), o que somente sera avaliado apos a analise da documentacao por nossa Consultoria
+Medica.
+2 - A apresentacao da DPS e de documentacao complementar nao implica na aceitacao automatica do risco (com
+ou sem clausula restrita), que somente sera definida apos parecer de nossa Consultoria Medica.
+Caso o proponente mencione determinadas doencas (DPS Positivada) deverao ser enviados junto a DPS os
+seguintes laudos complementares, tendo como base o campo assinalado como positivo conforme abaixo:
+Discriminacao
+Sim Nao
+1 - Esteve ou esta afastado de suas atividades profissionais? Por que motivo?
+Esclareca:
+2 - Esta em gozo de beneficio previdenciario de invalidez? Por que motivo?
+Esclareca:
+Mod.:4840-605E
+Versao:05/2016
+2Via-Cliente
+1/4

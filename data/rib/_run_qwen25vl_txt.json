@@ -1,0 +1,1402 @@
+[
+ {
+  "img": "annos_de_prosa_page10.png",
+  "sec": 5.77,
+  "pred_len": 1820,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page108.png",
+  "sec": 5.73,
+  "pred_len": 1887,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page142.png",
+  "sec": 5.73,
+  "pred_len": 1841,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page17.png",
+  "sec": 5.61,
+  "pred_len": 1870,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page189.png",
+  "sec": 5.33,
+  "pred_len": 1771,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page193.png",
+  "sec": 5.45,
+  "pred_len": 1780,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page197.png",
+  "sec": 2.4,
+  "pred_len": 725,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page199.png",
+  "sec": 4.83,
+  "pred_len": 1469,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page235.png",
+  "sec": 2.01,
+  "pred_len": 589,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page3.png",
+  "sec": 5.39,
+  "pred_len": 1725,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page34.png",
+  "sec": 4.88,
+  "pred_len": 1555,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page37.png",
+  "sec": 4.91,
+  "pred_len": 1660,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page40.png",
+  "sec": 5.74,
+  "pred_len": 1820,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page55.png",
+  "sec": 5.7,
+  "pred_len": 1723,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page58.png",
+  "sec": 5.08,
+  "pred_len": 1674,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page59.png",
+  "sec": 5.91,
+  "pred_len": 1796,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page76.png",
+  "sec": 5.18,
+  "pred_len": 1652,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page79.png",
+  "sec": 5.63,
+  "pred_len": 1872,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page9.png",
+  "sec": 5.7,
+  "pred_len": 1803,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "annos_de_prosa_page90.png",
+  "sec": 5.48,
+  "pred_len": 1675,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page100.png",
+  "sec": 6.06,
+  "pred_len": 1956,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page108.png",
+  "sec": 6.09,
+  "pred_len": 1994,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page114.png",
+  "sec": 5.89,
+  "pred_len": 1899,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page121.png",
+  "sec": 5.99,
+  "pred_len": 1811,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page13.png",
+  "sec": 5.86,
+  "pred_len": 1889,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page134.png",
+  "sec": 6.57,
+  "pred_len": 2029,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page152.png",
+  "sec": 6.33,
+  "pred_len": 2054,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page20.png",
+  "sec": 4.34,
+  "pred_len": 1301,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page30.png",
+  "sec": 6.17,
+  "pred_len": 1944,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page57.png",
+  "sec": 5.89,
+  "pred_len": 1946,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page76.png",
+  "sec": 5.46,
+  "pred_len": 1817,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page77.png",
+  "sec": 2.23,
+  "pred_len": 714,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page81.png",
+  "sec": 6.19,
+  "pred_len": 1973,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "carlota_angela_page97.png",
+  "sec": 6.57,
+  "pred_len": 2046,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page103.png",
+  "sec": 4.8,
+  "pred_len": 1483,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page130.png",
+  "sec": 4.09,
+  "pred_len": 1350,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page134.png",
+  "sec": 3.88,
+  "pred_len": 1172,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page157.png",
+  "sec": 4.24,
+  "pred_len": 1326,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page176.png",
+  "sec": 4.37,
+  "pred_len": 1450,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page178.png",
+  "sec": 4.22,
+  "pred_len": 1325,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page181.png",
+  "sec": 3.98,
+  "pred_len": 1217,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page191.png",
+  "sec": 4.47,
+  "pred_len": 1443,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page2.png",
+  "sec": 4.99,
+  "pred_len": 1414,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page208.png",
+  "sec": 4.42,
+  "pred_len": 1466,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page217.png",
+  "sec": 4.93,
+  "pred_len": 1501,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page22.png",
+  "sec": 2.49,
+  "pred_len": 750,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page24.png",
+  "sec": 4.97,
+  "pred_len": 1474,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page240.png",
+  "sec": 4.53,
+  "pred_len": 1416,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page245.png",
+  "sec": 4.81,
+  "pred_len": 1482,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page260.png",
+  "sec": 4.46,
+  "pred_len": 1433,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page264.png",
+  "sec": 4.64,
+  "pred_len": 1505,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page269.png",
+  "sec": 4.84,
+  "pred_len": 1457,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page27.png",
+  "sec": 4.78,
+  "pred_len": 1472,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page275.png",
+  "sec": 3.98,
+  "pred_len": 1210,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page284.png",
+  "sec": 4.48,
+  "pred_len": 1387,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page305.png",
+  "sec": 4.82,
+  "pred_len": 1430,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page31.png",
+  "sec": 4.84,
+  "pred_len": 1441,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page34.png",
+  "sec": 4.96,
+  "pred_len": 1494,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page46.png",
+  "sec": 4.47,
+  "pred_len": 1310,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page58.png",
+  "sec": 4.68,
+  "pred_len": 1474,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page64.png",
+  "sec": 4.96,
+  "pred_len": 1487,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page75.png",
+  "sec": 4.62,
+  "pred_len": 1431,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page84.png",
+  "sec": 4.62,
+  "pred_len": 1411,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page9.png",
+  "sec": 4.63,
+  "pred_len": 1474,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "cidade_do_vicio_page98.png",
+  "sec": 1.8,
+  "pred_len": 510,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page103.png",
+  "sec": 3.96,
+  "pred_len": 1289,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page108.png",
+  "sec": 4.1,
+  "pred_len": 1253,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page11.png",
+  "sec": 4.7,
+  "pred_len": 1511,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page139.png",
+  "sec": 4.74,
+  "pred_len": 1520,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page163.png",
+  "sec": 4.05,
+  "pred_len": 1321,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page172.png",
+  "sec": 2.55,
+  "pred_len": 693,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page184.png",
+  "sec": 3.6,
+  "pred_len": 1139,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page187.png",
+  "sec": 4.47,
+  "pred_len": 1355,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page19.png",
+  "sec": 4.46,
+  "pred_len": 1477,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page198.png",
+  "sec": 3.8,
+  "pred_len": 1174,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page199.png",
+  "sec": 3.73,
+  "pred_len": 1204,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page200.png",
+  "sec": 4.32,
+  "pred_len": 1384,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page205.png",
+  "sec": 4.04,
+  "pred_len": 1271,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page30.png",
+  "sec": 4.61,
+  "pred_len": 1444,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page33.png",
+  "sec": 4.44,
+  "pred_len": 1432,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page49.png",
+  "sec": 4.56,
+  "pred_len": 1411,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page63.png",
+  "sec": 4.02,
+  "pred_len": 1258,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page68.png",
+  "sec": 4.53,
+  "pred_len": 1434,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_brasileiras_page83.png",
+  "sec": 3.3,
+  "pred_len": 983,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page100.png",
+  "sec": 3.61,
+  "pred_len": 1159,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page102.png",
+  "sec": 3.74,
+  "pred_len": 1212,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page111.png",
+  "sec": 3.67,
+  "pred_len": 1168,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page117.png",
+  "sec": 3.57,
+  "pred_len": 1226,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page137.png",
+  "sec": 3.67,
+  "pred_len": 1199,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page15.png",
+  "sec": 2.42,
+  "pred_len": 772,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page16.png",
+  "sec": 3.66,
+  "pred_len": 1224,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page164.png",
+  "sec": 3.88,
+  "pred_len": 1133,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page176.png",
+  "sec": 3.52,
+  "pred_len": 1153,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page184.png",
+  "sec": 3.57,
+  "pred_len": 1209,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page193.png",
+  "sec": 3.68,
+  "pred_len": 1161,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page196.png",
+  "sec": 3.82,
+  "pred_len": 1201,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page202.png",
+  "sec": 4.08,
+  "pred_len": 1257,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page203.png",
+  "sec": 3.31,
+  "pred_len": 1061,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page206.png",
+  "sec": 3.85,
+  "pred_len": 1219,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page208.png",
+  "sec": 3.84,
+  "pred_len": 1207,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page21.png",
+  "sec": 4.08,
+  "pred_len": 1201,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page213.png",
+  "sec": 2.5,
+  "pred_len": 756,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page224.png",
+  "sec": 3.82,
+  "pred_len": 1216,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page234.png",
+  "sec": 3.49,
+  "pred_len": 1139,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page236.png",
+  "sec": 4.33,
+  "pred_len": 1240,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page25.png",
+  "sec": 3.9,
+  "pred_len": 1260,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page266.png",
+  "sec": 3.91,
+  "pred_len": 1190,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page267.png",
+  "sec": 3.97,
+  "pred_len": 1167,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page30.png",
+  "sec": 1.76,
+  "pred_len": 477,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page42.png",
+  "sec": 3.69,
+  "pred_len": 1137,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page48.png",
+  "sec": 4.0,
+  "pred_len": 1257,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page53.png",
+  "sec": 3.5,
+  "pred_len": 1090,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page70.png",
+  "sec": 3.88,
+  "pred_len": 1227,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page72.png",
+  "sec": 4.16,
+  "pred_len": 1221,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page76.png",
+  "sec": 3.78,
+  "pred_len": 1155,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "historias_sem_data_page83.png",
+  "sec": 4.2,
+  "pred_len": 1292,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page1.png",
+  "sec": 4.24,
+  "pred_len": 1396,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page120.png",
+  "sec": 4.48,
+  "pred_len": 1428,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page132.png",
+  "sec": 3.88,
+  "pred_len": 1226,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page133.png",
+  "sec": 2.21,
+  "pred_len": 655,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page137.png",
+  "sec": 4.1,
+  "pred_len": 1347,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page138.png",
+  "sec": 4.68,
+  "pred_len": 1441,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page139.png",
+  "sec": 4.55,
+  "pred_len": 1428,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page15.png",
+  "sec": 4.52,
+  "pred_len": 1416,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page161.png",
+  "sec": 4.51,
+  "pred_len": 1473,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page164.png",
+  "sec": 4.22,
+  "pred_len": 1346,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page18.png",
+  "sec": 4.11,
+  "pred_len": 1358,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page192.png",
+  "sec": 4.56,
+  "pred_len": 1491,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page207.png",
+  "sec": 4.34,
+  "pred_len": 1356,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page21.png",
+  "sec": 4.31,
+  "pred_len": 1406,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page213.png",
+  "sec": 4.5,
+  "pred_len": 1385,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page30.png",
+  "sec": 2.23,
+  "pred_len": 751,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page39.png",
+  "sec": 4.23,
+  "pred_len": 1449,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page52.png",
+  "sec": 4.38,
+  "pred_len": 1460,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page84.png",
+  "sec": 4.74,
+  "pred_len": 1414,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page85.png",
+  "sec": 4.4,
+  "pred_len": 1389,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "nossa_gente_page93.png",
+  "sec": 4.15,
+  "pred_len": 1298,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "o_guarany_page10.png",
+  "sec": 3.8,
+  "pred_len": 1133,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "o_guarany_page12.png",
+  "sec": 3.43,
+  "pred_len": 1146,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "o_guarany_page38.png",
+  "sec": 3.6,
+  "pred_len": 1152,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "o_guarany_page40.png",
+  "sec": 2.31,
+  "pred_len": 679,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "o_guarany_page44.png",
+  "sec": 3.17,
+  "pred_len": 971,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page104.png",
+  "sec": 1.12,
+  "pred_len": 289,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page113.png",
+  "sec": 1.99,
+  "pred_len": 538,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page117.png",
+  "sec": 3.27,
+  "pred_len": 941,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page126.png",
+  "sec": 1.83,
+  "pred_len": 463,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page134.png",
+  "sec": 2.73,
+  "pred_len": 766,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page140.png",
+  "sec": 1.42,
+  "pred_len": 382,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page153.png",
+  "sec": 1.43,
+  "pred_len": 383,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page169.png",
+  "sec": 3.36,
+  "pred_len": 902,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page182.png",
+  "sec": 2.42,
+  "pred_len": 661,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page184.png",
+  "sec": 2.46,
+  "pred_len": 686,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page209.png",
+  "sec": 1.88,
+  "pred_len": 488,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page214.png",
+  "sec": 1.83,
+  "pred_len": 471,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page230.png",
+  "sec": 1.79,
+  "pred_len": 511,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page242.png",
+  "sec": 1.68,
+  "pred_len": 437,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page264.png",
+  "sec": 2.3,
+  "pred_len": 614,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page278.png",
+  "sec": 2.31,
+  "pred_len": 637,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page295.png",
+  "sec": 2.58,
+  "pred_len": 690,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page301.png",
+  "sec": 2.55,
+  "pred_len": 646,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page306.png",
+  "sec": 2.6,
+  "pred_len": 682,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page66.png",
+  "sec": 2.68,
+  "pred_len": 774,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page72.png",
+  "sec": 2.75,
+  "pred_len": 738,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page95.png",
+  "sec": 1.78,
+  "pred_len": 483,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "poesias_herculano_page98.png",
+  "sec": 2.34,
+  "pred_len": 644,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page117.png",
+  "sec": 5.04,
+  "pred_len": 1558,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page119.png",
+  "sec": 5.32,
+  "pred_len": 1758,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page122.png",
+  "sec": 5.57,
+  "pred_len": 1758,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page124.png",
+  "sec": 4.89,
+  "pred_len": 1688,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page134.png",
+  "sec": 3.86,
+  "pred_len": 1126,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page136.png",
+  "sec": 4.04,
+  "pred_len": 1306,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page139.png",
+  "sec": 5.26,
+  "pred_len": 1689,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page140.png",
+  "sec": 5.27,
+  "pred_len": 1729,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page155.png",
+  "sec": 3.02,
+  "pred_len": 836,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page157.png",
+  "sec": 2.49,
+  "pred_len": 735,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page162.png",
+  "sec": 2.5,
+  "pred_len": 657,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page164.png",
+  "sec": 3.13,
+  "pred_len": 866,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page167.png",
+  "sec": 2.31,
+  "pred_len": 583,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page169.png",
+  "sec": 2.71,
+  "pred_len": 658,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page173.png",
+  "sec": 2.47,
+  "pred_len": 681,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page177.png",
+  "sec": 2.53,
+  "pred_len": 679,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page189.png",
+  "sec": 2.07,
+  "pred_len": 495,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page19.png",
+  "sec": 5.26,
+  "pred_len": 1730,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page195.png",
+  "sec": 2.69,
+  "pred_len": 798,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page202.png",
+  "sec": 2.35,
+  "pred_len": 619,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page204.png",
+  "sec": 1.83,
+  "pred_len": 418,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page212.png",
+  "sec": 3.16,
+  "pred_len": 917,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page25.png",
+  "sec": 4.41,
+  "pred_len": 1381,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page26.png",
+  "sec": 4.96,
+  "pred_len": 1485,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page27.png",
+  "sec": 5.21,
+  "pred_len": 1639,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page30.png",
+  "sec": 4.44,
+  "pred_len": 1410,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page37.png",
+  "sec": 5.37,
+  "pred_len": 1664,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page39.png",
+  "sec": 4.79,
+  "pred_len": 1508,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page47.png",
+  "sec": 5.59,
+  "pred_len": 1618,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page6.png",
+  "sec": 4.5,
+  "pred_len": 1420,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page61.png",
+  "sec": 4.99,
+  "pred_len": 1719,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page65.png",
+  "sec": 4.96,
+  "pred_len": 1631,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page67.png",
+  "sec": 3.34,
+  "pred_len": 1072,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page7.png",
+  "sec": 5.29,
+  "pred_len": 1667,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "reliquias_de_casa_velha_page91.png",
+  "sec": 5.13,
+  "pred_len": 1712,
+  "err": null,
+  "empty": false
+ }
+]

@@ -1,0 +1,52 @@
+FORMULÁRIO 3 – FICHA INDIVIDUAL DE INVESTIGAÇÃO DE DTA
+
+UNIDADE NOTIFICANTE: centro de saúde
+DATA: 5/8/2019SE:35642110
+
+DADOS DO CASO:
+Nome do paciente: Luis R Dias
+Data do nascimento: 24/9/1987 idade: 33 Sexo: masculino
+Nome do município de residência: Porto Alegre
+Bairro: Jardim São Paulo
+Endereço: Rua Dona Leonor 151
+Telefone: (51) 6265-4917
+
+1. REFEIÇÃO SUSPEITA:
+Data da ingestão: 7/9/2018
+Local da ingestão: casa
+Município: Porto Alegre
+Ponto de referência: edifício azul
+
+2. ALIMENTOS CONSUMIDOS NA REFEIÇÃO SUSPEITA:
+batata
+cebora
+cenoura
+
+3. CONDIÇÃO CLÍNICA ( ) doente (✓) não doente
+Se doente, preencher os seguintes campos:
+
+4. INÍCIO DOS SINTOMAS: Data 7/9/2018 Hora: 2h
+5. SINAIS E SINTOMAS
+(✓) Náusea ( ) Febre
+( ) Vômito ( ) Cefaléia
+( ) Cólica ( ) Outros Especificar: ___________
+
+6. RECEBEU ATENDIMENTO MÉDICO (✓) Sim ( ) Não Onde: ___________
+7. HOSPITALIZADO (✓) Sim ( ) Não Onde: ___________
+
+8. EXAMES LABORATORIAIS: (✓) Sim ( ) Não
+Material: (✓) Sangue ( ) Fezes ( ) Vômito ( ) Outro Especificar: ___________
+Data da coleta: 8/9/2018
+Faz uso de antibióticos antes da coleta (✓) Sim ( ) Não
+Data do envio ao laboratório: 8/9/2018
+
+9. RESULTADO: Data do resultado: 8/9/2018
+10. CONCLUSÃO: Evolução: sim
+Caso de DTA (✓) confirmado ( ) descartado Especificar outro diagnóstico: ___________
+( ) laboratorial ( ) clínico epidemiológico
+
+11. ACOMPANHAMENTO DO CASO/OBSERVAÇÃO: tudo é normal
+
+Investigador: Nuno Rodrigues Unidade de saúde: centro de saúde
+Município: Porto Alegre Regional Rio Grande do Sul Data da investigação: 8/9/2018
+Fone: (21) 5380-6371

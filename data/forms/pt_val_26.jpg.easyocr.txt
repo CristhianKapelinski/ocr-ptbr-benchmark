@@ -1,0 +1,90 @@
+Bradesco
+Saúde
+Solicitação de Terapia Imuno Biológica
+Paciente ambulatorial
+Senha liberada:
+Data(s) do(s) evento(s) autorizado(s):
+62468
+1/6/2019
+Paciente internado
+Apólice
+Nome
+Fernanda Costa
+02,18,6439,609238.090
+Sexo
+Idade
+Peso
+Altura
+Superfície corporal
+Rede:
+50
+58
+160
+61
+M
+Nacional
+Preferencial
+Diagnóstico
+CID1O
+Data do diagnóstico
+tudo está normal
+L75.001
+22/6/2019
+Quadro clinico atual
+Comorbidades associadas
+não
+Tratamentos anteriores
+Medicamento(s)
+Doses
+Período de utilização
+aspirina
+semana
+Falha de tratamento
+Sim
+Não
+Indicadores (preencher os indicadores; inerentes a patologia do paciente)
+Atividade da doença
+Índice atual
+Índice
+após 12 a 16 semanas
+SDAI
+10
+143
+CDAI
+150
+DAS 28
+2.6
+2.5
+BASDAI
+0.2
+0.1
+IADC
+78
+70
+ASDAS
+1.2
+1.5
+PASI
+50
+40
+Legenda
+Índice de Atividade da Doença de Crohn
+SDAI
+Índice Simplificado
+IADC
+CDAI
+Índice Clínico de Atividade da Doença
+DAS 28
+Índice de Atividade da Doença
+28 articulações
+ASDAS
+Índice de Atividade da Doença para
+BASDAI -
+Índice Bath de Atividade da Doença para
+Espondilite Anquilosante
+Espondilite Anquilosante
+Cód. Form. Eletrônico 0831
+Dezembro 2011
+Pág. 1/3
+Bradesco Seguros
+intranet

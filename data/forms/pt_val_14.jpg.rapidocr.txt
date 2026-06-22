@@ -1,0 +1,77 @@
+2.3.1.1 Acao 20CT
+Quadro A 2.3.1.1-Acao 20CT
+Identificacao da Acao
+ResponsabilidadedaUPC
+(x）Integral
+（）Parcial
+na execucao da acao
+20CT
+Codigo
+Tipo:Atividade
+Capacitacao deAgentesparaoSistemadeComunicacaode GovernodoPoderExecutivo
+Titulo
+Federal-SICOM
+*Iniciativa
+Nao se Aplica
+Fortalecera comunicacaosocial doPoderExecutivoFederal comasociedade
+Objetivo
+Codigo: 1162
+Codigo: 2038
+Programa
+Tipo: Tematico
+Unidade Orcamentaria
+20101
+Acao Prioritaria
+)Sim (X )Nao Caso positivo:( ） PAC () Brasil sem Miséria() Outras
+Lei Orcamentaria do exercicio
+Execucao Orcamentaria e Financeira
+Dotac?o
+Despesa
+Restos a Pagar do exercicio
+Nao
+Inicial
+Final
+Empenhada
+Liquidada
+Paga
+Processados
+Processados
+783.110,00
+783.110,00
+34.466,26
+33.985,71
+33.985,71
+0
+480,55
+Execucao Fisica
+Meta
+Unidade de
+Descricao da meta
+medida
+Prevista
+Reprogramada
+Realizada
+Agente capacitado
+Unidade
+175
+175
+90
+Restos a Pagar Nao processados- Exercicios Anteriores
+Execucao Orcamentaria e Financeira
+Execucao Fisica-Metas
+Valor em 19
+Unidade de
+Valor Liquidado
+Valor Cancelado
+Descricao da Meta
+Realizada
+janeiro
+medida
+Fonte:TesouroGerencial
+Analise Situacional
+Firmou-se com a Escola de Administracäo Fazendaria - ESAF, para capacitacao de
+agentes do Sicom,o Termo de Execucäo Descentralizada -TED n? 03/2017.Para execucao do
+Termo, a ESAF empenhou 0 valor de R$ 33.188,53, sendo R$ 1.277,73 empenhados e pagos
+diretamente pela Secom,a titulo de ressarcimento de despesas referentes aos materiais de
+consumo,servicosgraficose despesas administrativas.
+25

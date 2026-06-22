@@ -1,0 +1,8 @@
+{
+  "_comment": "Measured median seconds/page for the CPU classical pipelines, timed load-once on the reference machine (8 vCPU, n=50 forms / n=50 IDs). These are committed constants because the classical per-page run manifests are not part of the run of record; the GPU-served engines (VLMs + Surya) instead recompute their latency from the committed _run*.json manifests. See docs/PROTOCOL.md.",
+  "tesseract": {"forms": 0.80, "ids": 0.17},
+  "easyocr": {"forms": 6.96, "ids": 0.63},
+  "doctr": {"forms": 1.84, "ids": 1.00},
+  "rapidocr": {"forms": 3.58, "ids": 0.51},
+  "paddleocr": {"forms": 10.76, "ids": 1.49}
+}

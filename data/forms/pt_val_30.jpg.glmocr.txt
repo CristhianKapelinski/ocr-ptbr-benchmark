@@ -1,0 +1,81 @@
+FICHA CADASTRAL
+PESSOA FÍSICA
+xp investimentos
+
+Uso exclusivo
+da XP
+Abertura Atualização
+Código do Cliente
+4560
+
+DADOS PESSOAIS
+Nome Completo: Thiago S Azevedo
+CPF: 003.745.123-09
+Nome do pai: Tiago S Azevedo
+Nome da mãe: Ana Azevedo
+Data de Nascimento: 10/5/1961
+Nacionalidade: Brasil
+Naturalidade: Piracicaba
+Sexo: Masculino Feminino
+Estado Civil: casado
+Nome do cônjuge ou companheiro(a): Maria Azevedo
+Tipo de Documento: (RG, CNH, entidade de classe)
+RG
+Nº de registro: 1.234.543
+Órgão emissor: SECRETARIA DE
+UF: SP
+Data de emissão: 10/10/1970
+Telefone: (DDD+Nº)
+(19) 9860-4990
+Celular: (DDD+Nº)
+(19) 9860-1200
+E-mail: 5qp@media.com
+Mensagem Eletrônica: (msn ou outros)
+não
+
+DADOS DE ENDEREÇO PARA CORRESPONDÊNCIA
+Deverá ser apresentado o comprovante para o respectivo endereço
+Logradouro: (rua, avenida) Rua Quatro
+Número: 1277
+Complemento: esq
+Bairro: Jardim São Paulo
+Cidade: Juiz de Fora
+UF: SP
+CEP: 15800-340
+
+DADOS DE ENDEREÇO COMERCIAL
+Logradouro: (rua, avenida) Rua Quatro
+Número: 1300
+Complemento: esq
+Bairro: Jardim São Paulo
+Cidade: Piracicaba
+UF: SP
+CEP: 15970-3461
+
+DADOS PROFISSIONAIS
+Formação: (advogado, engenheiro, médico, etc.)
+professor
+Ocupação: (gerente, analista, assistente auxiliar, autônomo, estudante, etc.)
+estudante
+Entidade para qual trabalha: Rua Quatro 19, São Paulo
+
+SITUAÇÃO FINANCEIRA PATRIMONIAL
+Renda mensal (salário, pró-labore, etc.)
+R$ 3000
+Bens móveis (carro, moto, lancha, etc.)
+R$ 200
+Bens imóveis (casa, terreno, apartamento, etc.)
+R$ 0
+Aplicações financeiras / Conta corrente (montante em conta corrente, ações, titulos de renda fixa, fundos,etc.)
+R$ 300
+Outros rendimentos (aluguel, mesada, pensão, aposentadoria, etc.)
+R$ 400
+
+DADOS BANCÁRIOS
+Indique as contas bancárias para as suas movimentações financeiras na XP. Apenas uma conta poderá ser marcada como principal.
+Conta Principal: Cód./ Banco: Agência: Nº da Conta: Conta Conjunta: Nome do co-titular: CPF:
+1 banco do brasil 3344 5433624856431
+003.745.123-11
+2 banco do brasil 8904 5433624856431
+003.799.121-09
+003.435.912-19

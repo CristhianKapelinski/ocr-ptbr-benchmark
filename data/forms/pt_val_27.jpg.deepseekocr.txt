@@ -1,0 +1,84 @@
+| Campus | NOME DO(A) ESTUDANTE (letra de forma) | Nº DE MATRÍCULA |
+|--------|----------------------------------------|----------------|
+| Universidade de São Paulo | Luis R Dias | 355220 |
+| PER/MOD/SÉRIE | CURSO / MODALIDADE | TURNO | ENDEREÇO / TELEFONE FIXO |
+| arte | 3º | 4 | ul580@claimab.com (51) 6265-4917 |
+| CPF | IDENTIDADE | ÓRGÃO EXPED. | MATRICULADO | DESVINCULADO |
+| 410.730.340-38 | masculino | ES | GRADUADO | marque com “X” a opção desejada |
+
+### Marque um “X” na opção desejada
+
+| ITENS | ANEXOS | DOCUMENTAÇÃO EXIGIDA (ANEXOS) |
+|--------|---------|---------------------------------|
+| 01 | Admissão por Transferência e Análise Curricular (anexos) - Solicitação no Protocolo Geral | c.f.g.h.i.j.k | a - Atestado Médico |
+| 02 | Ajuste de Matrícula Semestral | | b - Cópia da CTPS - Identificação e Contrato |
+| 03 | Autorização para cursar disciplinas em outras Instituições de Ensino Superior (especifique) | | c - Declaração de Transferência do Órgão |
+| 04 | Cancelamento de Matrícula (× ou Disciplina) | | d - Declaração da Empresa com o respectivo horário |
+| 05 | Certificado de Conclusão - Ano (× Semestre) | | e - Guia de Transferência |
+| 06 | Certidão - Autenticidade (especifique) | | f - Histórico Escolar do Ensino Fundamental (original) |
+| 07 | Complementação de Matrícula (especifique) | | g - Histórico Escolar do Ensino Médio (original) |
+| 08 | Declaração de MATRÍCULA / Vínculo | | h - Histórico Escolar do Ensino Superior Original |
+| 09 | Declaração de Monitoria | | i - Histórico Escolar do Ensino Técnico |
+| 10 | Declaração para Estágio - Conclusão Ano (× Semestre) | | j - Ementas das disciplinas cursadas com Aprovação |
+| 11 | Diploma 1ª Via (× 2ª) - Conclusão Ano (× Semestre) | | k - Declaração de Unidade Militar |
+| 12 | Dispensa da prática de Educação Física (anexos) | | a/k | OBSERVAÇÕES: |
+| 13 | Declaração Tramitação de Diploma (técnico) | | | |
+| 14 | Ementa de disciplina - (especifique) | | | não |
+| 15 | Guia de Transferência | | | |
+| 16 | Histórico Escolar - Ano (× Semestre) | | | |
+| 17 | Isenção de disciplinas cursadas (anexo) | | g/h.i.j | |
+| 18 | Justificativa de falta(s) ou prova 2ª chamada (anexos) | | a,d,k | |
+| 19 | Matriz curricular | | | |
+| 20 | Reabertura de Matrícula | | | |
+| 21 | Reintegração (×) Estágio (×) Relatório Curricular (CEEG) | | | |
+| 23 | Reintegração para Cursar - Solicitação no Protocolo Geral | | | |
+| 24 | Solicitação de mudança de regime (especifique) | | | |
+| 25 | Solicitação de internato | | | |
+| 26 | Solicitação de Conselho de Classe | | | |
+| 27 | Trancamento de Semestre (especifique) | | | |
+| 28 | Transferência de Turno (especifique turno) | | a/d/k | |
+
+### LANÇAMENTO DE NOTA - DISCIPLINA: Nome da disciplina
+Maria Henriques
+Per/Curso/Turno que cursou 4º6
+( ) 1ª unidade ( ) 2ª unidade Nome do professor Pedro Silva Nº de ordem 3522
+(×) 3ª unidade ( ) 4ª unidade ( ) Recuperação Final Ano / Semestre 3
+
+### REVISÃO DE NOTA - PROVA: Nome da disciplina Maria Henriques
+Per/Curso/Turno que cursou 4º6
+( ) 1ª unidade ( ) 2ª unidade Nome do professor Pedro Silva Nº de ordem 3522
+(×) 3ª unidade ( ) 4ª unidade ( ) Recuperação Final Ano / Semestre 3
+
+### REVISÃO DE FALTAS - DISCIPLINA: Nome da disciplina Maria Henriques
+Per/Curso/Turno que cursou 4º6
+( ) 1ª unidade ( ) 2ª unidade Nome do professor Pedro Silva Nº de ordem 3522
+(×) 3ª unidade ( ) 4ª unidade ( )
+
+### TEMPO DE ESCOLARIDADE
+4h
+
+### OBTENÇÃO DE NOTAS
+33
+
+### OBSERVAÇÕES: não
+
+### DATA
+4 / 5 / 2018
+
+### LUIS R DIAS
+
+### ASSINATURA DO REQUERENTE
+
+| PROTOCOLO Nº | 23443 | CGCA / CRE / SRE |
+|--------------|--------|----------------|
+| Em 4 / 5 / 2018 | Maria Henriques | Resp. |
+
+---
+
+### COMPROVANTE DE ENTREGA DE REQUERIMENTO
+4 / 5 / 2018
+
+| CURSO / TURNO | Nº MATRÍCULA | Visto |
+|----------------|--------------|-------|
+| 3º 4 | 1 3 7 5 0 8 5 8 9 0 2 6 2 | Atenção |
+| NOME (letra de forma) | | A solicitação não procura na prazo de 90 (noventa) dias perderá a validade. O documento só será entregue com o PROTOCOLO de ENTREGA. |

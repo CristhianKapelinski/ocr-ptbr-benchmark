@@ -1,0 +1,21 @@
+Rascunho do formulário modelo DS 160 para pedido de visto de entrada nos EUA: as informações abaixo descritas são transferidas para o Sistema de informations dos EUA e são de responsabilité dorequirente e, portanto, deve ser preenchido pelo requirente de pedido de visto.
+
+Obs.: Este formulário deverá serrespondido em PORTUGUES.
+
+<table><tr><td colspan="2">INFORMAÇões PESSOAIS</td></tr><tr><td>Sobrenome ( exatamente conforme o passaporte )</td><td>Pinto</td></tr><tr><td>Nome ( exatamente conforme o passaporte )</td><td>Maria Jesus</td></tr><tr><td>Nome completeness no Alfabeto Nativo ( caso não possua, informar “Não se aplicá”</td><td>não se aplicá</td></tr><tr><td>Você já usou outros nomes ( exemplo: solteira, religiosa, professional, pseudonimo, etc) ?</td><td>(✓) Não 
+( ) Sim: Informar: 
+a) Outros sobrenomes realizados: 
+b) Outros Nomes realizados:</td></tr><tr><td>Sexo:</td><td>() Masculino 
+(✓) Feminino</td></tr><tr><td>Estado Civil oficial:</td><td>(✓) Casado 
+( ) Solteiro 
+( ) Viúvo 
+( ) Divorciado 
+( ) Separado Legalmente 
+( ) outros – especialmente:</td></tr><tr><td>Data de Nascimento</td><td>1\3\1989</td></tr><tr><td>Cidade de Nascimento</td><td>São Paulo</td></tr><tr><td>Estado de Nascimento</td><td>São Paulo</td></tr><tr><td>País de Nascimento</td><td>Brasil</td></tr><tr><td>Nacionalidade:</td><td>Brasileira</td></tr><tr><td>Você possuiu outras nacionalidade àsbone da指示ada acima? 
+( Informar todas as outras nacionalidades que possuir )</td><td>(✓) Não 
+( ) Sim: Informar qual a nacionalidade e se possuar passaporte社会稳定, informar número do passaporte e validadode mesmo:</td></tr><tr><td>Número do CPF: Caso não possua informar “Não se Aplica</td><td>931.164.971-68</td></tr><tr><td>Número do Social Security U.S. A: Caso não possua informar “Não se Aplica “</td><td>não se aplicá</td></tr><tr><td>Número da Identificação Fiscal U.S.A : 
+Caso não possua informar “Não se</td><td>não se aplicá</td></tr></table>
+
+Revisão 1
+
+Página 1

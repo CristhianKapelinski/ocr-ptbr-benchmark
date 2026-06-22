@@ -1,0 +1,25 @@
+LICCAO DE BOTANICA
+233
+D.HELENA
+Eas despedidas.
+D.CECILIA
+Nao comprehendo.
+D.HELENA
+Espera e veras.
+D.CECILIA
+Nao posso encaral-o;adeus.
+D.HELENA
+Cecilia!(D.Cecilia sae.)
+SCENAIX
+D.HELENA,BARAO
+BARAo,a porta.
+Perdao,minha senhora;eu trazia um livro ha
+pouco...
+D.HELENA,com o liuro na mao.
+Sera este?
+BARAo,caminhando para ella.
+Justamente.
+D.HELENA
+Escripto em sueco,penso eu...
+BARAO
+Em sueco.

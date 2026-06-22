@@ -1,0 +1,601 @@
+FICHA CADASTRAL PESSOA FÍSICA
+Uso exclusivo da XP
+Abertura
+Atualização
+4560
+DADOS PESSOAIS
+Nome Completo:
+Thiago S Azevedo
+CPF:
+003.745.123-09
+Nome do pai:
+Tiago S Azevedo
+Ana Azevedo
+Data de Nascimento:
+10/5/1961
+Nacionalidade:
+Brasil
+Naturalidade: (municipio)
+Piracicaba
+Sexo:
+Masculino
+Estado Civil:
+casado
+Nome do cônjuge ou companheiro(a):
+Maria Azevedo
+Tipo de Documento: (RG, CNH, entidade de classe)
+RG
+Nº de registro:
+1.234.543
+Orção emissor:
+SECRETARIA DE
+UF:
+SP
+Data de emissão:
+10/10/1970
+Telefone: (DDD+Nº)
+(19) 9860-4990
+Celular: (DDD+Nº)
+(19) 9860-1200
+E-mail:
+5qp@media.com
+Mensagem Eletrônica: (msn ou outros)
+não
+DADOS DE ENDEREÇO PARA CORRESPONDÊNCIA
+Deverá ser apresentado o comprovante para o respectivo endereço
+Logradouro: (rua, avenida)
+Rua Quatro
+Bairro:
+Jardim São Paulo
+Cidade:
+Juiz de Fora
+UF:
+SP
+CEP:
+15800-340
+DADOS DE ENDEREÇO COMERCIAL
+Logradouro: (rua, avenida)
+Rua Quatro
+Bairro:
+Jardim São Paulo
+Cidade:
+Piracicaba
+UF:
+SP
+CEP:
+15970-3461
+DADOS PROFISSIONAIS
+Formação: (advogado,engenheiro, médico, etc.)
+professor
+Entidade para qual trabalha:
+Rua Quatro 19, São Paulo
+Ocupação: (gerente, analista, assistente auxiliar, autônomo, estudante, etc.)
+estudante
+SITUAÇÃO FINANCEIRA PATRIMONIAL
+Renda mensal (salário, pró-labore, etc.)
+Bens móveis (carro, moto, lancha, etc.)
+Bens imóveis (casa, terreno, apartamento, etc.)
+Aplicações financeiras / Conta corrente (montante em conta corrente, ações, títulos de renda fixa, fundos,etc.)
+Outros rendimentos (aluguel, mesada, pensão, aposentadoria, etc.)
+R$ 3000
+R$ 200
+R$ 0
+R$ 300
+R$ 400
+DADOS BANCÁRIOS
+Indique as contas bancárias para as suas movimentações financeiras na XP. Apenas uma conta poderá ser marcada como principal.
+Conta Principal:
+Cód./ Banco:
+Agência:
+Nº da Conta:
+Conta Conjunta:
+Nome do co-titular:
+CPF:
+1
+banco do brasil
+3344
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362485643
+2
+banco do brasil
+8904
+543362

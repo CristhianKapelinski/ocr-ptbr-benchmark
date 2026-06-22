@@ -1,0 +1,13 @@
+2.3.1.1 Ação 20CT
+
+Quadro A 2.3.1.1 - Ação 20CT
+
+<table><tr><td colspan="9">Identificacao da Ação</td></tr><tr><td>Responsibilitadade da UPC na execucao da ação</td><td colspan="8">(X) Integral ( ) Parcial</td></tr><tr><td>Cóppo</td><td colspan="8">20CT Tipo: Atividade</td></tr><tr><td>Titrulo</td><td colspan="8">Capacitação de Agentes para o Sistema de Comunicação de Governo do Poder Executivo Federal – SICOM</td></tr><tr><td>*Iniciativa</td><td colspan="8">Não se Aplica</td></tr><tr><td>Objetivo</td><td colspan="8">Fortalecer a comunicação social do Poder Executivo Federal coma sociedade Código: 1162</td></tr><tr><td>Programa</td><td colspan="8">DEMOCRACIA E APERFEICOAMENTO DA GESTAO PUBLICA Código: 2038 Tipo: Temático</td></tr><tr><td>Unidade Orçamentária</td><td colspan="8">20101</td></tr><tr><td>Ação Prioritária</td><td colspan="8">()Sim ( X )Não Caso positivo: () PAC () Brasil sem Miseria () Outras</td></tr><tr><td colspan="9">Lei Orçamentária do exercício</td></tr><tr><td colspan="9">Execuição Orçamentária e Financeira</td></tr><tr><td colspan="2">Dotação</td><td colspan="4">Despesa</td><td colspan="3">Restos a Pagar do exercércio</td></tr><tr><td>Inicial</td><td>Final</td><td>Empenhada</td><td>Liquidada</td><td>Paga</td><td>Processados</td><td colspan="3">Não Processados</td></tr><tr><td>783.110,00</td><td>783.110,00</td><td>34.466,26</td><td>33.985,71</td><td>33.985,71</td><td>0</td><td colspan="3">480,55</td></tr><tr><td colspan="9">Execuição Física</td></tr><tr><td rowspan="2" colspan="3">Descrição da meta</td><td rowspan="2">Unidade de medida</td><td colspan="5">Meta</td></tr><tr><td>Prevista</td><td>Reprogramada</td><td colspan="3">Realizada</td></tr><tr><td colspan="3">Agente capacito</td><td>Unidade</td><td>175</td><td>175</td><td colspan="3">90</td></tr><tr><td colspan="9">Restos a Pagar Não processados - Exercções Anteriores</td></tr><tr><td colspan="4">Execuição Orçamentária e Financeira</td><td colspan="5">Execuição Física - Metas</td></tr><tr><td>Valor em 1ºJaneiro</td><td>Valor Liquidado</td><td>Valor Cancelado</td><td>Descrição da Meta</td><td>Unidade de medida</td><td colspan="4">Realizada</td></tr><tr><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td colspan="3">-</td></tr></table>
+
+Fonte: Tesouro Gerencial
+
+Análise Situacional
+
+Firmou-se com a Escola de Administração Fazendaária - ESAF, para capacização de agentes do Sicom, o Termo de Execuição Descentralizada - TED n° 03/2017. Para execuição do Termo, a ESAF empenhou o valor de R$ 33.188,53, sendo R$ 1.277,73 empenhados e半导ços diretamente pela Secom, a titulo de dessarcimento de despesas referentes aos materiais de consumo, serviços graficos e despesas administrativas.
+
+25

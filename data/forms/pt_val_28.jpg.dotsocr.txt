@@ -1,0 +1,156 @@
+FORMULÁRIO PLANO DE TRABALHO
+
+1. IDENTIFICAÇÃO DA INSTITUIÇÃO PROPONENTE
+
+<table>
+  <tr>
+    <td>Proponente:</td>
+    <td>Embraer S.A.</td>
+    <td>CNPJ:</td>
+    <td>17.115.437/0001-73</td>
+  </tr>
+  <tr>
+    <td>Endereço:</td>
+    <td colspan="3">Vila Coelho Xavier 1973</td>
+  </tr>
+  <tr>
+    <td>CEP: 15800-3401</td>
+    <td>Município:</td>
+    <td>Fortaleza</td>
+    <td>UF:</td>
+    <td>SP</td>
+  </tr>
+  <tr>
+    <td>DDD: ( 85)</td>
+    <td>Telefone:</td>
+    <td>2501-2316</td>
+    <td>Fax:</td>
+    <td>(85) 8614-3556</td>
+  </tr>
+  <tr>
+    <td>E-mail:</td>
+    <td>zzu19@linshiyouxiang.net</td>
+    <td>Site:</td>
+    <td>www.embraersa.br</td>
+    <td>População do município:</td>
+    <td>1 bilhão</td>
+  </tr>
+</table>
+
+Regime jurídico / Esfera administrativa:
+
+<table>
+  <tr>
+    <td>✓</td>
+    <td>Direito Público</td>
+    <td>☐</td>
+    <td>Direito Privado</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>✓</td>
+    <td>Federal</td>
+    <td>☐</td>
+    <td>Estadual</td>
+    <td>☐</td>
+    <td>Municipal</td>
+  </tr>
+</table>
+
+Representante legal:
+
+Renan R Barros
+
+CPF:
+
+107.672.200-80
+
+RG / órgão expedidor:
+
+1.234.543 SE
+
+Cargo: escretária
+
+Função: administração
+
+E-mail: kkqg58l@payspun.com
+
+Endereço residencial: Rua Teresópolis 294
+
+Telefone: (24) 2501-2316
+
+CEP: 15800-3567
+
+Município: Petrópolis
+
+UF: RJ
+
+Data: 1\1\2019
+
+Assinatura: Renan R Barros
+
+2. DESCRIÇÃO DO PROJETO
+
+<table>
+  <tr>
+    <td rowspan="2">Título do projeto:</td>
+    <td rowspan="2">Aquisições</td>
+    <td colspan="2">Período de execução</td>
+  </tr>
+  <tr>
+    <td>Início:</td>
+    <td>Término:</td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td>8 /20 18</td>
+    <td>8 /20 19</td>
+  </tr>
+</table>
+
+Identificação do objeto: SMOO
+
+Justificativa da proposição: A empresa atualmente precisa se expandir, SMOO enfrenta falência
+
+Metas: Aquisições com sucesso
+
+3. IDENTIFICAÇÃO DOS RESPONSÁVEIS PELA EXECUÇÃO DO PROJETO
+
+<table>
+  <tr>
+    <td>Nome do Coordenador I:</td>
+    <td>Tiago Lopes</td>
+    <td>CPF</td>
+    <td>603.216.025-44</td>
+  </tr>
+  <tr>
+    <td>DDD: 85</td>
+    <td>Telefone: 8614-3556</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>E-mail: zzu19@linshiyouxiang.net</td>
+    <td>Assinatura: Tiago Lopes</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Nome do Coordenador II:</td>
+    <td>Nuno Rodrigues</td>
+    <td>CPF</td>
+    <td>603.216.025-44</td>
+  </tr>
+  <tr>
+    <td>DDD: 21</td>
+    <td>Telefone: 5380-6371</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>E-mail: zzu19@linshiyouxiang.com</td>
+    <td>Assinatura: Nuno Rodrigues</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>

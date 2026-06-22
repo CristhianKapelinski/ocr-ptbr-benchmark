@@ -1,0 +1,129 @@
+Alojamento local - Registo
+A
+Identificacaododeclarante
+Nome
+1
+Luis R Dias
+Na qualidade de:
+ Proprio
+Representante
+Socio-gerente/gerente/administrador/diretor
+2
+O representante deve possuir procuracao com os poderes necessarios e suficientes para, em nome do titular da exploracao, efetuar o presente registo, bem como
+subscrever o termo de responsabilidade que consta na parte final do formulario e a que se refere 0 artigo 6.°,n.° 2,alinea b) do Decreto-Lei n.°128/2014, de 29 de
+agosto.
+Preencher se foro representante
+Codigo de consulta da procuracao online
+3
+74292774
+O e-mail indicado tem por fim a rececao de comunicacoes no ambito do exercicio da atividade de prestacao de servicos de alojamento e estara visivel no Portal do
+Turismo de Portugal l.P., na consulta disponibilizada no RNAL (Registo Nacional dos Estabelecimentos de Alojamento Local).
+E-mail
+n69t@claimab.com
+4
+Telefone
+5
+Telemovel
+35125865342424
+6
+35198000233222
+7
+Fax
+35198000233222
+B
+Identificacaodotitularde exploracao
+1
+od!l
+Pessoa singular(empresario em nomeindividual)
+Pessoa coletiva
+Nome / firma ou denominacao social
+Luis Silva
+2
+3
+627183
+Codigo de consulta da certidaopermanente doregisto comercial
+4
+3211110
+Na qualidade de:
+Arrendatario
+Cessionario
+Comodatario
+Donatario
+5
+Proprietario
+Usufrutuario
+Ooutro
+Qual
+6
+Morada nacional
+Tipo de via
+Rua
+7
+8
+Designacao da via
+rua de Santa Maria
+N. porta
+Andar
+Lado
+esq
+Lugar
+9
+152
+10
+3
+11
+12
+centro
+13
+Distrito
+Lisboa
+14
+Concelho
+conselho municipal
+lisboa
+15
+Freguesia
+Localidade
+santa tecla
+16
+17
+Codigo postal
+3444-222
+18
+Localidadepostal
+santa tecla
+Morada estrangeira
+19
+Pais
+Brasil
+Endereco
+20
+RuaDona Leonor 124
+21
+Cidade
+Porto Alegre
+22
+Regiao
+Rio Grande do Sul
+Codigo postal
+Localidade
+23
+90420-180
+24
+Porto Alegre
+Preencherse oscontactosdo titular forem diferentesdos contactosdorequerente
+25
+E-mail
+nsh@claimab.com
+Telemovel
+(51) 6265-4917
+Telefone
+28
+Fax
+26
+27
+(51) 6265-4954
+(51) 6265-4954
+Se houver mais titulares preencher o anexo 1.
+22-10-2018FR_DS0006_V12.0
+Pagina 1 de4

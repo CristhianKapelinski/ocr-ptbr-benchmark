@@ -1,0 +1,11 @@
+MEDIA CONTACT SHEET
+(Publication or station)  (Location/address)
+(Name)  (Position)
+(Date)  (Phone number)
+Reason for Contact
+Questions/Responses
+Reason for Contact: (Name)
+(Date)  (Location/address)
+(Phone number)
+Additional Comments
+Inquiry handled by: (Name)

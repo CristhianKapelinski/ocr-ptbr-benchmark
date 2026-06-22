@@ -1,0 +1,319 @@
+PROGRAMA NACIONAL DE CONTROLE DA DENGUE - PNCD
+RESUMO SEMANAL DO SERVIÇO ANTIVETORIAL
+
+01 Controle Digitação
+456002019
+
+02 Município
+Embraer S.A.
+7899 São Paulo
+sul
+
+03 Código e nome da localidade
+04 Zona
+
+05 Categ. localid.
+construção
+1 1-sede 2-outros
+3 / 2018
+12 / 12 / 2009
+12 / 12 / 2019
+s S-sim N-não
+500 / 564
+
+12 Atividade
+1-LI - Levantamento de índice
+2-LI+T - Levantamento de índice+Tratamento
+3-PE-Ponto Estratégico
+4-T - Tratamento
+5-DF-Delimitação de Foco
+6-PVE-Pesquisa Vetoria Especial
+
+RESUMO DO TRABALHO DE CAMPO
+
+Nº imóveis trabalhados por tipo
+14 Residência
+15 Comércio
+16 TB
+17 PE
+18 Outro
+19 Total
+20 Trat Focal
+21 Trat Perifocal
+22 Inspeçãoados
+23 Amostra Coletadas
+24 Recusa
+25 Fechados
+26 Recuperados
+sim não não
+
+TB - terreno baldo
+PE - Ponto Estratégico
+
+Nº depósitos inspecionados por tipo
+27 A1
+28 A2
+29 B
+30 C
+31 D1
+32 D2
+33 E
+34 Total
+10 2 3 5 5 20 10 55
+sim
+
+Depósitos Tratados
+Larvicida (1)
+36 Tipo
+37 Qtde.(Gramas)
+38 Qt dep. trat
+39 Tipo
+40 Qtde.(Gramas)
+41 Qt. dep. trat
+44 9
+Adulticida
+42 Tipo
+43 Qtde(Cargas)
+44 Total de Agentes na semana
+45 Total Dias Trabalhados na semana
+90
+
+RESUMO DO LABORATORIO
+
+Nº depósitos com espécimes por tipo
+46 A1
+47 A2
+48 B
+49 C
+50 D1
+51 D2
+52 E
+53 Total
+com Aedes aegypti
+12 12 12 12 12 12 84
+com Aedes albopictus
+10 10 10 10 10 10 70
+
+A1 - caixa d'água (elevado)
+A2 - Outros depósitos de armazenamento de água (baixo)
+B - Pequenos depósitos móveis
+C - Depósitos fixos
+D1 - Prueus e outros materiais rodantes
+D2 - Lixo (recipientes plásticos, latas) sucatas, entulhos
+E - Depósitos naturais
+
+Nº de imóveis com espécimes, por tipo
+54 Residência
+55 Comércio
+56 Terreno Baldo
+57 Ponto Estratégico
+58 Outros
+59 Total
+com Aedes aegypti
+10 10 10 10 10 50
+com Aedes albopictus
+10 10 10 10 10 50
+outros
+10 10 10 10 10 50
+
+Nº e seq. dos quarteiros com Aedes aegypti
+12/A 10/b 4/C 66/D
+12/A 10/b 4/C 4/C
+12/A 10/b 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 10/b 66/D
+10/b 12/A 1

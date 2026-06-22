@@ -1,0 +1,82 @@
+2.2. Formulário versão impressa
+
+Abaixo segue a primeira versão do formulário de automonitoramento da pesca
+para ser submetida a testes (Figura 01; Anexo 01).
+
+AUT NITORAMENTO DA PESCA Código do pescador:
+UTOMO o 43 191 61B.
+Município: Data da pescaria:
+
+( JTamandaré-PE ( )Barreiros-PE (72550 José da C. Grande-PE ( )Maragogi-AL
+
+( )Japaratinga-AL ( )Porto de Pedras-AL ( )Paripueira-AL ( )Ipioca-Maceid-AL 22/ 4, 2020
+(. )São M. dos Milagres-AL (| )Passo de Camaragibe-AL (Barra de Sto Antônio-AL
+
+PESCOU EMBARCADO? Não é deslocamento, é se usou embarcação durante a pescaria.
+Tipo de embarcação que usou: Nome do barco: Barco branco 15F
+Jangada ( )Barco ( )Canoa ( JBaitera ( JOutro
+
+Usou Motor APASIM ab \NAO ; Nome do mestre: Estevan S Fernandos
+Qual o combustivel? solina ( JOleo Diesel
+
+DETAKHES DA VIAGEM
+
+Saída Chegada
+
+dia: 22; 4 1 2020 hora: 12:00. E: 22/14) 2020h0ra: 293: 20
+Quantos pescadores? _116kg Nome do Pesqueiro: Branco
+
+ARTES DE PESCA / PESCARIAS
+
+Principal petrecho utilizado:
+( ede de Emalhe ( )RededeArrasto ( JTarrafa ( )Linha ( )Espinhel ( )Mergulho (  )Armadilhas(  )Curral
+( )Mariscagem ( )Bicheiro Caranguejo ( Jerere
+
+Petrechos secundário utilizados:
+( Rede de Emalhe ( )RededeArrasto ( Jarrafa ( Jlinha ( JEspinhel ( fMergulho ( JArmadilhas (Curral
+
+(__)Mariscagem ( )Bicheiro ( Caranguejo (| Jerere
+CAPTURA — espécies capturadas
+Espécie Peso Total | Quantas | Preço Total Espécie Peso Total Quantas | Preço Total
+(Kg) unidades? (R$)? (Kg) unidades? (R$)?
+(__) Aguihao (__) Gato
+(_) Agulhinha (__) Guarajuba
+(_) Albacora (__) Manjuba
+(__) Arabaiana (__) Pampo
+( ) Badejo (_ ) Pescada amarela
+() Ariocó (. ) Pescada branca
+( ) Bagre (__) Pirauna
+(__) Batato (_) Raia
+(_) Bejupirá (__) Sardinha
+(__) Biquara (_ ) Serra
+( ) Bobó ( ) Sirigado (badejo)
+(| ) Boca-mole ( ) Tainha
+( ) Bonito ( ) Xaréu
+( ) Cação 4 4 16 1(.) Marisco (Macunim)
+( ) Camurim (robalo) 12 2 BA (__) Taioba
+(__) Caranha © [C_) Unha-de-velho
+(_) Carapeba ( ) Sururú
+( ) Carapicú ( ) Ostra
+(__) Carapitinga ( ) Bedigão
+( ) Cavala (siri
+( ) Cioba ( ) Caranguejo-uca
+( ) Coroque (. ) Guaiamum
+( ) Corvina () Aratú
+(__) Dentão (__) Polvo
+(. ) Dourado ( ) Lagostim
+(_) Espada (__) Lagosta
+(_) Ferreiro (_) Camarão-branco
+( ) Galo (_ ) Camarão-espigão
+(. ) Garassuma ( ) Camarão-rosa
+
+Levou parte da produção para casa/dividiu com família? ( Vf ( )NAO | Quantidade da produção que levou para casa/dividiu
+com a familia (Kg):
+
+Onde entregou %) Feira Kg: 16 (_ ) Consumidor final (casas da região) Kg: :
+ou vai entregar? ( )Frigorífico/Peixaria Kg: A (__) Atravessador Kg: :
+(_) Restaurante Kg: : (__) Hotel Kg: E
+
+Quando foi a última pescaria antes dessa? 17 / 3 2019 E quando foi a penúltima? 419 / 3/7 2019
+
+Figura 1. Primeira versão do formulário/protocolo de automonitoramento da pesca na
+APACC.

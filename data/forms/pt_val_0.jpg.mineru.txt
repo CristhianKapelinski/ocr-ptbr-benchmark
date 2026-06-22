@@ -1,0 +1,67 @@
+12
+
+PROGRAMA NACIONAL DE CONTROLDE DENGUE - PNCD RESUMO SEMANAL DO SERVICO ANTIVETORIAL
+
+<table><tr><td>01</td><td>Controle Digitação</td></tr><tr><td colspan="2">456002019</td></tr></table>
+
+<table><tr><td>02</td><td colspan="6">Município</td><td>03</td><td colspan="4">Código e nome da localidade</td><td>04</td><td>Zona</td></tr><tr><td colspan="7">Embraer S.A.</td><td>7899</td><td colspan="4">São Paulo</td><td colspan="2">sul</td></tr><tr><td>05</td><td>Categ. localid.</td><td>06</td><td>Tipo</td><td>07</td><td>Ciclo/ano</td><td>08</td><td>Data inicio</td><td>09</td><td>Data final</td><td>10</td><td>Concluido?</td><td>11</td><td>Sem. Epidem.</td></tr><tr><td colspan="2">construção</td><td>1</td><td>1-sede 2-outros</td><td colspan="2">3 / 2018</td><td colspan="2">12 / 12 /2009</td><td colspan="2">12 / 12 / 2019</td><td>s</td><td>S-sim N não</td><td colspan="2">500 / 564</td></tr></table>
+
+<table><tr><td>12</td><td colspan="3">Atividade</td></tr><tr><td rowspan="2">2</td><td>1-LI - Levolvimento de indice</td><td>2-LI+T - Levolvimento de indice+Tramento</td><td>3-PE-Ponto Estratégico</td></tr><tr><td>4-T - Tramento</td><td>5-DF-Delimitação de Foco</td><td>6-PVE-Pesquisa Vetora Especial</td></tr></table>
+
+RESUMO DO TRABALHO DE CAMPO
+
+<table><tr><td rowspan="2">13Total
+quart.
+concl</td><td colspan="7">H0lmóveisetrabalhados por tipo</td><td colspan="4">H0imóveis</td><td>23
+Amostra
+Coletadas</td><td colspan="4">Pendência</td></tr><tr><td>14
+Residência</td><td>15
+Comércio</td><td>16
+TB</td><td>17
+PE</td><td>18
+Outro</td><td>19
+Total</td><td>20
+Focal</td><td>21
+Perifocal</td><td>22
+Inspe-
+cionados</td><td>24
+Recusa</td><td>25
+Fechados</td><td>26
+Recu-
+perados</td><td></td><td></td><td></td><td></td></tr><tr><td>tb</td><td>12</td><td>10</td><td>12</td><td>20</td><td>15</td><td>69</td><td>10</td><td>12</td><td>34</td><td>7</td><td>sim</td><td>não</td><td>não</td><td></td><td></td><td></td></tr></table>
+
+TB - terreno baldio PE - Ponto Estrategico
+
+<table><tr><td colspan="14">N° depósitos inspections por tipo</td><td></td><td></td></tr><tr><td>27</td><td>A1</td><td>28</td><td>A2</td><td>29</td><td>B</td><td>30</td><td>C</td><td>31</td><td>D1</td><td>32</td><td>D2</td><td>33</td><td>E</td><td>34</td><td>Total</td></tr><tr><td colspan="2">10</td><td colspan="2">2</td><td colspan="2">3</td><td colspan="2">5</td><td colspan="2">5</td><td colspan="2">20</td><td colspan="2">10</td><td colspan="2">55</td></tr></table>
+
+<table><tr><td>35</td><td>Deposito
+Eliminado</td></tr><tr><td colspan="2">sim</td></tr></table>
+
+<table><tr><td colspan="11">Depósitos Tratados</td></tr><tr><td colspan="4">Larvicida (1)</td><td colspan="7">Larvicida (2)</td></tr><tr><td>36</td><td>Tipo</td><td>37</td><td>Qtd. de (Gramas)</td><td>38</td><td>Qtd. dep. trat</td><td>39</td><td>Tipo</td><td>40</td><td>Qtd. de (Gramas)</td><td>41</td></tr><tr><td>de tempo</td><td>32</td><td>34</td><td>à vista</td><td>23</td><td>33</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>42</td><td>Tipo</td><td>43</td><td>Qtd. de (Cargas)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>78</td><td>90</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+
+RESUMO DO LABORATORIO
+
+<table><tr><td colspan="15">N° depósitos com espécines por tipo</td><td></td><td></td></tr><tr><td></td><td>46</td><td>A1</td><td>47</td><td>A2</td><td>48</td><td>B</td><td>49</td><td>C</td><td>50</td><td>D1</td><td>51</td><td>D2</td><td>52</td><td>E</td><td>53</td><td>Total</td></tr><tr><td>com Aedes aegypti</td><td colspan="2">12</td><td colspan="2">12</td><td colspan="2">12</td><td colspan="2">12</td><td colspan="2">12</td><td colspan="2">12</td><td colspan="2">12</td><td colspan="2">84</td></tr><tr><td>com Aedes albopictus</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">70</td></tr></table>
+
+Al - caix d'agua (elevado)
+
+01 - Preuseouts matenars rodantes
+
+A2 - Outros depósitos de armazenamento de agua (baixo) B - Pequenos depósitos moveris
+
+D2 - Lixo (recipientes plácicos, latas) sucatas, entulhos E - Depósitos naturais
+
+C-Depositos fixos
+
+<table><tr><td colspan="12">N° de imóveis com espécímes, por tipo</td><td colspan="7">N° de exemplares</td><td></td><td></td></tr><tr><td></td><td>54</td><td>Resiência</td><td>55</td><td>Comércio</td><td>56</td><td>Terreno Baldo</td><td>57</td><td>Ponto Estrategico</td><td>58</td><td>Outros</td><td>59</td><td>Total</td><td>60</td><td>Larvas</td><td>61</td><td>Papas</td><td>62</td><td>Exúvia de papa</td><td>63</td><td>Adultos</td></tr><tr><td>com Aedes aegypti</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">50</td><td colspan="2">24</td><td colspan="2">24</td><td colspan="2">24</td><td colspan="2">3</td></tr><tr><td>com Aedes albopictus</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">50</td><td colspan="2">24</td><td colspan="2">42</td><td colspan="2">23</td><td colspan="2">3</td></tr><tr><td>outros</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">10</td><td colspan="2">50</td><td colspan="2">24</td><td colspan="2">34</td><td colspan="2">23</td><td colspan="2">2</td></tr></table>
+
+<table><tr><td>12/A</td><td>10/b</td><td>4/C</td><td>66/D</td></tr><tr><td>12&#x27;A</td><td>10/b</td><td>4/C</td><td>4/C</td></tr><tr><td>12/A</td><td>10/b</td><td>10/b</td><td>66/D</td></tr><tr><td>10/b</td><td>12/A</td><td>10/b</td><td>66/D</td></tr><tr><td>10/b</td><td>12/A</td><td>10/b</td><td>66/D</td></tr><tr><td>10/b</td><td>4/C</td><td>4/C</td><td>12/A</td></tr><tr><td>10/b</td><td>4/C</td><td>4/C</td><td>12&#x27;A</td></tr></table>
+
+<table><tr><td colspan="4">65 N°e seq. dos quarteiroes com
+Aedes albopictus</td></tr><tr><td>4 / C</td><td>12 / A</td><td>4 / C</td><td>10 / b</td></tr><tr><td>10 / b</td><td>12 / A</td><td>4 / C</td><td>66 D</td></tr><tr><td>4 / C</td><td>12 / A</td><td>4 / C</td><td>66 / D</td></tr><tr><td>4 / C</td><td>12 / A</td><td>10 / b</td><td>66 / D</td></tr><tr><td>10 / b</td><td>66 / D</td><td>10 b</td><td>12 / A</td></tr><tr><td>10 / b</td><td>4 / C</td><td>66 / D</td><td>12 / A</td></tr><tr><td>10 / b</td><td>4 / C</td><td>66 / D</td><td>12 / A</td></tr></table>
+
+<table><tr><td>12/A</td><td>4/C</td><td>66/D</td><td>10/b</td></tr><tr><td>4/C</td><td>10/b</td><td>12/A</td><td>66/D</td></tr><tr><td>10/b</td><td>4/C</td><td>12/A</td><td>66/D</td></tr><tr><td>10/b</td><td>4/C</td><td>12/A</td><td>66/D</td></tr><tr><td>10/b</td><td>4/C</td><td>12/A</td><td>66/D</td></tr><tr><td>10/b</td><td>12/A</td><td>4/C</td><td>10/b</td></tr><tr><td>10/b</td><td>12/A</td><td>66/D</td><td>10/b</td></tr></table>
+
+<table><tr><td>67 Visto do Supervisor</td><td>Ana Correia</td><td>68 Data do visto</td><td>1/12、2019</td></tr></table>
+
+FAD07-20/09/2006 v.21

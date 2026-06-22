@@ -1,0 +1,87 @@
+Solicitação de Terapia Imuno Biológica
+
+Paciente ambulatorial
+Paciente internado
+
+Senha liberada:
+62468
+
+Data(s) do(s) evento(s) autorizado(s):
+1/6/2019
+
+Nome
+Fernanda Costa
+
+Apólice
+02,18,6439,609238.090
+
+Sexo
+M F
+Idade
+50
+Peso
+58
+Altura
+160
+Superfície corporal
+61
+
+Rede:
+Nacional
+Preferencial
+
+Diagnóstico
+tudo está normal
+
+CID10
+L75.001
+
+Data do diagnóstico
+22/6/2019
+
+Quadro clínico atual
+
+Comorbidades associadas
+não
+
+Tratamentos anteriores
+
+Medicamento(s)
+aspirina
+
+Doses
+3
+
+Período de utilização
+1 semana
+
+Falha de tratamento
+Sim
+Não
+
+Atividade da doença – Indicadores (preencher os indicadores, inerentes a patologia do paciente)
+
+Índice atual
+10
+7
+150
+143
+2.6
+2.5
+0.2
+0.1
+78
+70
+1.5
+1.2
+50
+40
+
+Legenda
+
+• SDAI – Índice Simplificado
+• CDAI – Índice Clínico de Atividade da Doença
+• DAS 28 – Índice de Atividade da Doença – 28 articulações
+• BASDAI – Índice Bath de Atividade da Doença para Espondilite Anquilosante
+• IADC - Índice de Atividade da Doença de Crohn
+• ASDAS - Índice de Atividade da Doença para Espondilite Anquilosante

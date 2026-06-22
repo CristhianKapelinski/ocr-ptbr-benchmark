@@ -1,0 +1,65 @@
+12-12 1953 RIBEIRAO DAS NEVES
+
+PREFEITURA MUNICIPAL
+
+DE RIBEIRÃO DAS NEVES
+
+SECRETARIA DE FAZENDA
+
+SUPERINTENDÊNCIA DE TRIBUTOS E ARRECADAÇÃO
+
+REQUERIMENTO PARA REVISÃO DE CADASTRO
+
+IPTU / COLETA DE LIXO / ILUMINAGão
+
+<table><tr><td colspan="3">DADOS DO REQUERENTE</td></tr><tr><td>NOME: Thiago S Azevedo</td><td colspan="2">CPF/CNPJ: 833.715.963-46</td></tr><tr><td colspan="2">ENDEREGO: Rua Quatro</td><td>NUMERO: 1277</td></tr><tr><td>BAIRRO: Jardim São Paulo</td><td colspan="2">CIDADE: São Paulo</td></tr><tr><td>TELEFONE: (19) 9860-4990</td><td colspan="2">E-MAIL: mayg@imedia.com</td></tr></table>
+
+DADOS DO IMÓVEL
+
+INSCRIÇÂO CADASTRAL: 34 . 22 . 44 . 244 - 110
+
+LOGRADOURO (RUA, AV. ETC.): Rua Quatro
+
+NUMERO: 4009
+
+COMPL.: \(5^{\circ}\) andar
+
+BAIRRO: Jardim São Paulo
+
+PONTO DE REFERÊNCIA: edificio azul
+
+MOTIVO DO REQUERIMENTO
+
+REVISÉO DE DADOS CADASTRAIS (Marque esta opção para divergência de area construúda, tipo de Utilização, alíquota, earethascharacteristicadoimóveloudo lote)
+
+IMÓVEL POSSUI PASSEIO: ○ SIM ⊙ NÃO
+
+IMÓVEL POSSUI MURO OU GRADE: ○ SIM ⊙ NÃO
+
+QUAL A UTILIZAÇÃO ATUAL DO IMÓVEL: ☑ RESIDencial ☐ COMERCIAL ☐ LOTE VAGO ☐ OUTROS
+
+REVISÉO DA TAXA DE COLETA DE LIXO (Marque esta opção para divergência na frequência de coleta, ausência do service ou demais quostões relacionadas à Taxa de Coleta de Lixo)
+
+REVISÉO DA CONTRIBUIÇÃO DE ILUMINAÇÃO PUBLICA (Marque esta opção caso não tenha rede de illuminação Pública naRua, ou já possua cobrança atraves da conta da CEMIG)
+
+UNIFICAÇÃO DE UNIDADE (Marque esta opção caso tenha unicificado construções dentro de um mesmo lote, e gostaria de receber aspasas uma cobrança de IPTU)
+
+- A unidade a ser unicida não poderá ter débitos de IPTU.
+
+DEMEMBRAMENTO DE UNIDADE (Marque esta opção caso tenha mais de uma construção no mesmo lote, e gostaria de receber o IPTU separadamente)
+
+ALTERACAO DE PROPRIETARIO OU POSSUIDOR (Marque esta opso caso queira alterar a titularidade do IPTU).
+
+- Para alteração do proprietário, está necessário expressar a Matricula ou Escritura Pública de Compra e Venda em nome do-Requerente.
+
+- Para alteração de Possuidor, está necessário estar o Contrato de compra e vendas comirma reconhecida e cópia da Matricula do imóvel (O vendedor mencionado no contrato de compra e vendas, deverá ser o mesmo que consta na matricula ou no IPTU atual).
+
+CADASTRAMENTO DE IMÓVEL (Marque esta opção caso queira cadastrar seu imóvel para cobrança de IPTU)
+
+- Caso o terreiro não sera inserido em loteamento aprovado,deer anexar o levantamento planimétrico impresso e em arquivos digital.
+
+OUTROS:
+
+INFORMAÇões COMPLEMENTARES:
+
+não

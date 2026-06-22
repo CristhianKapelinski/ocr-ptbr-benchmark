@@ -1,0 +1,64 @@
+POTENCIA IGUAL OU INFERIORA 1O KW
+1 - IDENTIFICACAO DA UNIDADE CONSUMIDORA - UC
+Codig0 da UC: 1098263
+Classe: 1
+Titular da UC:Camila C Araujo
+Camila C Araujo
+N°. 87
+CEP:15800-3401
+Rua/ Av.:
+Cidade: Belford Roxo
+Bairro: Jardim Sao Paulo
+UF: RJ
+E-mail: svc@linshiyouxiang.net
+CNPJ/CPF:685.972.400-59
+Telefone: (21) 5380-6371
+Celular: 5531386432235
+2 - DADOS DA UNIDADE CONSUMIDORA
+Potencia Instalada (kW): 10
+Tensao de Atendimento (V): 200
+Tipo de Conexao:
+Monofasica
+Bifasica
+Trifasica
+3 - DADOS DA GERACAO
+Potencia Instalada de Geracao (kWp): 10
+Tipo da Fonte de Geracao:
+Hidraulica
+Solar
+Eolica
+Biomassa
+Cogeracao Qualificada
+Outra (Especificar):
+4 - DOCUMENTACOES A SER ANEXADA
+1. ART do Responsavel Técnico peloProjeto eletrico e instalacao dosistema de microgeracao;
+2.Diagrama unifilarcontemplandoGeracao/Protecao(inversor,se for o caso)/Medicaoe memorial
+descritivo da instalacao;
+3. Certificado de Conformidade do(s) Inversor(es) ou numero de registro da concessao do Inmetro do(s)
+Inversor(es) para a tensao nominal de conexao com a rede;
+4. Dados Necessarios ao Registro da Central geradora conforme disponivel no site da ANEEL:
+www.aneel.gov.br/scg
+porcentagem derateio doscréditose o enquadramento conforme incisosVl eVlll do art.2° da
+Resolucao Normativa n°482/2012;
+houver);
+7. Documento que comprove o reconhecimento, pela ANEEL, da cogeracao qualificada (se houver)
+5 - CONTATOS NA DISTRIBUIDORA (PREENCHIDO PELA DISTRIBUIDORA)
+Responsavel/ Area: Tiago Santos
+Endereco:
+Camila C Araujo 998
+Telefone:  (85) 8614-3556
+E-mail:
+svcwy@linsh.net
+6 - SOLICITANTE
+Nome/Procurador Legal: Camila Costa
+Telefone: (24) 2501-2316
+E-mail:  zz19@linsh.net
+Belford Roxo
+/11
+2019
+7
+Tiago Santos
+Assinatura do
+Local
+Data
+Responsavel

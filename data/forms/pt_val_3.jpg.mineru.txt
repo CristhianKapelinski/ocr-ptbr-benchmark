@@ -1,0 +1,65 @@
+FORMULARIO 03
+
+PLANO INDIVIDUAL DE TRABALHO-PIT
+
+DOCENTE: Ana Costa
+
+CATEGORIA FUNCIONAL: musica TITULACAO professor REG DE TRABALHO 2445
+
+DEPARTAMENTO: arte AREA: a3 SEMESTRE/ANO: 2
+
+ATIVIDADES ACADÉMICAS
+
+1. ENSINO
+
+1.1 AULAS
+
+<table><tr><td rowspan="2">DISCIPLINA/ CÓDIGO</td><td rowspan="2">NÍVEL (*)</td><td rowspan="2">CURSO</td><td colspan="2">CARGA HORÁRIA</td></tr><tr><td>SALA DE AULA</td><td>PLANEJAMENTO</td></tr><tr><td>segundo 2</td><td>G</td><td>história de música oritental</td><td>203</td><td>203</td></tr><tr><td rowspan="2"></td><td colspan="2">SUB-TOTAL</td><td>2h</td><td>2h</td></tr><tr><td colspan="2">TOTAL</td><td colspan="2">4h</td></tr></table>
+
+(*)G: Graduação; PG: Pós-Graduação
+
+1.2 ORIENTACAO
+
+<table><tr><td>MODALIDADE</td><td>NO. DE TURMAS/ALUNOS</td><td>CARGA HORÁRIA</td></tr><tr><td>Bolsista de Projeto de Ensino</td><td>A45778</td><td>2h</td></tr><tr><td>Orientação Académica</td><td>C2346</td><td>2h</td></tr><tr><td></td><td>TOTAL</td><td>4h</td></tr></table>
+
+2. PESQUISA
+
+2.1 PROJETOS
+
+<table><tr><td>TÍTULO</td><td>INÍCIO</td><td>TÉRMINO</td><td>NÍVEL DE PARTICIPÇÃO(*)</td><td>SITUÇÃO DO PROJETO(**)</td><td>CARGA HORÁRIA</td></tr><tr><td>ensino de música</td><td>5\5\2019</td><td>6\5\2019</td><td>C</td><td>A</td><td>12h</td></tr><tr><td colspan="4"></td><td>TOTAL</td><td>12h</td></tr></table>
+
+(*) C: Coordinador; O: Outrosnects de participacao
+
+\((^{**})\) A: em andamento; B: em andamento irregular; C: concluso; D: paralisado; E: cancelado
+
+2.2 ORIENTACAO EM INICIAÇÃO CIENTIFICA
+
+<table><tr><td>TÍTULO DO PROJETO</td><td>NO. DE BOLSISTAS</td><td>CARGA HORÁRIA</td></tr><tr><td>ensino de música oriental</td><td>A2466</td><td>5h</td></tr><tr><td></td><td>TOTAL</td><td>5h</td></tr></table>
+
+3. EXTENSão
+
+3.1 PROJETO
+
+<table><tr><td>TÍTULO</td><td>CARÁTER(*)</td><td>NÍVEL DE PARTICIPACÇÃO(**)</td><td>SITUÇÃO DO PROJETO(***）</td><td>PERÍODO</td><td>CARGA HORária</td></tr><tr><td>música ocitental</td><td>P</td><td>C</td><td>A</td><td>2</td><td>5H</td></tr><tr><td></td><td></td><td></td><td></td><td>TOTAL</td><td>5H</td></tr></table>
+
+(*)P: permanente; E: eventual
+
+\((^{**})C\): coordinador; O: outros níveis de participação;
+
+\((^{**})A:\) em andamento; B: em andamento irregular; C: concluso; D: paralisado; E: cancelado
+
+3.2 ORIENTAZAO
+
+<table><tr><td>TÍTULO DO PROJETO</td><td>NO. DE BOLSISTAS</td><td>CARGA HORÁRIA</td></tr><tr><td>ensino de música oriental</td><td>a7200</td><td>4H</td></tr><tr><td></td><td>TOTAL</td><td>4H</td></tr></table>
+
+4. ADMINISTRACAO
+
+<table><tr><td>CARGO</td><td>SETOR</td><td>PERÍODO/MANDATO</td><td>CARGA HORÁRIA</td></tr><tr><td>SECRETÁRIA</td><td>ARTE</td><td>4</td><td>4H</td></tr><tr><td colspan="2"></td><td>TOTAL</td><td>4H</td></tr></table>
+
+5. REUNIOES
+
+<table><tr><td>SETOR</td><td>NUMERO DE PARTICIPACções</td><td>CARGA HORÁRIA</td></tr><tr><td>Departamento</td><td>7</td><td>4H</td></tr><tr><td>Área de Conhecimento</td><td>44</td><td>4H</td></tr><tr><td>Colegiado</td><td>5</td><td>2H</td></tr><tr><td></td><td>TOTAL</td><td>10H</td></tr></table>
+
+6. OUTROS CASOS
+
+<table><tr><td>ESPECIFICAR</td><td>NÉVEL DE PARTICIPÇÃO</td><td>PERÍODO</td><td>CARGA HORÁRIA</td></tr><tr><td>Laboratório: Preparo, conservação e organizeação de peças anatônicas</td><td>C</td><td>4</td><td>4H</td></tr><tr><td colspan="2"></td><td>TOTAL</td><td>4H</td></tr></table>

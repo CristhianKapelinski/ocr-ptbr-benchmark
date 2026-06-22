@@ -1,0 +1,88 @@
+Bradesco
+Saude
+Solicitacao de Terapia Imuno Biologica
+Paciente ambulatorial
+Senhaliberada:
+Data(s) do(s) evento(s) autorizado(s):
+62468
+1/6/2019
+Paciente internado
+Apolice
+Nome
+Fernanda Costa
+02,18,6439,609238.090
+Sexo
+Idade
+Altura
+Superficie corporal
+Rede:
+Peso
+OM
+卤
+50
+58
+160
+61
+冈
+Nacional
+Preferencial
+Diagnostico
+CID10
+Data do diagnostico
+tudo esta normal
+L75.001
+22/6/2019
+Quadroclinico atual
+Comorbidadesassociadas
+nao
+Tratamentos anteriores
+Medicamento(s)
+Doses
+Periodo de utilizacao
+aspirina
+3
+1 semana
+冈
+Falha de tratamento
+Sim
+Nao
+Atividade da doenca -Indicadores (preencher os indicadores, inerentes a patologia do paciente)
+indice atual
+indice apos 12 a 16 semanas.
+SDAI
+10
+7
+143
+CDAI
+150
+DAS 28
+2.6
+2.5
+BASDAI
+0.2
+0.1
+IADC
+78
+70
+1.2
+ASDAS
+1.5
+PASI
+50
+40
+Legenda
+SDAI-indiceSimplificado
+IADC-indicedeAtividadedaDoencadeCrohn
+.
+CDAl -indiceClinico deAtividadedaDoenca
+DAS28-indicedeAtividadedaDoenca-28 articulacoes
+ASDAS-indicedeAtividadedaDoencapara
+.
+BASDAl-indiceBathdeAtividadedaDoencapara
+EspondiliteAnquilosante
+Espondilite Anquilosante
+Dezembro 2011
+Pag.1/3
+Cod.Form.Eletronico0831
+Bradesco Seguros
+intranet

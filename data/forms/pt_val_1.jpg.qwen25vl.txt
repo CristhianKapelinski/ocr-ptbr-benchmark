@@ -1,0 +1,66 @@
+CAIXA
+DMN - Documento de Manutenção do NIS
+
+Grau de sigilo
+#Confidencial 05
+
+1. Nome
+Murilo S Lima
+
+2. NIS
+RG.06.969.616-2
+
+3. CPF
+574.401.736-43
+
+4. Data de nascimento
+1 /20 / 1957
+
+5. Telefone Celular
+( 61)8240-7139
+
+6. CEP
+71691-235
+
+7. Endereço
+Quadra Quadra 12 Rua 05 1007
+
+8. Bairro
+Quadra Quadra 12 Rua 05 1007
+
+9. Município/UF
+DF
+
+Solicito a manutenção cadastral do meu Número de Identificação Social (NIS), conforme informações prestadas ao atendente da CAIXA. Autorizo o envio de SMS para o número celular acima, informando o andamento e conclusão do atendimento.
+
+SP
+12 / 6 / 2018
+(Município/UF)
+(Data)
+
+Beatrice C Castro
+(Assinatura ou digital trabalhador)
+
+Campos de preenchimento pela agência da CAIXA
+
+Informe abaixo o problema identificado ou o tipo de acerto necessário, conforme apontado pelo cliente e/ou segundo a análise feita pela Agência:
+
+Serviços realizados pela Agência:
+- Inclusão/alteração de vínculo PIS: Incluir ou alterar as informações do primeiro emprego do trabalhador em inscrição já existente na base do Cadastro, exceto quando se tratar de servidor público.
+- Alteração cadastral, exceto endereço: Alterar e/ou incluir dados de identificação da pessoa (nome, data de nascimento, nome da mãe ou do pai, etc.) e documentos (CPF, RG, CTPS, Certidão Civil, Título de Eleitor).
+- Exclusão de documento: Excluir do Cadastro em razão de inclusão indevida (RG, Certidão de Óbito, etc.)
+- Atualização de endereço: Atualizar o endereço no Cadastro.
+
+Serviços realizados pela Centralizadora:
+- Inclusão/alteração de vínculo de Servidor Público: Incluir ou alterar as informações do primeiro emprego em inscrição já existente na base do Cadastro, quando o empregador tratar-se de instituição pública.
+- Cadastramento excepcional: Efetuar o cadastramento do NIS quando não for possível ser inserido pela Agência (Solicitação de órgãos externos, determinação da autoridade judicial, nomes considerados impróprios, sobrenome com apenas uma letra ou trabalhador falecido).
+- Alteração cadastral: Realizar alteração cadastral nos casos em que não é permitido o procedimento pela Agência (Nomes considerados impróprios, sobrenome com apenas uma letra ou quando no primeiro emprego o trabalhador era menor de 14 anos).
+- Cadastramento retroativo: Incluir o número do PIS/PASEP no Cadastro, nos casos em que a pessoa comprova a titularidade do número de inscrição, mas este não consta na base.
+- Verificação de titularidade: Avaliar a quem pertence à inscrição quando houver dúvidas sobre a titularidade.
+- Reativação de Inscrição: Reativar inscrições convertidas ou canceladas indevidamente.
+- Cancelamento de NIS: Cancelar NIS, quando identificada fraude no cadastramento, mediante correspondência de órgãos públicos.
+
+Informações adicionais que auxiliem o atendimento da demanda:
+
+31.043 v018 micro
+1

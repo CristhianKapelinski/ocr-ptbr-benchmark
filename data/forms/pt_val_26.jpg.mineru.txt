@@ -1,0 +1,63 @@
+#
+
+Bradesco
+
+Saude
+
+Solicitacao de Terapia Imuno Biologica
+
+<table><tr><td colspan="3">Paciente ambulatorial
+Paciente internado</td><td colspan="3">Senha liberada:
+62468</td><td colspan="2">Data(s) do(s) evento(s) autorizzato(s):
+1/6/2019</td></tr><tr><td colspan="6">Nome
+Fernanda Costa</td><td colspan="2">Apólice
+02,18,6439,609238.090</td></tr><tr><td>Sexo</td><td>Idade</td><td>Peso</td><td>Altura</td><td colspan="2">Superficie corporal</td><td colspan="2">Rede:</td></tr><tr><td>M F</td><td>50</td><td>58</td><td>160</td><td colspan="2">61</td><td colspan="2">Nacional     □ Preferencial</td></tr><tr><td colspan="5">Diagnóstico
+todostà normal</td><td colspan="2">CID10
+L75.001</td><td>Data do diagnóstico
+22/6/2019</td></tr></table>
+
+Quadro clinico atual
+
+Comorbidades associadas
+
+não
+
+<table><tr><td colspan="3">Tratamentos anteriores</td></tr><tr><td>Medicamento(s)</td><td>Doses</td><td>Periode de&#x27;utilisation</td></tr><tr><td>aspirina</td><td>3</td><td>1 semana</td></tr></table>
+
+Falha de tratamento
+
+Sim
+
+Não
+
+Atividade da doença - Indicadores (preencher os indicadores, inerentes a patologia do paciente)
+
+<table><tr><td></td><td>Índice atual</td><td>Índice après 12 a 16 semanas.</td></tr><tr><td>SDAI</td><td>10</td><td>7</td></tr><tr><td>CDAI</td><td>150</td><td>143</td></tr><tr><td>DAS 28</td><td>2.6</td><td>2.5</td></tr><tr><td>BASDAI</td><td>0.2</td><td>0.1</td></tr><tr><td>IADC</td><td>78</td><td>70</td></tr><tr><td>ASDAS</td><td>1.5</td><td>1.2</td></tr><tr><td>PASI</td><td>50</td><td>40</td></tr></table>
+
+Legenda
+
+SDAI - Índice Simplificado
+
+- CDAI - Índice Clínico de Atividade da Doença
+
+DAS 28 - Ínicio de Atividade da Doença - 28 articulações
+
+- BASDAI - Índice Bath de Atividade da Doença para Espondilite Anquilosante
+
+IADC - Índice de Atividade da Doença de Crohn
+
+ASDAS - Índice de Atividade da Doença para
+
+Espondilite Anquilosante
+
+Dezembro 2011
+
+Pág.1/3
+
+Cód. Form. Eletrónico 0831
+
+#
+
+Bradesco Seguros
+
+intranet

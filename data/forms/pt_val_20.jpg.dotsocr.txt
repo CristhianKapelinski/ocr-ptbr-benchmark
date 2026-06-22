@@ -1,0 +1,84 @@
+<table>
+  <caption>INFORMAÇÕES PESSOAIS</caption>
+  <tbody>
+    <tr>
+      <td>Sobrenome ( exatamente conforme o passaporte )</td>
+      <td>Pinto</td>
+    </tr>
+    <tr>
+      <td>Nome ( exatamente conforme o passaporte )</td>
+      <td>Maria Jesus</td>
+    </tr>
+    <tr>
+      <td>Nome completo no Alfabeto Nativo ( caso não possua, informar "Não se aplica"</td>
+      <td>não se aplica</td>
+    </tr>
+    <tr>
+      <td>Você já usou outros nomes ( exemplo: solteira, religiosa, profissional, pseudonimo, etc ) ?</td>
+      <td>
+        (✓) Não<br/>
+        ( ) Sim: Informar:<br/>
+        a) Outros sobrenomes utilizados:<br/>
+        b) Outros Nomes utilizados:
+      </td>
+    </tr>
+    <tr>
+      <td>Sexo:</td>
+      <td>
+        ( ) Masculino<br/>
+        (✓) Feminino
+      </td>
+    </tr>
+    <tr>
+      <td>Estado Civil oficial:</td>
+      <td>
+        (✓) Casado<br/>
+        ( ) Solteiro<br/>
+        ( ) Viúvo<br/>
+        ( ) Divorciado<br/>
+        ( ) Separado Legalmente<br/>
+        ( ) outros – especifique:
+      </td>
+    </tr>
+    <tr>
+      <td>Data de Nascimento</td>
+      <td>1\3\1989</td>
+    </tr>
+    <tr>
+      <td>Cidade de Nascimento</td>
+      <td>São Paulo</td>
+    </tr>
+    <tr>
+      <td>Estado de Nascimento</td>
+      <td>São Paulo</td>
+    </tr>
+    <tr>
+      <td>País de Nascimento</td>
+      <td>Brasil</td>
+    </tr>
+    <tr>
+      <td>Nacionalidade:</td>
+      <td>Brasileira</td>
+    </tr>
+    <tr>
+      <td>Você possuiu outra nacionalidade além da indicada acima ?<br/>( Informar todas as outras nacionalidades que possuir )</td>
+      <td>
+        (✓) Não<br/>
+        ( ) Sim: Informar qual a nacionalidade e se possuir<br/>
+        passaporte válido, informar numero do passaporte e validade do mesmo:
+      </td>
+    </tr>
+    <tr>
+      <td>Número do CPF: Caso não possua informar "Não se Aplica"</td>
+      <td>931.164.971-68</td>
+    </tr>
+    <tr>
+      <td>Número do Social Security U.S. A: Caso não possua informar "Não se Aplica"</td>
+      <td>não se aplica</td>
+    </tr>
+    <tr>
+      <td>Número da Identificação Fiscal U.S.A : Caso não possua informar "Não se Aplica"</td>
+      <td>não se aplica</td>
+    </tr>
+  </tbody>
+</table>

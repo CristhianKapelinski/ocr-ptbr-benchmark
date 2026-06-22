@@ -1,0 +1,28 @@
+FID FUNDO LSTIADUAL DE DFFEA DOS INTERESTES DIFUSOS
+
+FUNDO ESTADUAL DE DEFESA DOS INTERESSES DIFUSOS
+
+FORMULÁRIO CARTA CONSULTA
+
+<table><tr><td rowspan="2">Todos os Campos da Carta-Consulta devem ser preenchidos pelo proponentse, exceto o campo ao lado, cujo preenchimentocade à Secretaria Executiva do Conselho Gestor do FID. Não sera considerados outros documents encaminhados.</td><td>Carta-consulta n°</td></tr><tr><td>53235663</td></tr></table>
+
+<table><tr><td>Interessado</td><td>Renan R Barros</td></tr><tr><td>Projeto</td><td>carta</td></tr><tr><td>Localidade</td><td>Petrópolis</td></tr></table>
+
+<table><tr><td colspan="3">Identificacao da Instituicao Proponente</td></tr><tr><td>Denominacao</td><td colspan="2">instituicao postal</td></tr><tr><td rowspan="2">Charakterizacao</td><td>Órgao Publico da Administracao Direta e Indireta</td><td>Ano da Fundacao</td></tr><tr><td>Entidades do 3o Setor</td><td>1</td></tr></table>
+
+<table><tr><td>A instituição já foi beneficiada com recursos do FID?</td><td>Sim</td><td>Não</td></tr><tr><td>Em caso affirmativo, qual o montante recebido?</td><td colspan="2">R$ 100</td></tr></table>
+
+<table><tr><td rowspan="6">Area do Projeto</td><td rowspan="6">√
+Meio Ambiente   Deficiente
+Artístico     Idoso
+Estático      Habitação e urbanismo
+Histórico     Saúde Pública
+Turístico      Cidadania
+Paisagístico      Outra:_
+Consumidor
+Contribuente</td><td colspan="2">Em caso de projet da区内de meio ambiente que vise à recuperação de区内degradada,assinale a opção que corresponda à SITUAGÊNDAÁREA</td></tr><tr><td>√</td><td>Proprietade Pública</td></tr><tr><td colspan="2">Reserva Particular do Patrimônio Natural - RPPN</td></tr><tr><td colspan="2">Proprietade Particular</td></tr><tr><td colspan="2">Tratando-se de projet de bens pertencentes aoPatrimônio Histórico o mesmo possui TOMBAMENTOAdministrazivo ou Judicial?</td></tr><tr><td colspan="2">√
+SIM    NÃO</td></tr></table>
+
+<table><tr><td>Duração total do projet:</td><td>8 /20 19 à 8 /20 20</td></tr><tr><td colspan="2">Deve-se prever o ∈cio da execuição dos projetos a partir do mês da apareção, PODendo estender-se até o fim do mesmo exercício ouavançar para os exercériços seguintes.</td></tr><tr><td colspan="2">Observação: não</td></tr><tr><td colspan="2">A duração do projet deverá contemplar os prazos legais para Licensão e/ou Chamamento Pública visando a contratação das vezes, pens e serviços, bem como os recebimentos provisórios e definitivos.</td></tr></table>
+
+24

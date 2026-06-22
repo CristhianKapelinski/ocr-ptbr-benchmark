@@ -1,0 +1,1570 @@
+[
+ {
+  "img": "page102_Rot_color_0.png",
+  "sec": 7.76,
+  "pred_len": 2667,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page103_Noise_SaltAndPepper_0.png",
+  "sec": 8.77,
+  "pred_len": 2911,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page104_Noise_SaltAndPepper_0.png",
+  "sec": 11.46,
+  "pred_len": 4287,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page108_Blur_HYPERBOLA_0.png",
+  "sec": 8.49,
+  "pred_len": 2456,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page10_Phantom_0.85_0.png",
+  "sec": 5.42,
+  "pred_len": 1646,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page111_Hole_0.png",
+  "sec": 7.02,
+  "pred_len": 2516,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page117_Rot_color_0.png",
+  "sec": 5.48,
+  "pred_len": 1852,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page122_Hole_0.png",
+  "sec": 8.22,
+  "pred_len": 2358,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page12_Noise_Gaussian_0.png",
+  "sec": 5.82,
+  "pred_len": 1926,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page131_Noise_SaltAndPepper_0.png",
+  "sec": 8.23,
+  "pred_len": 2951,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page136_Noise_Gaussian_0.png",
+  "sec": 8.09,
+  "pred_len": 2499,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page141_Bleed_0.png",
+  "sec": 6.39,
+  "pred_len": 2128,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page142_Noise_SaltAndPepper_0.png",
+  "sec": 4.96,
+  "pred_len": 1695,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page145_Bleed_0.png",
+  "sec": 5.29,
+  "pred_len": 1741,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page147_Bleed_0.png",
+  "sec": 6.04,
+  "pred_len": 1974,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page149_Noise_Gaussian_0.png",
+  "sec": 7.99,
+  "pred_len": 2336,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page155_Blur_HYPERBOLA_0.png",
+  "sec": 10.86,
+  "pred_len": 3079,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page156_Phantom_0.85_0.png",
+  "sec": 10.6,
+  "pred_len": 2661,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page157_Rot_color_0.png",
+  "sec": 7.29,
+  "pred_len": 1782,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page160_Hole_0.png",
+  "sec": 6.91,
+  "pred_len": 2297,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page161_Rot_color_0.png",
+  "sec": 6.22,
+  "pred_len": 2093,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page164_Blur_HYPERBOLA_0.png",
+  "sec": 7.16,
+  "pred_len": 2366,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page175_Rot_color_0.png",
+  "sec": 6.08,
+  "pred_len": 2062,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page176_Hole_0.png",
+  "sec": 6.91,
+  "pred_len": 2300,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page177_Noise_SaltAndPepper_0.png",
+  "sec": 6.09,
+  "pred_len": 2083,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page180_Blur_HYPERBOLA_0.png",
+  "sec": 6.2,
+  "pred_len": 2224,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page185_Noise_Gaussian_0.png",
+  "sec": 6.85,
+  "pred_len": 2261,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page187_Noise_SaltAndPepper_0.png",
+  "sec": 7.4,
+  "pred_len": 2345,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page189_Hole_0.png",
+  "sec": 7.5,
+  "pred_len": 2276,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page193_Phantom_0.85_0.png",
+  "sec": 6.76,
+  "pred_len": 2221,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page1_Hole_0.png",
+  "sec": 6.56,
+  "pred_len": 2165,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page205_Rot_color_0.png",
+  "sec": 8.38,
+  "pred_len": 2330,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page209_Phantom_0.85_0.png",
+  "sec": 8.4,
+  "pred_len": 2374,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page20_Noise_SaltAndPepper_0.png",
+  "sec": 6.04,
+  "pred_len": 1921,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page227_Blur_HYPERBOLA_0.png",
+  "sec": 6.17,
+  "pred_len": 1651,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page22_Noise_SaltAndPepper_0.png",
+  "sec": 6.92,
+  "pred_len": 2388,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page233_Rot_color_0.png",
+  "sec": 11.73,
+  "pred_len": 3897,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page234_Bleed_0.png",
+  "sec": 7.83,
+  "pred_len": 2463,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page236_Bleed_0.png",
+  "sec": 8.61,
+  "pred_len": 2470,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page242_Bleed_0.png",
+  "sec": 9.31,
+  "pred_len": 3157,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page244_Rot_color_0.png",
+  "sec": 7.67,
+  "pred_len": 2697,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page245_Phantom_0.85_0.png",
+  "sec": 8.91,
+  "pred_len": 2794,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page266_Rot_color_0.png",
+  "sec": 11.99,
+  "pred_len": 3751,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page267_Hole_0.png",
+  "sec": 6.98,
+  "pred_len": 2350,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page268_Bleed_0.png",
+  "sec": 10.57,
+  "pred_len": 3375,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page269_Blur_HYPERBOLA_0.png",
+  "sec": 7.92,
+  "pred_len": 2573,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page270_Noise_SaltAndPepper_0.png",
+  "sec": 6.84,
+  "pred_len": 2402,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page283_Phantom_0.85_0.png",
+  "sec": 6.65,
+  "pred_len": 2483,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page2_Rot_color_0.png",
+  "sec": 6.43,
+  "pred_len": 2003,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page300_Phantom_0.85_0.png",
+  "sec": 6.08,
+  "pred_len": 2020,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page302_Blur_HYPERBOLA_0.png",
+  "sec": 18.04,
+  "pred_len": 4510,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page306_Noise_SaltAndPepper_0.png",
+  "sec": 8.16,
+  "pred_len": 2741,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page307_Hole_0.png",
+  "sec": 6.39,
+  "pred_len": 2072,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page308_Phantom_0.85_0.png",
+  "sec": 6.94,
+  "pred_len": 2285,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page315_Rot_color_0.png",
+  "sec": 6.71,
+  "pred_len": 2351,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page317_Rot_color_0.png",
+  "sec": 6.97,
+  "pred_len": 2139,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page319_Noise_SaltAndPepper_0.png",
+  "sec": 7.55,
+  "pred_len": 2072,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page320_Phantom_0.85_0.png",
+  "sec": 3.68,
+  "pred_len": 1217,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page321_CharDeg_0.png",
+  "sec": 7.03,
+  "pred_len": 2259,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page322_CharDeg_0.png",
+  "sec": 6.22,
+  "pred_len": 2085,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page325_Blur_HYPERBOLA_0.png",
+  "sec": 6.54,
+  "pred_len": 2332,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page332_Rot_color_0.png",
+  "sec": 6.54,
+  "pred_len": 2243,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page340_Phantom_0.85_0.png",
+  "sec": 5.24,
+  "pred_len": 1804,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page345_CharDeg_0.png",
+  "sec": 6.6,
+  "pred_len": 2197,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page347_Noise_Gaussian_0.png",
+  "sec": 6.57,
+  "pred_len": 2153,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page34_Phantom_0.85_0.png",
+  "sec": 2.99,
+  "pred_len": 840,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page355_Noise_Gaussian_0.png",
+  "sec": 1.24,
+  "pred_len": 287,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page356_Phantom_0.85_0.png",
+  "sec": 5.93,
+  "pred_len": 2011,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page35_CharDeg_0.png",
+  "sec": 6.72,
+  "pred_len": 2190,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page364_Noise_Gaussian_0.png",
+  "sec": 6.79,
+  "pred_len": 2203,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page366_Bleed_0.png",
+  "sec": 6.2,
+  "pred_len": 1991,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page371_Rot_color_0.png",
+  "sec": 5.63,
+  "pred_len": 1814,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page374_Phantom_0.85_0.png",
+  "sec": 7.94,
+  "pred_len": 2412,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page377_Phantom_0.85_0.png",
+  "sec": 6.58,
+  "pred_len": 2148,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page378_Noise_SaltAndPepper_0.png",
+  "sec": 5.73,
+  "pred_len": 1948,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page382_Bleed_0.png",
+  "sec": 4.52,
+  "pred_len": 1547,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page393_CharDeg_0.png",
+  "sec": 7.14,
+  "pred_len": 2303,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page398_Blur_HYPERBOLA_0.png",
+  "sec": 7.3,
+  "pred_len": 2291,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page3_CharDeg_0.png",
+  "sec": 5.78,
+  "pred_len": 1812,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page406_Hole_0.png",
+  "sec": 7.96,
+  "pred_len": 2746,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page407_Rot_color_0.png",
+  "sec": 8.23,
+  "pred_len": 2874,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page410_Noise_Gaussian_0.png",
+  "sec": 7.28,
+  "pred_len": 2652,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page411_Phantom_0.85_0.png",
+  "sec": 8.25,
+  "pred_len": 2863,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page414_Blur_HYPERBOLA_0.png",
+  "sec": 8.37,
+  "pred_len": 2719,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page419_Noise_Gaussian_0.png",
+  "sec": 8.6,
+  "pred_len": 2752,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page42_Noise_Gaussian_0.png",
+  "sec": 12.43,
+  "pred_len": 3632,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page432_Noise_SaltAndPepper_0.png",
+  "sec": 7.93,
+  "pred_len": 2626,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page433_Blur_HYPERBOLA_0.png",
+  "sec": 8.08,
+  "pred_len": 2707,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page434_Blur_HYPERBOLA_0.png",
+  "sec": 9.12,
+  "pred_len": 2774,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page436_CharDeg_0.png",
+  "sec": 8.48,
+  "pred_len": 2775,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page439_Noise_Gaussian_0.png",
+  "sec": 8.94,
+  "pred_len": 2636,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page446_CharDeg_0.png",
+  "sec": 6.08,
+  "pred_len": 2050,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page450_Noise_SaltAndPepper_0.png",
+  "sec": 8.39,
+  "pred_len": 2841,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page451_Noise_SaltAndPepper_0.png",
+  "sec": 7.66,
+  "pred_len": 2625,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page456_Rot_color_0.png",
+  "sec": 8.98,
+  "pred_len": 2746,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page458_Hole_0.png",
+  "sec": 8.45,
+  "pred_len": 2731,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page460_Rot_color_0.png",
+  "sec": 8.82,
+  "pred_len": 2922,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page464_Rot_color_0.png",
+  "sec": 7.61,
+  "pred_len": 2547,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page466_Noise_Gaussian_0.png",
+  "sec": 8.31,
+  "pred_len": 2702,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page469_CharDeg_0.png",
+  "sec": 9.22,
+  "pred_len": 2791,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page474_Hole_0.png",
+  "sec": 8.28,
+  "pred_len": 2781,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page475_Bleed_0.png",
+  "sec": 9.11,
+  "pred_len": 2805,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page478_Noise_Gaussian_0.png",
+  "sec": 8.88,
+  "pred_len": 2799,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page480_Phantom_0.85_0.png",
+  "sec": 8.41,
+  "pred_len": 2723,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page481_Hole_0.png",
+  "sec": 8.23,
+  "pred_len": 2667,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page484_Phantom_0.85_0.png",
+  "sec": 12.22,
+  "pred_len": 3895,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page487_CharDeg_0.png",
+  "sec": 4.29,
+  "pred_len": 1271,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page489_Phantom_0.85_0.png",
+  "sec": 8.45,
+  "pred_len": 2885,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page494_Hole_0.png",
+  "sec": 9.3,
+  "pred_len": 2845,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page497_Bleed_0.png",
+  "sec": 10.38,
+  "pred_len": 3089,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page498_Blur_HYPERBOLA_0.png",
+  "sec": 9.53,
+  "pred_len": 2903,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page49_Hole_0.png",
+  "sec": 9.3,
+  "pred_len": 3290,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page504_Rot_color_0.png",
+  "sec": 9.82,
+  "pred_len": 2981,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page508_CharDeg_0.png",
+  "sec": 11.46,
+  "pred_len": 3668,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page509_CharDeg_0.png",
+  "sec": 10.21,
+  "pred_len": 3016,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page511_Bleed_0.png",
+  "sec": 9.72,
+  "pred_len": 3013,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page519_Blur_HYPERBOLA_0.png",
+  "sec": 9.96,
+  "pred_len": 2960,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page523_Noise_Gaussian_0.png",
+  "sec": 8.24,
+  "pred_len": 2586,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page526_Bleed_0.png",
+  "sec": 8.78,
+  "pred_len": 2563,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page528_Noise_Gaussian_0.png",
+  "sec": 8.75,
+  "pred_len": 2664,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page52_CharDeg_0.png",
+  "sec": 7.26,
+  "pred_len": 2513,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page530_Rot_color_0.png",
+  "sec": 8.93,
+  "pred_len": 2744,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page532_Blur_HYPERBOLA_0.png",
+  "sec": 8.06,
+  "pred_len": 2594,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page534_CharDeg_0.png",
+  "sec": 8.27,
+  "pred_len": 2789,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page539_Blur_HYPERBOLA_0.png",
+  "sec": 9.34,
+  "pred_len": 2812,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page541_Noise_SaltAndPepper_0.png",
+  "sec": 10.08,
+  "pred_len": 2834,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page544_Rot_color_0.png",
+  "sec": 8.62,
+  "pred_len": 2766,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page545_Noise_SaltAndPepper_0.png",
+  "sec": 9.54,
+  "pred_len": 2864,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page547_Blur_HYPERBOLA_0.png",
+  "sec": 9.56,
+  "pred_len": 2981,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page54_Rot_color_0.png",
+  "sec": 8.45,
+  "pred_len": 2531,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page554_Noise_Gaussian_0.png",
+  "sec": 10.02,
+  "pred_len": 2924,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page556_Bleed_0.png",
+  "sec": 9.36,
+  "pred_len": 2886,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page557_Bleed_0.png",
+  "sec": 10.04,
+  "pred_len": 3064,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page561_CharDeg_0.png",
+  "sec": 8.14,
+  "pred_len": 2761,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page563_Blur_HYPERBOLA_0.png",
+  "sec": 8.31,
+  "pred_len": 2774,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page565_Noise_Gaussian_0.png",
+  "sec": 9.0,
+  "pred_len": 2905,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page56_Phantom_0.85_0.png",
+  "sec": 6.72,
+  "pred_len": 2467,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page578_CharDeg_0.png",
+  "sec": 7.6,
+  "pred_len": 2416,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page57_CharDeg_0.png",
+  "sec": 2.26,
+  "pred_len": 714,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page589_Noise_SaltAndPepper_0.png",
+  "sec": 13.43,
+  "pred_len": 3369,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page58_Phantom_0.85_0.png",
+  "sec": 4.96,
+  "pred_len": 1813,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page590_Bleed_0.png",
+  "sec": 8.18,
+  "pred_len": 2686,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page591_Phantom_0.85_0.png",
+  "sec": 10.37,
+  "pred_len": 3078,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page598_Bleed_0.png",
+  "sec": 10.53,
+  "pred_len": 2983,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page600_Noise_Gaussian_0.png",
+  "sec": 9.69,
+  "pred_len": 2743,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page602_Noise_SaltAndPepper_0.png",
+  "sec": 8.57,
+  "pred_len": 2717,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page610_Bleed_0.png",
+  "sec": 9.99,
+  "pred_len": 2947,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page611_Hole_0.png",
+  "sec": 9.57,
+  "pred_len": 2738,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page613_Blur_HYPERBOLA_0.png",
+  "sec": 8.93,
+  "pred_len": 2838,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page615_CharDeg_0.png",
+  "sec": 9.01,
+  "pred_len": 2725,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page617_Noise_SaltAndPepper_0.png",
+  "sec": 10.37,
+  "pred_len": 3048,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page623_Hole_0.png",
+  "sec": 7.6,
+  "pred_len": 2459,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page624_Blur_HYPERBOLA_0.png",
+  "sec": 11.54,
+  "pred_len": 3385,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page633_Hole_0.png",
+  "sec": 42.04,
+  "pred_len": 9671,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page634_Blur_HYPERBOLA_0.png",
+  "sec": 10.46,
+  "pred_len": 2711,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page636_Phantom_0.85_0.png",
+  "sec": 8.64,
+  "pred_len": 2703,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page638_Rot_color_0.png",
+  "sec": 9.36,
+  "pred_len": 2756,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page63_Rot_color_0.png",
+  "sec": 7.33,
+  "pred_len": 2508,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page644_Hole_0.png",
+  "sec": 9.62,
+  "pred_len": 2839,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page645_Noise_Gaussian_0.png",
+  "sec": 8.95,
+  "pred_len": 2728,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page647_Noise_Gaussian_0.png",
+  "sec": 9.68,
+  "pred_len": 2765,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page649_CharDeg_0.png",
+  "sec": 9.44,
+  "pred_len": 2726,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page651_Noise_Gaussian_0.png",
+  "sec": 10.01,
+  "pred_len": 2872,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page655_Bleed_0.png",
+  "sec": 9.19,
+  "pred_len": 3103,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page666_Rot_color_0.png",
+  "sec": 8.49,
+  "pred_len": 2744,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page667_Blur_HYPERBOLA_0.png",
+  "sec": 10.2,
+  "pred_len": 3116,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page668_Blur_HYPERBOLA_0.png",
+  "sec": 9.16,
+  "pred_len": 2737,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page670_CharDeg_0.png",
+  "sec": 9.36,
+  "pred_len": 2771,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page671_Noise_Gaussian_0.png",
+  "sec": 12.05,
+  "pred_len": 3436,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page672_Phantom_0.85_0.png",
+  "sec": 10.02,
+  "pred_len": 3019,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page673_Bleed_0.png",
+  "sec": 9.18,
+  "pred_len": 2873,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page676_CharDeg_0.png",
+  "sec": 10.37,
+  "pred_len": 3072,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page677_Hole_0.png",
+  "sec": 10.0,
+  "pred_len": 3063,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page678_Rot_color_0.png",
+  "sec": 7.48,
+  "pred_len": 2606,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page680_Noise_Gaussian_0.png",
+  "sec": 9.17,
+  "pred_len": 2767,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page685_Noise_SaltAndPepper_0.png",
+  "sec": 9.15,
+  "pred_len": 2750,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page687_Noise_SaltAndPepper_0.png",
+  "sec": 10.77,
+  "pred_len": 3265,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page698_Bleed_0.png",
+  "sec": 9.47,
+  "pred_len": 2866,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page706_Noise_Gaussian_0.png",
+  "sec": 11.48,
+  "pred_len": 3594,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page710_Phantom_0.85_0.png",
+  "sec": 8.53,
+  "pred_len": 2891,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page711_Blur_HYPERBOLA_0.png",
+  "sec": 8.28,
+  "pred_len": 2794,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page713_Bleed_0.png",
+  "sec": 9.98,
+  "pred_len": 3206,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page719_Hole_0.png",
+  "sec": 9.55,
+  "pred_len": 2849,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page721_Phantom_0.85_0.png",
+  "sec": 8.78,
+  "pred_len": 2754,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page723_Hole_0.png",
+  "sec": 9.51,
+  "pred_len": 3051,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page724_Phantom_0.85_0.png",
+  "sec": 10.14,
+  "pred_len": 3234,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page727_Bleed_0.png",
+  "sec": 9.88,
+  "pred_len": 2943,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page729_CharDeg_0.png",
+  "sec": 10.41,
+  "pred_len": 2754,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page732_Hole_0.png",
+  "sec": 9.05,
+  "pred_len": 2759,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page735_Bleed_0.png",
+  "sec": 8.93,
+  "pred_len": 2718,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page747_Hole_0.png",
+  "sec": 9.59,
+  "pred_len": 2799,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page750_Blur_HYPERBOLA_0.png",
+  "sec": 9.84,
+  "pred_len": 2962,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page763_CharDeg_0.png",
+  "sec": 8.53,
+  "pred_len": 2731,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page767_Bleed_0.png",
+  "sec": 9.16,
+  "pred_len": 2811,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page769_Bleed_0.png",
+  "sec": 8.96,
+  "pred_len": 2842,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page771_Noise_SaltAndPepper_0.png",
+  "sec": 9.36,
+  "pred_len": 2693,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page775_Phantom_0.85_0.png",
+  "sec": 10.77,
+  "pred_len": 2803,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page776_Noise_SaltAndPepper_0.png",
+  "sec": 8.65,
+  "pred_len": 2713,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page778_Hole_0.png",
+  "sec": 11.85,
+  "pred_len": 3728,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page786_Noise_SaltAndPepper_0.png",
+  "sec": 8.38,
+  "pred_len": 2740,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page801_CharDeg_0.png",
+  "sec": 8.27,
+  "pred_len": 2838,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page803_Rot_color_0.png",
+  "sec": 10.89,
+  "pred_len": 3465,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page806_Hole_0.png",
+  "sec": 10.52,
+  "pred_len": 3158,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page809_CharDeg_0.png",
+  "sec": 9.35,
+  "pred_len": 3120,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page80_Bleed_0.png",
+  "sec": 11.92,
+  "pred_len": 3514,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page810_Blur_HYPERBOLA_0.png",
+  "sec": 9.08,
+  "pred_len": 3180,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page818_Noise_SaltAndPepper_0.png",
+  "sec": 8.72,
+  "pred_len": 3071,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page826_Noise_SaltAndPepper_0.png",
+  "sec": 8.78,
+  "pred_len": 2798,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page829_Hole_0.png",
+  "sec": 8.72,
+  "pred_len": 2863,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page839_CharDeg_0.png",
+  "sec": 8.35,
+  "pred_len": 2790,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page843_Noise_Gaussian_0.png",
+  "sec": 8.7,
+  "pred_len": 2825,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page848_Noise_Gaussian_0.png",
+  "sec": 8.34,
+  "pred_len": 2701,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page849_Phantom_0.85_0.png",
+  "sec": 7.81,
+  "pred_len": 2660,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page85_CharDeg_0.png",
+  "sec": 9.12,
+  "pred_len": 2907,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page86_Hole_0.png",
+  "sec": 8.77,
+  "pred_len": 2731,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page87_Bleed_0.png",
+  "sec": 10.36,
+  "pred_len": 3097,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page89_Noise_SaltAndPepper_0.png",
+  "sec": 3.16,
+  "pred_len": 613,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page91_Noise_Gaussian_0.png",
+  "sec": 7.09,
+  "pred_len": 2467,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page92_Rot_color_0.png",
+  "sec": 7.44,
+  "pred_len": 2364,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page93_CharDeg_0.png",
+  "sec": 6.49,
+  "pred_len": 2264,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page94_Blur_HYPERBOLA_0.png",
+  "sec": 8.31,
+  "pred_len": 2351,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page95_Noise_Gaussian_0.png",
+  "sec": 7.6,
+  "pred_len": 2526,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page97_Hole_0.png",
+  "sec": 12.37,
+  "pred_len": 3488,
+  "err": null,
+  "empty": false
+ },
+ {
+  "img": "page98_Blur_HYPERBOLA_0.png",
+  "sec": 9.48,
+  "pred_len": 2510,
+  "err": null,
+  "empty": false
+ }
+]

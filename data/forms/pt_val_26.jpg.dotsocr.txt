@@ -1,0 +1,101 @@
+Solicitação de Terapia Imuno Biológica
+
+Paciente ambulatorial
+
+Paciente internado
+
+Nome
+
+Fernanda Costa
+
+Sexo
+
+M
+
+F
+
+Idade
+
+50
+
+Peso
+
+58
+
+Altura
+
+160
+
+Superfície corporal
+
+61
+
+Rede:
+
+Nacional
+
+Preferencial
+
+Diagnóstico
+tudo está normal
+
+CID10
+L75.001
+
+Data do diagnóstico
+22/6/2019
+
+Quadro clínico atual
+
+Comorbidades associadas
+não
+
+Tratamentos anteriores
+
+Medicamento(s)
+
+aspirina
+
+Doses
+
+3
+
+Período de utilização
+
+1 semana
+
+Falha de tratamento
+
+Sim
+
+Não
+
+Atividade da doença – Indicadores (preencher os indicadores, inerentes a patologia do paciente)
+
+<table><thead><tr><td></td><td>Índice atual</td><td>Índice após 12 a 16 semanas.</td></tr></thead><tbody><tr><td>SDAI</td><td>10</td><td>7</td></tr><tr><td>CDAI</td><td>150</td><td>143</td></tr><tr><td>DAS 28</td><td>2.6</td><td>2.5</td></tr><tr><td>BASDAI</td><td>0.2</td><td>0.1</td></tr><tr><td>IADC</td><td>78</td><td>70</td></tr><tr><td>ASDAS</td><td>1.5</td><td>1.2</td></tr><tr><td>PASI</td><td>50</td><td>40</td></tr></tbody></table>
+
+Legenda
+
+* SDAI – Índice Simplificado
+
+* CDAI – Índice Clínico de Atividade da Doença
+
+* DAS 28 – Índice de Atividade da Doença – 28 articulações
+
+* BASDAI – Índice Bath de Atividade da Doença para Espondilite Anquilosante
+
+* IADC - Índice de Atividade da Doença de Crohn
+
+* ASDAS - Índice de Atividade da Doença para Espondilite Anquilosante
+
+Dezembro 2011
+
+Pág. 1/3
+
+Cód. Form. Eletrônico 0831
+
+Bradesco
+Saúde
+
+intranet
+

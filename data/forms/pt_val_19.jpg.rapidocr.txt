@@ -1,0 +1,117 @@
+CONSELHOFEDERALDEFARMACIA-CFF
+CONSELHO REGIONAL DE FARMACIA DO ESTADO DO PARANA-CRF-PR
+Fone: (41) 3363-0234
+CRF-PR
+E-mail:crfpr@crf-pr.org.br
+Sitio: www.crf-pr.org.br
+Instrucoes para preenchimento do formulario (PDF preenchivel)
+Necessario:
+1. Aplicativo leitor do arquivo PDF (ex.: Acrobat read e outros);
+2. Opcao caps lock ativado (CAIXA ALTA -LETRAS) para preenchimento.
+1aFase-Modo depreenchimento:
+1.Como iniciar o preenchimento do formulario em PDF preenchivel:
+1.1.
+Utilize o mouse para selecionar o primeiro campo a ser preenchido.
+1.2.
+Para pular para proximo campo:
+1.2.1.
+Pode utilizar o mouse ou tab.
+Para iniciar opreenchimento do formulario aberto no Adolbe Acrobat Reader
+1.3.
+1.3.1.
+Para iniciar utilize omouse clicando dentro do quadrado que fica emfrente a
+palavra razao social
+1.3.1.1.Para desmarcar é somente utilizar o mouse para desmarcar a escolha.
+2.Como deve ser preenchido cada campo veja instrucoes abaixo:
+FormularioPDFcompreenchimentodoscamposdigitados
+ASSISTENCIAPOSTODECOLETA
+Comorepresentantelegal daempresacomRenanRBarrosPROCESSONo:325522889
+Preenchercomosdadosdaempresarequerentedaresponsabilidadetecnicaoualteracaodehorario
+Razao Social:
+Embraer S.A.
+Fantasia:
+CNPJ:
+17.115.43
+Embraer S.A.
+Endereco:
+VilaCoelhoXavier1973
+Bairro:
+CEP:
+nao
+15800-340
+Cidade:
+E-mail:
+Sao Paulo
+zzurv19@linshiyouxiang.net
+Celular: (
+56
+2501-2316
+Fone Fixo:（
+56
+8614-3556
+PreenchercomhorariodeFUNCIONAMENTODAEMPRESAnoguadroabaixo
+Declaroqueoestabelecimentoterahorariodefuncionamentodiario:
+Domingo
+Segunda
+Terca
+Quarta
+Quinta
+Sexta
+Sabado
+Inicio:
+Inicio:
+Inicio:
+Inicio:
+Inicio:
+Inicio:
+Inicio:
+9
+9
+9
+9
+9
+9
+9
+Fim
+Fim
+Fim
+Fim
+Fim
+Fim
+Fim
+12
+12
+12
+12
+12
+12
+12
+Inicio :
+Inicio :
+Inicio :
+Inicio :
+Inicio :
+Inicio :
+Inicio :
+14
+14
+14
+14
+14
+14
+14
+Fim
+Fim
+Fim
+Fim
+Fim
+Fim
+Fim
+22
+22
+22
+22
+22
+22
+22
+1 de 8 paginas

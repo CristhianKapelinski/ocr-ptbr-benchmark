@@ -1,0 +1,15 @@
+#
+
+UNIVALI
+
+FICHA DE INSCRIÇÃO JOVEM APRENDIZ UNIVALI
+
+<table><tr><td>INFORMAÇões SOBRE O CANDIDATO</td></tr><tr><td>Nome Completo: Isabelle M Souza</td></tr><tr><td>RG: 278.064-1</td></tr><tr><td>Local e Data de Nascimento: Ponta Grossa 11/2/2003</td></tr><tr><td>Filiação</td></tr><tr><td>Nome Completo do Pai: Pedro Nuno Souza</td></tr><tr><td>NomeCompleto da Mæ: Ana Maria Souza</td></tr><tr><td>Endereço para conta:</td></tr><tr><td>Rua e número: Rua Leopoldo Miquez 1174</td></tr><tr><td>Bairro: centro</td></tr><tr><td>Cidade: Ponta Grossa CEP: 70.675-628</td></tr><tr><td>Telefone Fixo: (42) 4512-8746 Celular: (42) 46512-8746Tel. Para
+Recado: (24) 2501-2316</td></tr><tr><td>Ponto de Referência:
+jardim</td></tr><tr><td>INFORMAÇões SOBRE A FAMILIA DO CANDIDATO</td></tr><tr><td>Com quem o candidato reside?</td></tr><tr><td>Pai (√) Mæ(√) Padrasto() Madrasta() Outro Responsavel() Quem?</td></tr><tr><td>Situation do trabalho dos pais e ou responsavel:
+Pai: Empregado(√) Desempregado() Aposentado() Autônomo() Não
+sabe informar()</td></tr><tr><td>Se empregado, qual a funciona? professor</td></tr><tr><td>Salário do Pai: R$15000</td></tr><tr><td>Mãe: Empregada() Desempregada(√) Aposentada() Autônoma() Não
+sabe informar()</td></tr><tr><td>Se empregada, qual a funciona?</td></tr><tr><td>Salário da Mãe:</td></tr><tr><td>Em caso de residir com responsavel que não os genitores qual a situação de
+trabalho do responsavel? Empregada() Desempregada() Aposentada(√)
+Autônoma() Não saber informar()</td></tr><tr><td>Se empregado, qual a funciona? Salário:</td></tr><tr><td>Emleysao aos demais membros da familia</td></tr><tr><td>Número de irrimões: Fernanda Souza</td></tr><tr><td>Quantos destes irrimões residem com o candidato? 1</td></tr><tr><td>Quantos destes irrimões工作的ham? 1</td></tr><tr><td>Qual a renda do(a) irmão(ã) que工作的ham? R$3500</td></tr><tr><td>Há outras famíariar que reside com o candidato: sim() não(√) quando?</td></tr><tr><td>Caso有多么 outros famíariar residindo com a familia, qual o valor da renda de +
+familiar? R$1000</td></tr><tr><td>INFORMAÇões ACADÉMICAS DO CANDIDATO</td></tr><tr><td>Nome da escola que o candidato estuda: escola de Ponta Grossa</td></tr><tr><td>Que série está cursando no Ensino Médio: 1°(√) 2°() 3°()</td></tr><tr><td>Horário das aulas: Matutino(√) Vespertino() Noturno()</td></tr><tr><td>O candidato já frequentou algo um tipo de coisa? Qual?</td></tr><tr><td>sim. cultura portuguesa.</td></tr></table>

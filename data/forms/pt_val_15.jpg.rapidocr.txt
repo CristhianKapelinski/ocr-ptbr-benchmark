@@ -1,0 +1,18 @@
+N°
+2
+TERMODEENCERRAMENTO
+NOMEDOLIVROA34
+Numerodeordem:567
+presente LivroA34_possui300folhas²(ou paginas) numeradas do n°01 ao
+n°03e serviu para a escrituracao do periodo de 1 / 52019a8 /5/2019da
+sociedadeempresaria_EmbraerS.A.
+Locale data:Sao Paulo1/5/2019
+Pedro Silva
+Nome completo do responsavel:
+Funcao/cargo:
+Presidente
+Maria Silva
+Nome completo do contador:
+CRCn°:2467890
+Usa-se folha quando o livro estiver escriturado apenas no anverso (art. 9°, I, “f"). Usa-se pagina
+quando o livro estiver escriturado no anverso e noverso(art. 9°, I,“f").

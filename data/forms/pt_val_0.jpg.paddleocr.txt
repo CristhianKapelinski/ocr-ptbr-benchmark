@@ -1,0 +1,368 @@
+12
+PROGRAMANACIONAL DE CONTROLEDADENGUE-PNCD
+01
+Controle Digitacao
+456002019
+RESUMO SEMANAL DO SERVICO ANTIVETORIAL
+-
+02
+Municipio
+03
+Codigo e nome da localidade
+04
+Zona
+Embraer S.A
+7899
+Sao Paulo
+sul
+0sCateg.localid.o6
+Tipo
+07
+Ciclolano
+08
+Data inicio
+09
+Datafinal
+10Concluido?11Sem.Epidem
+1-sede
+S-sim
+construcao
+1
+3
+12/12 / 2019
+500/564
+2-outros
+/2018
+12/12/2009
+S
+Il-nao
+12
+Atividade
+1-Ll-Levantamento deindice
+2-L+T-Levaritamento de indice+Tratamerito
+3-PE-Ponto Estrategico
+2
+4-T-Tratamento
+5-DF-Delimitacaode Foco
+6-pVE-Pesguisa Yetoria Especial
+RESUMO DO TRABALHO DECAMPO
+13
+MoImóveis trabalhadosportipo
+limoveis
+23
+Total
+Pendencia
+14
+quart.
+15
+16
+17
+18
+19
+20Trat
+21Trat
+22
+24
+25
+26
+Recu
+.
+Inspe
+Amostra
+concl
+Residencia
+TB
+PE
+Outro
+Total
+Comercio
+Focal
+Peritoca
+cionados
+Coletada
+RecusaFechadosl
+peradoa
+tb
+10
+12
+15
+69
+7
+sim
+nao
+12
+20
+10
+12
+34
+nao
+TB·terreno baldic
+PE·PortoEstratego
+N° depósitos inspecionados por lipo
+35
+Depósito
+27A1
+28
+A2
+29
+B
+30
+C
+31D1
+32
+D2
+33
+E
+34
+Total
+Eliminado
+10
+2
+3
+5
+5
+20
+10
+55
+sim
+DepositosTratados
+Adulticida
+44Total de
+45otal Dias
+Larvicida1)
+Larvicida2)
+42
+43atde
+Pgertesna
+Trabalhados
+36T0
+37Qtde.(Gramas)
+38at dep trat
+40atde.Gramas)
+39
+Tipo
+41
+Ot.dep.trat
+Tipo
+(Cargas
+semana
+na semana
+90
+de tempo
+34
+a vista
+9
+78
+32
+23
+33
+44
+RESUMO DO LABORATORIO
+N depositos com especimespor tipo
+46
+A1
+47
+A2
+48
+B
+49
+50
+D1
+51
+D2
+52
+C
+E
+53
+Total
+com Aedes aegypti
+12
+12
+12
+12
+12
+12
+84
+12
+10
+com Aedes albopictus
+10
+10
+10
+10
+10
+10
+70
+Al-caa daguaelevado
+A2.Outros depbsitos de mzenamento de agua(baixo
+B-Pequenos depositos moveis
+C-Depbsitosfixos
+D1-Pneuse outrosmateriasrodanites
+D2-Lxoracipantes plasticos,latassucatas.entulhos
+E-Depositosnaturais
+No de imoveis com especimes,por tipo
+Nodeexemplares
+Resi-
+Comer-
+Terreno
+Ponto Es
+Exuvia
+54
+55
+56
+57
+58
+Outros
+59
+Total
+6oLarvas61Pupas62
+63Adultos
+dencla
+cio
+Baldio
+trategico
+depupa
+comAedes aegypt
+10
+10
+10
+10
+50
+24
+24
+10
+24
+3
+com Aedes albopictus
+10
+10
+10
+50
+42
+23
+3
+10
+10
+24
+10
+24
+34
+2
+outros
+10
+10
+10
+10
+50
+23
+65
+NO
+64
+NO
+e
+seq.dos quarteiroes
+com
+seg.dos quarteiroes
+com
+66
+NO
+e
+seq.dos quarteiroes com Aedes
+Aedes aegypti
+Aedes albopictus
+aegypti+Aedesalbopictus
+66 D
+12A
+10/b
+4 rC
+4 1 C
+12A
+4 rC
+12/A
+4 1C
+66r D
+10b
+10/b
+10/b
+41 C
+4i C
+10/b
+12A
+4
+IC
+66 D
+4C
+10b
+12/A
+66 rD
+12'A
+10/b
+10 ;b
+4 iC
+4C
+12A
+12/A
+66/
+D
+4C
+12A
+66D
+10/b
+66 D
+10 b
+66 D
+4 C
+66 D
+12A
+10 b
+12/A
+10/ b
+10b
+4 1C
+12A
+66 D
+66 D
+10 b
+66 D
+10/b
+12/A
+10 b
+66 fD
+10 b
+10 b
+4 rC
+12/A
+12A
+10r b
+41C
+41 C
+12/A
+10 b
+4i C
+66 r D
+12A
+10 b
+12A
+4 1C
+10/b
+10/b
+4 1C
+4 sC
+12 A
+41
+c
+66,D
+10,b
+12/A
+66 D
+10'b
+12 A
+10'b
+67
+Ana Correia
+68Data do visto
+Visto do Supervisol
+1/12
+2019
+FAD07-20/00/2006
+.21

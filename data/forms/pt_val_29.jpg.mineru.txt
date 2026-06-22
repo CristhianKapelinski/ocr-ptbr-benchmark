@@ -1,0 +1,12 @@
+SISTEMA NORMATIVO CORPORATIVO
+
+Este documento constitui uma copia não controlada gerada em 20/02/2020
+
+PADRAO TECNICO
+
+<table><tr><td>Código</td><td>TÍTULO</td><td>VERSÃO</td></tr><tr><td>PT.DT.PDN.03.14.014</td><td>FORNECIMENTO DE ENERGIA ELETRICA EM TENSão SECUNDária
+EDIFICAções INDIVIDUAIS - EDP ESPÍRITO SANTO</td><td>08</td></tr></table>
+
+<table><tr><td>APROVADO POR</td><td colspan="2">VIGÊNCIA</td></tr><tr><td rowspan="2">ALEXANDRE GONÇALVES - DDEE</td><td>INÍCIO</td><td>FIM</td></tr><tr><td>27/11/2019</td><td>CONDICIONADO</td></tr></table>
+
+Este documento constitui uma copia não controlada gerada em 20/02/2020

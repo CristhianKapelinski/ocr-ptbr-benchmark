@@ -1,0 +1,73 @@
+FORMULARIO3-FICHAINDIVIDUALDEINVESTIGACAODEDTA
+UNIDADE NOTIFICANTE:centrO de saude
+DATA:5/8/20195E:35642110
+DADOSDO CASO:
+Nome do paciente:_Luis R Dias
+Data do nascimento:24_9/1987ldade:_33Sex0:_masculino
+Nome do municipio de residencia:_Porto Alegre
+Bairro._Jardim Sao Paulo
+Endereco:_Rua Dona Leonor 151
+Ponto de referencia: edificio azul
+Telefone: (51) 6265-4917
+1.REFEICAOSUSPEITA:
+Hora da ingestao: 7:00 am
+Data da ingestao:_7/9/2018
+Endereco:_Rua Dona Leonor 151
+L ocal da ingestao:
+：casa
+Municipio:Porto Alegre
+Ponto de referencia:edificio azul
+2.ALIMENTOSCONSUMIDOSNAREFEICAOSUSPEITA:
+banana
+batata
+cebora
+maca
+pao
+cenoura
+3.CONDICAO CLINICA()doente()nao doente
+Se doente,preencher osseguintescampos:
+4.INiCIO DOS SINTOMAS: Data_7/ 9/2018 Hora: 2h
+() Nausea
+(）Febre
+5.SINAISESINTOMAS
+() Cefaleia
+()vomito
+()Colica
+()Outros
+E specificar:
+()Diarreia
+6.RECEBEUATENDIMENTOMEDICO(VSim
+()Nao
+Onde:
+(v) Sim
+7.HOSPITALIZADO
+()Nao
+Onde:
+()sim ()Nao
+8.EXAMESLABORATORIAIS:
+Material : (V) Sanque
+Data da coleta: 8 / 9 / 2018
+Fez uso de antibioticos antesda
+coleta (V)sim ()Nao
+()Fezes
+()Vomito
+Data do envio ao laboratorio:
+(）Outro Especificar:
+8/9/2018
+9.RESULTADO:
+2018
+Data do resultado:8
+10.CONCLUSAO:
+Evolucao:sim
+Caso de DTA
+()confirmado
+() descartadoEspecificar outro diagnostico:
+Se confirmado: ( laboratorial
+()clinico epidemiologico
+11.ACOMPANHAMENTODOCASO/OBSERVACAO:
+tudo é normal
+Investigador:_ Nuno Rodrigues U
+Unidade de saude:_centro de saude
+Fone: (21) 5380-6371
+Municipio: Porto Alegre
+RegionalRio Grande do SulData da investigacao:8/ 9/ 2018
