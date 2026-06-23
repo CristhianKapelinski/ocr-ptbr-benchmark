@@ -1,0 +1,176 @@
+CIGARETTE REPORT FORM
+YEAR:_________ NO. PER PACK:_________
+BRAND NAME:_________ VAR. DESC:_________ (SEE EXPLANATION)
+VARIETY UNIT SALES:_________ VARIETY DOLLAR SALES:_________
+CIG. LENGTH:_________ FILTER LENGTH:_________
+FILTER TYPE:_________ FLAVORING:_________ OVERWRAP:_________ PACK TYPE:_________
+1ST MANUFACT. DATE:_________ 1ST SALES DATE:_________ LAST SOLD DATE:_________
+YEARLY SUMMARY:_________ TAR:_________ NICOTINE:_________ CARBON MONO:_________
+ADVERTISING EXPENDITURES (SEE EXPLANATION)
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:_________ CAT-2 EXPENSES:_________ CAT-3 EXPENSES:_________
+CAT-4 EXPENSES:_________ CAT-5 EXPENSES:_________ CAT-6 EXPENSES:_________
+CAT-7 EXPENSES:_________ CAT-8 EXPENSES:_________ CAT-9 EXPENSES:_________
+CAT-A EXPENSES:_________ CAT-B EXPENSES:_________ CAT-C EXPENSES:_________
+CAT-D EXPENSES:_________ CAT-E EXPENSES:_________ CAT-F EXPENSES:_________
+CAT-G EXPENSES:_________ CAT-H EXPENSES:_________ CAT-I EXPENSES:_________
+CAT-J EXPENSES:_________ CAT-K EXPENSES:_________ CAT-L EXPENSES:_________
+TOTAL ADVERTISING EXPENDITURES:_________
+CAT-M EXPENSES:_________ CAT-N EXPENSES:_________ CAT-O EXPENSES:_________
+CAT-P EXPENSES:_________ CAT-Q EXPENSES:_________ CAT-R EXPENSES:_________
+CAT-S EXPENSES:_________ CAT-T EXPENSES:_________ CAT-U EXPENSES:_________
+CAT-V EXPENSES:_________ CAT-W EXPENSES:_________ CAT-X EXPENSES:_________
+CAT-Y EXPENSES:_________ CAT-Z EXPENSES:_________ CAT-0 EXPENSES:_________
+CAT-1 EXPENSES:________

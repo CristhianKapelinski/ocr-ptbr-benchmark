@@ -1,0 +1,108 @@
+:01
+S.P.ZOLOT
+FROM:
+R. W.RICHARDSON
+DEC21
+X
+NOV16
+SUBJECT:
+QLD GOLD-LIGHT BOX 100'S PROGRESS REPORT
+GEOGRAPHY
+REGION:
+FULL
+PARTIAL
+X
+(ONLY IF PARTIAL REGION, CONTINUE WITH DIVISION(S) SCOPE)
+DIVISION:
+FULL
+X
+PARTIAL
+DIVISION NAME: Detroit North
+DIVISION NAME: Detroit South
+#REPS:
+13
+DIVISION NAME: Detroit East
+DIVISION NAME: Detroit West
+REPS:
+12
+DIVISION NAME: Grand Rapids
+DIVISION NAME: Flint
+#REPS:
+13
+DISTRIBUTION
+Direct Accounts and Chains Headquartered within the Region
+(15+ Stores) Stocking No Od Gold Light Box 100's
+Name of Account
+Ind/Lor
+Number of
+Name of Account:
+Ind/Lor
+Numberof
+Volume
+Stores
+Volume
+Store
+Quality Dairy
+151/15
+SpeedyQ
+196/13
+16
+Bay Stations
+81/9
+18
+Schmuckal Oil
+138/9
+22
+Wilson Oil
+140/13
+15
+Quik Stop
+117/9
+24
+Forwards
+118/8
+19
+Phil Flint
+166/15
+15
+Arbor Rx
+115/13
+209
+Imperial Oil
+163/11
+32
+Direet Aecounts and ChainsHeadquartered Outside theRegion
+(15+Stores) Stocking No Old Gold Light Box 100's
+Namt of Account
+Ind/Lor
+Number of
+Name ofAccount
+Ind/Lor.
+..Numberofeen
+Volume
+Stores
+Volume
+Stores
+Clark Gas
+142
+Emro
+237
+7-Eleven Southland
+102
+Walmart
+39
+8
+Ultra Diamond
+184
+3
+Dairy Mart
+32
+9
+4
+Mobil Oil
+40
+ACAAmoco
+31
+6
+6
+Psge 1of}

@@ -1,0 +1,85 @@
+{
+  "_comment": "English control (FUNSD, 30 forms, 448 gold field values) FVR for the classical OCR engines and Surya, scored with the identical FVR path the VLMs used: ocr_bench.aggregate.score_fvr(\"en\", engine, date_aware=False, drop_short=False). Reviewer-requested control extension; the VLM EN cells in run_of_record.json are reproduced byte-identically by the same path. n and gold are the same 448 values across all engines.",
+  "n_forms": 30,
+  "n_fields": 448,
+  "engines": {
+    "tesseract": {
+      "display": "Tesseract",
+      "type": "classical",
+      "en": {
+        "fvr": 0.475,
+        "ci": [
+          0.43,
+          0.522
+        ],
+        "recovered": 213,
+        "total": 448
+      }
+    },
+    "easyocr": {
+      "display": "EasyOCR",
+      "type": "classical",
+      "en": {
+        "fvr": 0.388,
+        "ci": [
+          0.344,
+          0.434
+        ],
+        "recovered": 174,
+        "total": 448
+      }
+    },
+    "doctr": {
+      "display": "docTR",
+      "type": "classical",
+      "en": {
+        "fvr": 0.839,
+        "ci": [
+          0.802,
+          0.87
+        ],
+        "recovered": 376,
+        "total": 448
+      }
+    },
+    "rapidocr": {
+      "display": "RapidOCR",
+      "type": "classical",
+      "en": {
+        "fvr": 0.815,
+        "ci": [
+          0.776,
+          0.848
+        ],
+        "recovered": 365,
+        "total": 448
+      }
+    },
+    "paddleocr": {
+      "display": "PaddleOCR",
+      "type": "classical",
+      "en": {
+        "fvr": 0.83,
+        "ci": [
+          0.793,
+          0.862
+        ],
+        "recovered": 372,
+        "total": 448
+      }
+    },
+    "surya": {
+      "display": "Surya",
+      "type": "specialized",
+      "en": {
+        "fvr": 0.85,
+        "ci": [
+          0.814,
+          0.88
+        ],
+        "recovered": 381,
+        "total": 448
+      }
+    }
+  }
+}
