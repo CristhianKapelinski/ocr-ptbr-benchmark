@@ -35,3 +35,6 @@ results/fig_frontier.pdf
 # per-page latency manifests (_run*.json). The no-GPU reproduce path scores
 # these offline. Document images are NOT committed (license + size); see
 # docs/DATASETS.md for how to fetch them for the from-scratch path.
+
+# graphify knowledge-graph output (local analysis, not part of the artifact)
+graphify-out/

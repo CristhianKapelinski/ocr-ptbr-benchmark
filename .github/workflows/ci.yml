@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: tests + lint + offline replay
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync the pinned environment
+        run: uv sync --frozen
+
+      - name: Lint
+        run: uv run ruff check src tests
+
+      - name: Unit and integration tests
+        run: uv run pytest -q
+
+      - name: Offline replay from the run of record
+        # recomputes every published number from the committed per-engine outputs and
+        # asserts they match the paper; needs no GPU and downloads no model
+        run: ./scripts/reproduce_from_results.sh

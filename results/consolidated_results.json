@@ -154,7 +154,15 @@
       "total": 354,
       "empty_docs": 19
     },
-    "en": null,
+    "en": {
+      "fvr": 0.839,
+      "ci": [
+        0.802,
+        0.87
+      ],
+      "recovered": 376,
+      "total": 448
+    },
     "rib": {
       "ned": 92.59,
       "ci": [

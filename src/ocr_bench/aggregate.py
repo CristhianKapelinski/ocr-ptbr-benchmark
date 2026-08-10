@@ -137,6 +137,7 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
     hit array (:mod:`ocr_bench.mineru_ids`), not from raw field values.
     """
     forms_raw = _has_raw("forms")
+    en_raw = _has_raw("en")
 
     # RIB / HYB: clean CC BY 4.0 ESTER-Pt, always re-scored from committed outputs.
     rib = score_ned("rib", engine)
@@ -179,6 +180,14 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
         else:
             lat["rib_med"] = latency.gpu_latency("rib", engine)
             lat["hyb_med"] = latency.gpu_latency("hyb", engine)
+
+    # If the EN raw data is present independently of forms, re-score it to pick up
+    # any engine whose EN outputs were added to the data root after the original
+    # run of record (e.g. MinerU's English control axis).
+    if en_raw and not forms_raw:
+        fresh_en = score_fvr("en", engine, date_aware=False, drop_short=False)
+        if fresh_en is not None and engine in EN_SCORED:
+            en = fresh_en
 
     # MinerU's IDs FVR + Wilson CI is recomputed from the committed PII-free hit
     # array on both paths (BRIDP raw is never present), overriding whatever the

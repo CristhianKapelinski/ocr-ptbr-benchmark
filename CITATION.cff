@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or its scoring harness, please cite the paper below."
+title: "Reading Brazil: a Brazilian-Portuguese OCR cost-versus-accuracy benchmark"
+abstract: >-
+  Reproducible scoring harness for a benchmark of 14 open OCR engines on Brazilian
+  documents, pairing a Brazilian-Portuguese accuracy axis with a consumer-GPU cost
+  axis over forms, identity documents, clean prose, degraded scans, and an English
+  control.
+type: software
+license: MIT
+repository-code: "https://github.com/CristhianKapelinski/ocr-ptbr-benchmark"
+authors:
+  - family-names: Kapelinski
+    given-names: Cristhian
+    orcid: "https://orcid.org/0009-0005-5750-022X"
+    affiliation: "AI Horizon Labs, Federal University of Pampa (UNIPAMPA)"
+  - family-names: Lunkes
+    given-names: Aline
+    orcid: "https://orcid.org/0000-0002-1846-4853"
+    affiliation: "AI Horizon Labs, Federal University of Pampa (UNIPAMPA)"
+  - family-names: Welfer
+    given-names: Daniel
+    orcid: "https://orcid.org/0000-0003-1560-423X"
+    affiliation: "Federal University of Santa Maria (UFSM)"
+  - family-names: Schmidt
+    given-names: Dionatan
+    orcid: "https://orcid.org/0009-0006-1453-6860"
+    affiliation: "AI Horizon Labs, Federal University of Pampa (UNIPAMPA)"
+  - family-names: Machado
+    given-names: Beatriz
+    orcid: "https://orcid.org/0009-0002-2750-0323"
+    affiliation: "AI Horizon Labs, Federal University of Pampa (UNIPAMPA)"
+  - family-names: Kreutz
+    given-names: Diego
+    orcid: "https://orcid.org/0000-0003-0830-0238"
+    affiliation: "AI Horizon Labs, Federal University of Pampa (UNIPAMPA)"
+preferred-citation:
+  type: conference-paper
+  title: >-
+    Reading Brazil: A Local Cost-versus-Accuracy Benchmark of Open OCR Engines on
+    Brazilian Documents
+  year: 2026
+  conference:
+    name: "Encontro Nacional de Inteligência Artificial e Computacional (ENIAC 2026)"
+  collection-title: >-
+    Anais do XXII Encontro Nacional de Inteligência Artificial e Computacional
+  publisher:
+    name: "Sociedade Brasileira de Computação (SBC)"
+  authors:
+    - family-names: Kapelinski
+      given-names: Cristhian
+      orcid: "https://orcid.org/0009-0005-5750-022X"
+    - family-names: Lunkes
+      given-names: Aline
+      orcid: "https://orcid.org/0000-0002-1846-4853"
+    - family-names: Welfer
+      given-names: Daniel
+      orcid: "https://orcid.org/0000-0003-1560-423X"
+    - family-names: Schmidt
+      given-names: Dionatan
+      orcid: "https://orcid.org/0009-0006-1453-6860"
+    - family-names: Machado
+      given-names: Beatriz
+      orcid: "https://orcid.org/0009-0002-2750-0323"
+    - family-names: Kreutz
+      given-names: Diego
+      orcid: "https://orcid.org/0000-0003-0830-0238"

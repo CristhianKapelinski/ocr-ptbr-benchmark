@@ -6,7 +6,8 @@
 %   DeepSeek=DeepSeek-OCR, Huny=HunyuanOCR, PaddleVL=PaddleOCR-VL, Mineru=MinerU,
 %   Tess=Tesseract, Easy=EasyOCR, DocTR=docTR, Rapid=RapidOCR, Paddle=PaddleOCR, Surya=Surya.
 % FVR rounded to 3 dp; NED kept at source precision (<=2 dp). Lo/Hi are 95% CI bounds.
-% MinerU is scored on forms/IDs/RIB/HYB (EN control not run); its IDs FVR comes from
+% MinerU is scored on every axis; its EN control was added after the original run
+% (the driver globbed only *.jpg while the EN forms are *.png). Its IDs FVR comes from
 % a committed PII-free hit array. GLM-OCR and Qwen3-VL HYB cells carry CIs.
 
 % ---- aggregate / roster ----
@@ -66,7 +67,7 @@
 \newcommand{\latFHuny}{2.4}
 \newcommand{\latIHuny}{0.49}
 
-% ===== MinerU (vlm, 1.2B) -- forms + IDs/RIB/HYB; EN control not run =====
+% ===== MinerU (vlm, 1.2B) -- every axis =====
 \newcommand{\pMineru}{1.2B}
 \newcommand{\formsMineru}{0.905}
 \newcommand{\formsMineruLo}{0.888}
@@ -75,7 +76,9 @@
 \newcommand{\idsMineru}{0.463}
 \newcommand{\idsMineruLo}{0.412}
 \newcommand{\idsMineruHi}{0.515}
-\newcommand{\enMineru}{--}
+\newcommand{\enMineru}{0.839}
+\newcommand{\enMineruLo}{0.802}
+\newcommand{\enMineruHi}{0.870}
 \newcommand{\ribMineru}{92.59}
 \newcommand{\ribMineruLo}{91.90}
 \newcommand{\ribMineruHi}{93.16}

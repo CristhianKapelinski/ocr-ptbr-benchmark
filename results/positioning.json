@@ -1,5 +1,5 @@
 {
-  "_comment": "Table 1 (qualitative): how this benchmark is positioned against prior OCR evaluation work. Not data-driven; the cells are qualitative dimensions the paper sets out in its related-work discussion. Each column is rendered by ocr_bench.tables.table_positioning. Kept anonymous and free of personal data.",
+  "_comment": "Table 1 (qualitative): how this benchmark is positioned against prior OCR evaluation work. Not data-driven; the cells are qualitative dimensions the paper sets out in its related-work discussion. Each column is rendered by ocr_bench.tables.table_positioning. Contains no personal data.",
   "columns": [
     {"key": "benchmark", "title": "Benchmark"},
     {"key": "pt_br", "title": "PT-BR"},

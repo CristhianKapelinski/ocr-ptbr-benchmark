@@ -1,21 +1,24 @@
-# Tool: Reading Brazil — a Brazilian-Portuguese OCR cost-versus-precision benchmark
+# Reading Brazil — a Brazilian-Portuguese OCR cost-versus-accuracy benchmark
 
 A reproducible scoring harness for the first systematic OCR benchmark that pairs a
 Brazilian-Portuguese **accuracy** axis with a local consumer-GPU **cost** axis across
-the open OCR wave. It scores **14 engines** (8 vision-language models from 0.9B to 9B,
-five purpose-built OCR pipelines, and one specialized engine) on Brazilian forms,
-identity documents, clean Portuguese prose, degraded scans, and an English control.
-The headline: no class wins outright — an OCR engine (**Surya**, **0.921** field-value
+the recent generation of open OCR engines. It scores **14 engines** (8 vision-language
+models from 0.9B to 9B, five classical detect-then-recognize pipelines, and the
+transformer-based Surya) on Brazilian forms, identity documents, clean Portuguese
+prose, degraded scans, and an English control.
+The headline: no class wins outright. An OCR engine (**Surya**, **0.921** field-value
 recall on IDs) and a vision-language model (**Qwen2.5-VL**, **0.97** on forms and
-**97.53** NED on degraded scans) lead every axis. This repository re-scores the
+**97.53** NED on degraded scans) are the only consistent all-rounders across the four
+axes; neither leads all of them. This repository re-scores the
 committed per-engine outputs offline, **asserts** the regenerated numbers are
 identical to the paper's, and **emits every table of the paper** as readable
 output. Two reproduce paths are provided: **(A)** a one-command, no-GPU path from
 the pre-computed run of record, and **(B)** an optional GPU path that rebuilds the
 per-engine outputs from scratch.
 
-> **Paper:** "Reading Brazil: A Local Cost-versus-Precision Benchmark" (under review).
-> Target venue: SBSeg/SBRC Salão de Ferramentas (artifact track).
+> **Paper:** Kapelinski, C., Lunkes, A., Welfer, D., Schmidt, D., Machado, B., and
+> Kreutz, D. (2026). "Reading Brazil: A Local Cost-versus-Accuracy Benchmark of Open
+> OCR Engines on Brazilian Documents." **ENIAC 2026, Undergraduate Track.**
 
 **This README is the single self-contained guide a reviewer needs.** The files under
 `docs/` (`PROTOCOL.md`, `DATASETS.md`, `ARCHITECTURE.md`) are complementary detail and
@@ -317,6 +320,32 @@ numbers below are fields of the results it writes to
   command reproduces the full run end to end.
 - **Expected time:** many hours (model downloads + 14 engines x 5 axes). **Expected
   resources:** one >= 16 GB CUDA GPU. See `docs/PROTOCOL.md` for the full serving recipe.
+
+## Citation
+
+If you use this benchmark, its corrected forms gold, or its scoring harness, please
+cite the paper:
+
+> Kapelinski, C., Lunkes, A., Welfer, D., Schmidt, D., Machado, B., and Kreutz, D.
+> (2026). Reading Brazil: A Local Cost-versus-Accuracy Benchmark of Open OCR Engines
+> on Brazilian Documents. In *Anais do XXII Encontro Nacional de Inteligência
+> Artificial e Computacional (ENIAC 2026)*. SBC.
+
+```bibtex
+@inproceedings{kapelinski2026readingbrazil,
+  author    = {Kapelinski, Cristhian and Lunkes, Aline and Welfer, Daniel and
+               Schmidt, Dionatan and Machado, Beatriz and Kreutz, Diego},
+  title     = {Reading {B}razil: A Local Cost-versus-Accuracy Benchmark of Open
+               {OCR} Engines on {B}razilian Documents},
+  booktitle = {Anais do XXII Encontro Nacional de Intelig{\^e}ncia Artificial e
+               Computacional (ENIAC 2026)},
+  year      = {2026},
+  publisher = {SBC}
+}
+```
+
+Machine-readable metadata is in [CITATION.cff](CITATION.cff), which GitHub's
+"Cite this repository" button and Zenodo both read.
 
 ## License
 

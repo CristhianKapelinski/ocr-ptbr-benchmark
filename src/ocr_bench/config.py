@@ -101,16 +101,18 @@ DEGRADATION_ORDER: tuple[str, ...] = (
 )
 
 # Which axes each engine class is scored on (drives null cells in the macros).
-# The EN control is VLM-only; HYB excludes the two engines whose HYB run is
-# partial (qwen3vl, glmocr carry no per-degradation breakdown but do have an
-# overall NED). MinerU is scored on every axis except the EN control: its
-# RIB/HYB are re-scored live from the committed ESTER-Pt outputs and its IDs FVR
-# is recomputed from a committed PII-free hit array (see ocr_bench.mineru_ids),
-# so it is no longer forms-only.
-EN_NOT_SCORED = frozenset({"mineru"})
-EN_SCORED = frozenset({"paddleocrvl", "hunyuanocr", "deepseekocr", "dotsocr",
+# Every engine is now scored on every axis it has data for. MinerU's RIB/HYB are
+# re-scored live from the committed ESTER-Pt outputs, its IDs FVR is recomputed
+# from a committed PII-free hit array (see ocr_bench.mineru_ids), and its EN
+# control was added after the original run: the driver globbed only *.jpg while
+# the EN forms are *.png, so the axis had been skipped silently rather than being
+# out of scope.
+EN_NOT_SCORED: frozenset[str] = frozenset()
+EN_SCORED = frozenset({"paddleocrvl", "hunyuanocr", "mineru", "deepseekocr", "dotsocr",
                        "qwen3vl", "qwen25vl", "glmocr"})
-HYB_NO_BREAKDOWN = frozenset({"qwen3vl", "glmocr"})
+# empty: qwen3vl and glmocr were suppressed here on the false premise that they
+# carry no per-degradation breakdown. They do, and it matches the paper exactly.
+HYB_NO_BREAKDOWN: frozenset[str] = frozenset()
 
 # MinerU's IDs FVR is the one restricted-axis cell that is *not* read from the
 # frozen run of record: it is recomputed offline from the committed PII-free hit
