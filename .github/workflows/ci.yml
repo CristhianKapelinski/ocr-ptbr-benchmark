@@ -24,7 +24,7 @@ jobs:
         run: uvx ruff check src tests
 
       - name: Unit and integration tests
-        run: uv run pytest -q
+        run: uv run --with pytest pytest -q
 
       - name: Offline replay from the run of record
         # recomputes every published number from the committed per-engine outputs and

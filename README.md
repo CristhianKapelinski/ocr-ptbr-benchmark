@@ -9,7 +9,7 @@ prose, degraded scans, and an English control.
 The headline: no class wins outright. An OCR engine (**Surya**, **0.921** field-value
 recall on IDs) and a vision-language model (**Qwen2.5-VL**, **0.97** on forms and
 **97.53** NED on degraded scans) are the only consistent all-rounders across the four
-axes; neither leads all of them. This repository re-scores the
+document types; neither leads all of them. This repository re-scores the
 committed per-engine outputs offline, **asserts** the regenerated numbers are
 identical to the paper's, and **emits every table of the paper** as readable
 output. Two reproduce paths are provided: **(A)** a one-command, no-GPU path from
@@ -23,6 +23,28 @@ per-engine outputs from scratch.
 **This README is the single self-contained guide a reviewer needs.** The files under
 `docs/` (`PROTOCOL.md`, `DATASETS.md`, `ARCHITECTURE.md`) are complementary detail and
 are not required to grant the seals.
+
+```mermaid
+flowchart LR
+    DOCS["Brazilian documents<br/>forms 50 · IDs 50<br/>clean prose 200 · degraded 224<br/>+ English control 30"]
+    ENG["14 open engines<br/>8 vision-language models<br/>6 purpose-built OCR engines"]
+    RUN["per-engine transcriptions<br/><i>run of record, committed</i>"]
+    SCORE["scoring<br/>FVR on forms and IDs<br/>NED on prose and degraded"]
+    STAT["Wilson and bootstrap 95% CIs<br/>paired bootstrap, seed 20260609"]
+    OUT["every table of the paper<br/>+ asserted macros"]
+
+    DOCS --> RUN
+    ENG -->|"Path B: GPU, from scratch"| RUN
+    RUN -->|"Path A: no GPU, one command"| SCORE
+    SCORE --> STAT --> OUT
+
+    style RUN fill:#e8f0fe,stroke:#4285f4
+    style OUT fill:#e6f4ea,stroke:#34a853
+```
+
+*Path A is what a reviewer needs: it re-scores the committed transcriptions offline and
+asserts every regenerated number against the paper. Path B rebuilds those transcriptions
+on a GPU and is optional.*
 
 ## README structure
 
@@ -333,13 +355,10 @@ cite the paper:
 
 ```bibtex
 @inproceedings{kapelinski2026readingbrazil,
-  author    = {Kapelinski, Cristhian and Lunkes, Aline and Welfer, Daniel and
-               Schmidt, Dionatan and Machado, Beatriz and Kreutz, Diego},
-  title     = {Reading {B}razil: A Local Cost-versus-Accuracy Benchmark of Open
-               {OCR} Engines on {B}razilian Documents},
-  booktitle = {Anais do XXII Encontro Nacional de Intelig{\^e}ncia Artificial e
-               Computacional (ENIAC 2026)},
-  year      = {2026},
+  author = {Kapelinski, Cristhian and Lunkes, Aline and Welfer, Daniel and Schmidt, Dionatan and Machado, Beatriz and Kreutz, Diego},
+  title = {Reading {B}razil: A Local Cost-versus-Accuracy Benchmark of Open {OCR} Engines on {B}razilian Documents},
+  booktitle = {Anais do XXII Encontro Nacional de Intelig{\^e}ncia Artificial e Computacional (ENIAC 2026)},
+  year = {2026},
   publisher = {SBC}
 }
 ```
