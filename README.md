@@ -28,7 +28,7 @@ are not required to grant the seals.
 flowchart LR
     DOCS["Brazilian documents<br/>forms 50 · IDs 50<br/>clean prose 200 · degraded 224<br/>+ English control 30"]
     ENG["14 open engines<br/>8 vision-language models<br/>6 purpose-built OCR engines"]
-    RUN["per-engine transcriptions<br/><i>run of record, committed</i>"]
+    RUN["per-engine transcriptions<br/>run of record, committed"]
     SCORE["scoring<br/>FVR on forms and IDs<br/>NED on prose and degraded"]
     STAT["Wilson and bootstrap 95% CIs<br/>paired bootstrap, seed 20260609"]
     OUT["every table of the paper<br/>+ asserted macros"]
