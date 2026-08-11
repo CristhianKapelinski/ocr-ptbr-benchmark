@@ -21,7 +21,7 @@ jobs:
         run: uv sync --frozen
 
       - name: Lint
-        run: uv run ruff check src tests
+        run: uvx ruff check src tests
 
       - name: Unit and integration tests
         run: uv run pytest -q
