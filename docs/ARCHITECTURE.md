@@ -17,8 +17,8 @@ config  ──┐
 |---|---|
 | `config` | engine roster, axes, degradation order, protocol constants; resolves `$OCR_BENCH_DATA` |
 | `scoring` | FVR / NED primitives: normalization, Levenshtein, Wilson, seeded bootstrap, date-aware candidates |
-| `bootstrap` | four paired document-level bootstraps (IDs/FORMS FVR diffs, HYB NED% diff) from the committed PII-free arrays |
-| `mineru_ids` | recompute MinerU's IDs FVR + Wilson CI from the committed PII-free single-engine hit array (BRIDP is never redistributed) |
+| `bootstrap` | four paired document-level bootstraps (IDs/FORMS FVR diffs, HYB NED% diff) from the committed arrays free of personally identifiable information (PII) |
+| `mineru_ids` | recompute MinerU's IDs FVR + Wilson CI from the committed PII-free single-engine hit array (the Brazilian identity-document dataset BRIDP is never redistributed) |
 | `io` | read per-document prediction/gold pairs and latency manifests from the run of record |
 | `degradation` | group HYB pages by DocCreator type and report per-type mean NED% |
 | `latency` | per-page median latency (recomputed from manifests for GPU engines; constants for CPU engines) |

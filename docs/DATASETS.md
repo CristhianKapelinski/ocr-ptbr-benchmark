@@ -1,11 +1,11 @@
 # Datasets and the run of record
 
-Five scored sets back the benchmark. For licence and privacy reasons (see
+Five scored sets back the benchmark. For license and privacy reasons (see
 `../data/DATA-LICENSES.md`) the repository commits only the cleanly
 redistributable subset and **auto-fetches** the rest from source.
 
 - **Committed (CC BY 4.0, no PII):** the ESTER-Pt RIB/HYB axes under `data/rib`
-  and `data/hyb` — per-document reference transcriptions (`*.gold.txt`), the
+  and `data/hyb`: per-document reference transcriptions (`*.gold.txt`), the
   per-engine OCR outputs scored against them (`*.<engine>.txt`), and the per-page
   latency manifests (`_run*.json`).
 - **Not committed:** the forms (XFUND), identity-document (BRIDP) and
@@ -17,17 +17,17 @@ redistributable subset and **auto-fetches** the rest from source.
   asserts their macros from that file. The from-scratch path fetches their raw
   inputs with `scripts/fetch_data.sh`.
 - **Committed, PII-free derived inputs:** four paired-bootstrap arrays drive the
-  significance tests in the no-GPU path. The FVR arrays — `ids_pair_hits.json`
+  significance tests in the no-GPU path. The FVR arrays: `ids_pair_hits.json`
   (Surya vs DeepSeek-OCR), `forms_pair_hits.json` (Qwen2.5-VL vs GLM-OCR) and
-  `ids_pair_hits_surya_rapidocr.json` (Surya vs RapidOCR) — store, for every scored
+  `ids_pair_hits_surya_rapidocr.json` (Surya vs RapidOCR): store, for every scored
   field, the binary hit pair `[a_hit, b_hit]` (`0/1`) plus an integer document index.
   The NED array `hyb_pair_ned.json` (Qwen2.5-VL vs Surya) stores, per HYB page, the
   `[a_ned, b_ned]` NED% floats plus an integer index. All four are derived once from
   the raw outputs on the GPU host and contain no field value, transcription or gold
-  text — only integers/floats.
-- Document **images** are never committed (licence + size).
+  text; only integers/floats.
+- Document **images** are never committed (license + size).
 
-| Axis (`data/` dir) | Role | n | Lang | Gold | Source licence | In repo |
+| Axis (`data/` dir) | Role | n | Lang | Gold | Source license | In repo |
 |---|---|---|---|---|---|---|
 | `forms` | Forms FVR | 50 | PT-BR | image-reconstructed `*.fields.json` | CC BY-NC-SA 4.0 | fetched (XFUND) |
 | `ids` | Identity-document FVR | 50 | PT-BR | synthetic structured `*.fields.json` | unstated | request (BRIDP) |
@@ -58,14 +58,14 @@ redistributable subset and **auto-fetches** the rest from source.
 their authoritative locations (idempotent, sha256-verified against
 `scripts/data.sha256`):
 
-- **XFUND PT split** — `github.com/doc-analysis/XFUND` release v1.0
+- **XFUND PT split**: `github.com/doc-analysis/XFUND` release v1.0
   (`pt.{train,val}.{json,zip}`), CC BY-NC-SA 4.0.
-- **FUNSD** — `guillaumejaume.github.io/FUNSD/dataset.zip`, research-only.
-- **ESTER-Pt** — Zenodo record `7872951` (`ESTER-Pt.zip`, ~19.6 GB), CC BY 4.0;
+- **FUNSD**: `guillaumejaume.github.io/FUNSD/dataset.zip`, research-only.
+- **ESTER-Pt**: Zenodo record `7872951` (`ESTER-Pt.zip`, ~19.6 GB), CC BY 4.0;
   only the from-scratch path needs the images, the RIB/HYB run of record is
   committed.
-- **BRIDP** — no confirmed public download (project page under construction,
-  licence unstated); the script prints how to request it from the authors and
+- **BRIDP**: no confirmed public download (project page under construction,
+  license unstated); the script prints how to request it from the authors and
   skips it.
 
 To rebuild predictions from scratch, run `scripts/fetch_data.sh`, then run the

@@ -5,7 +5,7 @@ reported number is computed, so the no-GPU reproduction is auditable.
 
 ## Metrics
 
-- **Field-value recall (FVR)** — forms, identity documents, English control. A
+- **Field-value recall (FVR)**: forms, identity documents, English control. A
   gold field value counts as recovered iff its alphanumeric-normalized form is a
   substring of the alphanumeric-normalized transcription. Reported as the micro
   proportion (recovered / total gold values) with a 95% Wilson interval.
@@ -17,7 +17,7 @@ reported number is computed, so the no-GPU reproduction is auditable.
   - The **excl-degenerate** forms variant drops a form whose normalized
     prediction is shorter than 20 characters (a near-empty transcription) and is
     reported alongside the raw forms FVR.
-- **Normalized edit distance (NED)** — clean Portuguese prose (RIB) and degraded
+- **Normalized edit distance (NED)**: clean Portuguese prose (RIB) and degraded
   scans (HYB). `NED% = (1 - min(lev(norm(pred), norm(gold)) / max(len(norm(gold)), 1), 1)) * 100`
   with NFC + lowercase + whitespace-collapse normalization. Reported as the mean
   over per-document NED% with a deterministic seeded bootstrap 95% interval.
@@ -43,7 +43,7 @@ and per-page NED were applied once on the GPU host that holds the raw data.
 | IDs FVR | Surya vs RapidOCR | 0.921 / 0.870 | **+0.051** | [0.023, 0.079] | yes | `ids_pair_hits_surya_rapidocr.json` | `\idsPairRapid{Diff,Lo,Hi}` |
 | HYB NED% | Qwen2.5-VL vs Surya | 97.5 / 93.9 | **+3.6** | [1.9, 5.6] | yes | `hyb_pair_ned.json` | `\hybPair{Diff,Lo,Hi}` |
 
-The FORMS pair is a **statistical tie** (the CI straddles 0): the two best VLMs are
+The FORMS pair is a **statistical tie**: the CI straddles 0, so the two best VLMs are
 indistinguishable on Brazilian-forms FVR. Because every resampling is recomputed from the
 committed array with a fixed seed, each point estimate and **both CI bounds reproduce
 exactly** (no tolerance), unlike the per-engine Wilson/NED bounds below. FVR diffs are
@@ -119,10 +119,10 @@ the two-step `mineru_vl_utils:MinerULogitsProcessor`) and transcribes the BRID
 (IDs), ESTER-Pt RIB and ESTER-Pt HYB pages, writing one `<img>.mineru.txt` per
 page next to the inputs plus a `_run50_mineru_*.json` latency manifest. The
 companion aggregator `score_mineru_extra.py` then re-uses the existing axis
-scorers verbatim — `score_fvr50_axis_final.py` for the date-aware IDs FVR (micro
+scorers verbatim: `score_fvr50_axis_final.py` for the date-aware IDs FVR (micro
 + 95% Wilson), `score_ned_tesseract.py` for the RIB and HYB mean NED% (seeded
 bootstrap CI, `B = 10000`, seed `20260609`) and `--by-degradation` for the
-eight-way HYB breakdown — and records the IDs median seconds/page. The reviewer
+eight-way HYB breakdown, and records the IDs median seconds/page. The reviewer
 does **not** need this GPU path: the resulting RIB/HYB `<img>.mineru.txt` outputs
 are committed under the already-redistributed ESTER-Pt data (CC BY 4.0) and
 re-scored live, and a PII-free per-field IDs hit array (`data/ids_mineru_hits.json`,

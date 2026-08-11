@@ -1,4 +1,4 @@
-# Reading Brazil — a Brazilian-Portuguese OCR cost-versus-accuracy benchmark
+# Reading Brazil: a Brazilian-Portuguese OCR cost-versus-accuracy benchmark
 
 A reproducible scoring harness for the first systematic OCR benchmark that pairs a
 Brazilian-Portuguese **accuracy** axis with a local consumer-GPU **cost** axis across
@@ -7,8 +7,8 @@ models from 0.9B to 9B, five classical detect-then-recognize pipelines, and the
 transformer-based Surya) on Brazilian forms, identity documents, clean Portuguese
 prose, degraded scans, and an English control.
 The headline: no class wins outright. An OCR engine (**Surya**, **0.921** field-value
-recall on IDs) and a vision-language model (**Qwen2.5-VL**, **0.97** on forms and
-**97.53** NED on degraded scans) are the only consistent all-rounders across the four
+recall (FVR) on IDs) and a vision-language model (VLM), **Qwen2.5-VL** (**0.97** on forms and
+**97.53** normalized edit distance (NED, where 100 is perfect recovery) on degraded scans) are the only consistent all-rounders across the four
 document types; neither leads all of them. This repository re-scores the
 committed per-engine outputs offline, **asserts** the regenerated numbers are
 identical to the paper's, and **emits every table of the paper** as readable
@@ -74,27 +74,29 @@ on a GPU and is optional.*
 - **Sustentável (SeloS):** packaged `src/` layout, one concern per module, typed public
   functions, pinned dependencies (`pyproject.toml` + committed `uv.lock`), tests and
   lint config; nothing is hardcoded to a host (all paths come from the environment).
-- **Reprodutível (SeloR):** the no-GPU path re-scores the committed ESTER-Pt outputs
-  live, regenerates the forms/IDs/EN numbers from the committed run of record, and
-  recomputes four paired significance tests from committed PII-free arrays, then
-  **asserts** every data-driven macro matches the paper's reference macro file at the
-  printed precision; deterministic seeds (bootstrap seed `20260609`) make the confidence
+- **Reprodutível (SeloR):** the no-GPU path re-scores the committed outputs
+  from ESTER-Pt (the Portuguese text-recognition benchmark) live, regenerates
+  the forms/IDs/EN numbers from the committed run of
+  record, and recomputes four paired significance tests from committed arrays
+  free of personally identifiable information (PII). It then **asserts** every
+  data-driven macro matches the paper's reference macro file at the printed
+  precision. Deterministic seeds (bootstrap seed `20260609`) make the confidence
   intervals exactly reproducible. No raw PII is needed or present.
 
 ## Two reproduce paths
 
 The artifact has two modular paths to the same numbers; a reviewer only needs **A**.
 
-- **Path A — from pre-computed results (no GPU, one command, emits every table).**
+- **Path A: from pre-computed results (no GPU, one command, emits every table).**
   `make reproduce` (= `./scripts/reproduce_from_results.sh`) re-scores the committed
-  ESTER-Pt outputs live, regenerates the forms/IDs/EN/cost numbers and the four
-  paired significance tests from the committed PII-free run of record, **asserts**
-  every data-driven macro matches the paper's reference macro file, then prints the
-  per-degradation matrix and **every table of the paper** (Tables 1–4) as readable
-  output. Pure CPU, no network, ~1–4 min. The tables are built from the same
+  ESTER-Pt outputs live and regenerates the forms/IDs/EN/cost numbers and the four
+  paired significance tests from the committed PII-free run of record. It then
+  **asserts** every data-driven macro matches the paper's reference macro file and
+  prints the per-degradation matrix and **every table of the paper** (Tables 1–4) as
+  readable output. Pure CPU, no network, ~1–4 min. The tables are built from the same
   consolidated results the macros come from, so there is a single source of truth.
 
-- **Path B — from scratch (GPU, gated).** `make from-scratch`
+- **Path B: from scratch (GPU, gated).** `make from-scratch`
   (= `./scripts/run_from_scratch.sh`) rebuilds the per-engine transcriptions from the
   models and documents on a CUDA GPU, then hands off to Path A to score and assert.
   A reviewer does **not** need this; the committed run of record reproduces every
@@ -106,7 +108,7 @@ Every paper table is emitted by Path A:
 |---|---|---|
 | Table 1 | positioning vs related OCR benchmarks (qualitative) | `results/positioning.json` |
 | Table 2 | accuracy by engine (forms/IDs FVR, RIB/HYB NED%, 95% CIs), VLM \| OCR-engine | scored run of record |
-| Table 3 | local cost axis — per-page latency (forms/IDs) with params + device, two panels | scored run of record |
+| Table 3 | local cost axis; per-page latency (forms/IDs) with params + device, two panels | scored run of record |
 | Table 4 | per-degradation NED matrix (14 engines × 8 DocCreator types) | scored run of record |
 
 Standalone, the tables are also available with `make tables` (= `uv run ocr-bench
@@ -135,8 +137,8 @@ make all           # reproduce + tables + test
 The Brazilian forms gold was reconstructed from the form images with **Claude Opus** (a large
 multimodal model, **not** one of the evaluated engines), then **validated by two annotators
 independently**: each checked the same reproducible random sample of **250** of the **1428**
-scored fields against the images. Both found **no error** — field-level accuracy **1.00**, Wilson
-95% interval **[0.985, 1.000]** (n = 250), with full agreement. The PII-free record is
+scored fields against the images. Both found **no error**. Field-level accuracy is **1.00**, Wilson
+95% interval **[0.985, 1.000]** (n = 250). The annotators were in full agreement. The PII-free record is
 [`results/forms_validation.json`](results/forms_validation.json), the method and provenance are in
 [`docs/HUMAN_VALIDATION.md`](docs/HUMAN_VALIDATION.md), and the sample is regenerated by
 [`scripts/validation/sample_validation_fields.py`](scripts/validation/sample_validation_fields.py)
@@ -145,7 +147,7 @@ scored fields against the images. Both found **no error** — field-level accura
 ![Annotation screen](docs/img/human_validation.png)
 
 *The browser annotation tool: each sampled form's image beside its sampled fields, marked OK or
-Wrong. The annotators' one discussed point was a representation choice, not an error — checkbox
+Wrong. The annotators' one discussed point was a representation choice, not an error. Checkbox
 marks (for example a consent form's seven `V` checklist items) are not encoded uniformly across
 forms.*
 
@@ -169,15 +171,18 @@ reference); the figure extra adds **`matplotlib`**. All versions are pinned in
 `pyproject.toml` and frozen in the committed `uv.lock`.
 
 The **inputs the reviewer needs are bundled**, but only the cleanly redistributable
-subset is committed. For licence and privacy reasons (see `data/DATA-LICENSES.md`):
+subset is committed. For license and privacy reasons (see `data/DATA-LICENSES.md`):
 
-- **Committed (CC BY 4.0, no PII):** the ESTER-Pt RIB/HYB axis under `data/rib` and
+- **Committed (CC BY 4.0, no PII):** the ESTER-Pt (Portuguese text-recognition benchmark)
+  clean (RIB) and degraded (HYB) axes under `data/rib` and
   `data/hyb` (reference transcriptions, per-engine outputs, latency manifests). The
   no-GPU path **re-scores** these live.
 - **Not redistributed:** the forms (XFUND), identity-document (BRIDP) and
   English-control (FUNSD) raw outputs and gold. Their gold carries
-  synthetic-but-realistic PII (names, CPFs, e-mails, addresses, dates of birth) under
-  restrictive licences (XFUND CC BY-NC-SA 4.0, FUNSD research-only, BRIDP unstated).
+  synthetic-but-realistic PII (names, CPFs (Brazilian individual tax IDs), e-mails, addresses,
+  dates of birth) under
+  restrictive licenses (XFUND CC BY-NC-SA 4.0, FUNSD research-only, BRIDP (Brazilian identity
+  documents) unstated).
   Their **aggregate scores** are committed as the run of record
   (`results/run_of_record.json`, numbers only); the no-GPU path regenerates and
   **asserts** their macros from that file. These committed scores are the run of
@@ -193,7 +198,7 @@ subset is committed. For licence and privacy reasons (see `data/DATA-LICENSES.md
 
 The reviewer therefore downloads nothing. The from-scratch path fetches the source
 inputs with `scripts/fetch_data.sh`; document **images** are never committed
-(licence + size). See `docs/DATASETS.md`.
+(license + size). See `docs/DATASETS.md`.
 
 ## Security concerns
 
@@ -202,15 +207,15 @@ inputs with `scripts/fetch_data.sh`; document **images** are never committed
   No network access, no GPU, no external services.
 - **No personal data is committed anywhere.** The committed tree holds only
   public-domain Portuguese literary text (ESTER-Pt, CC BY 4.0) and aggregate numbers
-  (latency medians, per-engine scores). The forms/ids/en raw field values — which
-  contain synthetic PII (names, CPFs, e-mails, addresses, dates of birth) — are **not**
+  (latency medians, per-engine scores). The forms/ids/en raw field values, which
+  contain synthetic PII (names, CPFs, e-mails, addresses, dates of birth), are **not**
   redistributed; only their aggregate scores are. The significance-test inputs
   (`data/ids_pair_hits.json`, `data/forms_pair_hits.json`,
   `data/ids_pair_hits_surya_rapidocr.json`, `data/hyb_pair_ned.json`) and MinerU's
   IDs hit array (`data/ids_mineru_hits.json`) are likewise PII-free: they hold only
   binary per-field hits (`0/1`) or per-page NED% floats and integer document
   indices, never a field value or transcription. The from-scratch path fetches the
-  source inputs (`scripts/fetch_data.sh`) under each dataset's own licence.
+  source inputs (`scripts/fetch_data.sh`) under each dataset's own license.
 - No credentials or secrets are used or stored. The optional from-scratch path downloads
   open model weights from Hugging Face into a cache directory you choose via `$HF_CACHE`.
 
@@ -247,7 +252,7 @@ PASS: reproduced the paper's numbers from the committed run of record.
 ```
 
 then the per-engine × 8-degradation NED matrix (12 of the 14 engines carry the
-breakdown — MinerU included; only Qwen3-VL and GLM-OCR report an overall HYB NED
+breakdown; MinerU included; only Qwen3-VL and GLM-OCR report an overall HYB NED
 without a per-degradation split), and finally the four paper tables (positioning,
 accuracy by engine with 95% CIs, the local cost axis, and the per-degradation
 matrix). **Expected time: ~1-2 min** (pure CPU, single thread). A non-zero exit
@@ -262,7 +267,7 @@ no-GPU `reproduce` command (Path A), which **reproduces every table of the paper
 numbers below are fields of the results it writes to
 `results/consolidated_results.json`, not separate runs.
 
-### Main claim — no OCR class wins outright; the leaders are document-type dependent
+### Main claim: no OCR class wins outright; the leaders are document-type dependent
 
 - **Description:** re-scoring the committed ESTER-Pt outputs (clean/degraded NED, the
   per-degradation matrix) live, and regenerating the forms/IDs/EN field-value recall and
@@ -286,14 +291,14 @@ numbers below are fields of the results it writes to
   `results/results_macros.reference.tex` (the file the paper compiles), and every
   table cell is built from the same consolidated results (single source of truth).
 
-### Significance claims — four paired document-level bootstraps
+### Significance claims: four paired document-level bootstraps
 
 - **Description:** four **paired, document-level (clustered) bootstraps** quantify the
   reliability of the paper's head-to-head claims. Each resamples the scored units (documents
   for FVR, pages for NED%) with replacement `B = 10000` times (seed `20260609`), recomputes
   the per-resample axis difference (A − B), and reports the 95% percentile CI. All four are
   recomputed by the `reproduce` command from committed PII-free arrays (binary `0/1` hits or
-  NED% floats plus integer document indices — no field values, transcriptions or gold text)
+  NED% floats plus integer document indices; no field values, transcriptions or gold text)
   and the corresponding macros are **asserted** exactly:
 
   | Axis | Comparison (A vs B) | Diff | 95% CI | Excl. 0 | Macros | Array |
@@ -314,7 +319,7 @@ numbers below are fields of the results it writes to
   macros (FVR diffs to 3 dp, NED diff to 1 dp, CI bounds to the paper's printed precision).
   A standalone check is `uv run pytest tests/test_bootstrap.py`.
 
-### Supporting claim — the cost frontier figure
+### Supporting claim: the cost frontier figure
 
 - **Description:** regenerate `fig_frontier.pdf` (field-value recall vs median
   processing time, forms and IDs panels, Pareto frontier dashed).
@@ -325,7 +330,7 @@ numbers below are fields of the results it writes to
 - **Expected time:** ~1 min (adds `matplotlib`). **Expected result:**
   `results/fig_frontier.pdf` with the two-panel frontier plot.
 
-### Optional — regenerate the outputs from scratch (GPU, gated)
+### Optional: regenerate the outputs from scratch (GPU, gated)
 
 - **Description:** fetch the source datasets, rebuild the per-engine transcriptions from
   the models and documents, then score them with the path above. A reviewer does **not**
@@ -368,8 +373,8 @@ Machine-readable metadata is in [CITATION.cff](CITATION.cff), which GitHub's
 
 ## License
 
-Code is **MIT** — see [LICENSE](LICENSE). Data has its own terms — see
+Code is **MIT**; see [LICENSE](LICENSE). Data has its own terms; see
 [data/DATA-LICENSES.md](data/DATA-LICENSES.md): the redistributed ESTER-Pt RIB/HYB run
 of record is **CC BY 4.0** (attribute the ESTER-Pt authors); the other datasets are
-fetched from source under their own licences (XFUND CC BY-NC-SA 4.0, FUNSD research-only,
+fetched from source under their own licenses (XFUND CC BY-NC-SA 4.0, FUNSD research-only,
 BRIDP unstated) and are **not** redistributed here.

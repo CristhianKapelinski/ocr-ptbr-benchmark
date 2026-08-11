@@ -14,8 +14,8 @@ That reconstructed gold was then **validated by two human annotators, independen
    sample** of **250** of the **1428** scored fields (non-empty values) across the forms.
    The pool is sorted deterministically before sampling, so the draw does not depend on the
    filesystem, and the seed is fixed (**seed 0**): the same command reproduces the same 250
-   fields. The field values carry the source dataset's licence, so the sample itself stays
-   local; only the PII-free result below is published.
+   fields. The field values carry the source dataset's license, so the sample itself stays
+   local; only the result free of personally identifiable information (PII) below is published.
 2. `scripts/validation/gen_review_html.py` renders the sample into a self-contained browser
    page: each sampled form's image sits beside its sampled fields, and the reviewer marks every
    field **OK** or **Wrong** (with a correction box) and exports the verdicts as JSON.
@@ -44,7 +44,7 @@ a `V`). The consensus was that the reconstructed value is **correct**; the corre
 simply does not standardize which encoding it uses. This is a prompt artifact of the gold
 correction, not a wrong value; it changes how an answer is written, not whether it is correct.
 
-## Provenance / licence
+## Provenance / license
 
 The underlying forms gold derives from **XFUND** (CC BY-NC-SA 4.0); its images are Brazilian
 administrative form templates filled with **synthetic** data by the benchmark's annotators, so
