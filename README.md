@@ -80,8 +80,17 @@ on a GPU and is optional.*
   record, and recomputes four paired significance tests from committed arrays
   free of personally identifiable information (PII). It then **asserts** every
   data-driven macro matches the paper's reference macro file at the printed
-  precision. Deterministic seeds (bootstrap seed `20260609`) make the confidence
-  intervals exactly reproducible. No raw PII is needed or present.
+  precision: point estimates exactly, and the bootstrap confidence bounds within the
+  tolerance `src/ocr_bench/verify.py` states (0.15 pp on the 0-100 NED scale), because
+  the original consolidated results did not record the resampling order. The seed
+  (`20260609`) fixes the resampling; it does not make the published bounds
+  bit-reproducible. No raw PII is needed or present.
+
+  Two groups of paper numbers are committed data rather than regenerated, so the
+  assert does not cover them: the English control for the six OCR engines
+  (`results/en_control_classical.json`) and the human-validation block
+  (`results/forms_validation.json`). Both are checked into the repository and can be
+  read directly.
 
 ## Two reproduce paths
 
@@ -92,8 +101,9 @@ The artifact has two modular paths to the same numbers; a reviewer only needs **
   ESTER-Pt outputs live and regenerates the forms/IDs/EN/cost numbers and the four
   paired significance tests from the committed PII-free run of record. It then
   **asserts** every data-driven macro matches the paper's reference macro file and
-  prints the per-degradation matrix and **every table of the paper** (Tables 1–4) as
-  readable output. Pure CPU, no network, ~1–4 min. The tables are built from the same
+  prints the per-degradation matrix and **every data-driven table of the paper**
+  (paper Tables 3–5) as readable output; the paper's Tables 1 and 2 are written by
+  hand from the literature and the dataset licenses. Pure CPU, no network, ~1–4 min. The tables are built from the same
   consolidated results the macros come from, so there is a single source of truth.
 
 - **Path B: from scratch (GPU, gated).** `make from-scratch`
@@ -121,7 +131,7 @@ A `Makefile` at the repo root wraps the scripts and CLI; each target is one line
 ```
 make help          # list the targets
 make reproduce     # Path A: re-score, assert macros, print matrix + all tables (no GPU)
-make tables        # print every paper table (Tables 1-4) from the committed results
+make tables        # print the data-driven tables (paper Tables 3-5) from the committed results
 make matrix        # print the per-degradation NED matrix (HYB axis)
 make macros        # regenerate the data-driven LaTeX macros
 make score         # score the run of record -> results/consolidated_results.json
@@ -285,8 +295,9 @@ numbers below are fields of the results it writes to
   ```
 - **Expected time:** ~1-2 min. **Expected resources:** < 1 GB RAM, ~32 MB read, no GPU.
 - **Expected result:** `PASS: reproduced the paper's numbers ...`, the printed
-  per-degradation matrix, and **all four paper tables** (positioning, accuracy by
-  engine, the local cost axis, the per-degradation matrix). Every data-driven macro
+  per-degradation matrix, and the **three data-driven paper tables** (accuracy by
+  engine, the local cost axis, the per-degradation matrix), plus a qualitative
+  positioning table that is context only, not the paper's Table 1. Every data-driven macro
   in `results/results_macros.generated.tex` equals the committed
   `results/results_macros.reference.tex` (the file the paper compiles), and every
   table cell is built from the same consolidated results (single source of truth).

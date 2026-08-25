@@ -7,15 +7,19 @@ returns a :class:`Table` carrying both a readable ASCII rendering and the LaTeX
 ``tabular`` body, so ``ocr-bench tables`` can print the human view and
 ``ocr-bench tables --latex`` can emit the paper bodies.
 
-Tables emitted:
-  * Table 1 -- positioning vs related benchmarks (qualitative, from a small
-    committed data file ``results/positioning.json``).
-  * Table 2 -- accuracy by engine (forms / IDs FVR, RIB / HYB NED%) with 95% CIs,
-    grouped VLM | OCR-engine, 14 engines.
-  * Table 3 -- local cost axis: per-page latency (forms / IDs) with params and
-    device, two panels (VLM | OCR-engine).
-  * Table 4 -- per-degradation NED matrix (14 engines x 8 DocCreator types),
-    reusing the existing HYB ``by_degradation`` breakdown.
+Tables emitted, with the paper table each one backs. The paper's Table 1
+(positioning against named benchmarks) and Table 2 (scored sets, gold source and
+licenses) are written by hand from the literature and the dataset licenses, so
+they are not emitted here; nothing in this module is their source.
+
+  * Local Table 1 -- positioning along qualitative dimensions, from the committed
+    ``results/positioning.json``. Context only: it is NOT the paper's Table 1.
+  * Local Table 2 -- accuracy by engine (forms / IDs FVR, RIB / HYB NED%) with
+    95% CIs, grouped VLM | OCR-engine, 14 engines. Backs paper Table 3.
+  * Local Table 3 -- local cost axis: per-page latency (forms / IDs) with params
+    and device, two panels (VLM | OCR-engine). Backs paper Table 4.
+  * Local Table 4 -- per-degradation NED matrix (14 engines x 8 DocCreator
+    types), reusing the HYB ``by_degradation`` breakdown. Backs paper Table 5.
 """
 from __future__ import annotations
 

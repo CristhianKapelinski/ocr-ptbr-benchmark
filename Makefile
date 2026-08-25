@@ -6,8 +6,8 @@
 #
 #   Path A (no GPU, one command): make reproduce
 #     re-scores the committed run of record, regenerates and ASSERTS the LaTeX
-#     macros against the paper reference, prints the degradation matrix and EVERY
-#     paper table.
+#     macros against the paper reference, prints the degradation matrix and every
+#     data-driven paper table (Tables 3-5).
 #   Path B (GPU, gated):          make from-scratch
 #     rebuilds the per-engine outputs from the models, then runs path A.
 # =============================================================================
@@ -21,7 +21,7 @@ help:
 	@echo ""
 	@echo "Reproduce (no GPU, from pre-computed results):"
 	@echo "  make reproduce      Re-score, regenerate + ASSERT macros, print matrix + all tables"
-	@echo "  make tables         Print every paper table (Tables 1-4) from the committed results"
+	@echo "  make tables         Print the data-driven tables (paper Tables 3-5) from the committed results"
 	@echo "  make matrix         Print the per-degradation NED matrix (HYB axis)"
 	@echo "  make macros         Regenerate the data-driven LaTeX macros"
 	@echo "  make score          Score the run of record -> results/consolidated_results.json"
