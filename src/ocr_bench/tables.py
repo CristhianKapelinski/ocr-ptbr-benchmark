@@ -17,9 +17,9 @@ they are not emitted here; nothing in this module is their source.
   * Local Table 2 -- accuracy by engine (forms / IDs FVR, RIB / HYB NED%) with
     95% CIs, grouped VLM | OCR-engine, 14 engines. Backs paper Table 3.
   * Local Table 3 -- local cost axis: per-page latency (forms / IDs) with params
-    and device, two panels (VLM | OCR-engine). Backs paper Table 4.
+    and device, two panels (VLM | OCR-engine). Backs paper Table 5.
   * Local Table 4 -- per-degradation NED matrix (14 engines x 8 DocCreator
-    types), reusing the HYB ``by_degradation`` breakdown. Backs paper Table 5.
+    types), reusing the HYB ``by_degradation`` breakdown. Backs paper Table 4.
 """
 from __future__ import annotations
 
