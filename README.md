@@ -366,14 +366,14 @@ cite the paper:
 
 > Kapelinski, C., Lunkes, A., Welfer, D., Schmidt, D., Machado, B., and Kreutz, D.
 > (2026). Reading Brazil: A Local Cost-versus-Accuracy Benchmark of Open OCR Engines
-> on Brazilian Documents. In *Anais do XXII Encontro Nacional de Inteligência
+> on Brazilian Documents. In *Anais do XXIII Encontro Nacional de Inteligência
 > Artificial e Computacional (ENIAC 2026)*. SBC.
 
 ```bibtex
 @inproceedings{kapelinski2026readingbrazil,
   author = {Kapelinski, Cristhian and Lunkes, Aline and Welfer, Daniel and Schmidt, Dionatan and Machado, Beatriz and Kreutz, Diego},
   title = {Reading {B}razil: A Local Cost-versus-Accuracy Benchmark of Open {OCR} Engines on {B}razilian Documents},
-  booktitle = {Anais do XXII Encontro Nacional de Intelig{\^e}ncia Artificial e Computacional (ENIAC 2026)},
+  booktitle = {Anais do XXIII Encontro Nacional de Intelig{\^e}ncia Artificial e Computacional (ENIAC 2026)},
   year = {2026},
   publisher = {SBC}
 }
