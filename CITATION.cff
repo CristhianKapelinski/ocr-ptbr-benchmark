@@ -8,7 +8,7 @@ abstract: >-
   control.
 type: software
 license: MIT
-repository-code: "https://gitlab.com/cristhianavila.aluno/ocr-ptbr-benchmark"
+repository-code: "https://github.com/CristhianKapelinski/ocr-ptbr-benchmark"
 authors:
   - family-names: Kapelinski
     given-names: Cristhian
