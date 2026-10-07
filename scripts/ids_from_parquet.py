@@ -41,7 +41,7 @@ def main(parquet: str, out_dir: str) -> int:
     count = {"cnh": 0, "rg": 0}
     for img, kind, resp in zip(table.column("image").to_pylist(),
                                table.column("type").to_pylist(),
-                               table.column("response").to_pylist()):
+                               table.column("response").to_pylist(), strict=True):
         if kind not in count:          # invoices: not part of the identity axis
             continue
         data = img["bytes"]
