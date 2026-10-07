@@ -116,5 +116,5 @@ HYB_NO_BREAKDOWN: frozenset[str] = frozenset()
 
 # MinerU's IDs FVR is the one restricted-axis cell that is *not* read from the
 # frozen run of record: it is recomputed offline from the committed PII-free hit
-# array, since BRIDP itself is never redistributed.
+# array, since the identity raw data is never redistributed.
 IDS_FROM_HITS = frozenset({"mineru"})

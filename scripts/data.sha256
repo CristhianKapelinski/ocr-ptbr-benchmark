@@ -18,3 +18,7 @@ c31735649e4f441bcbb4fd0f379574f7520b42286e80b01d80b445649d54761f  dataset.zip
 # RIB/HYB run of record is committed). fetch_data.sh prints its computed sha256
 # on first download so a from-scratch user can pin it locally if desired.
 # ESTER-Pt.zip
+#
+# Identity documents (huggingface.co/datasets/tech4humans/br-doc-extraction, valid
+# split; images from the BID Dataset; licence unstated), verified 2026-10-07:
+f2b414cef8fa7a561fb164c53cdc6b434038803a7e3cc13a9d77fa01b97e21a0  valid-00000-of-00001.parquet

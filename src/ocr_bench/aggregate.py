@@ -2,7 +2,7 @@
 
 This is the analysis core of the reproduce path. The clean ESTER-Pt RIB/HYB axis
 (CC BY 4.0, no PII) is always **re-scored live** from its committed per-engine
-outputs. The restricted forms/ids/en axes (XFUND / BRIDP / FUNSD) are not
+outputs. The restricted forms/ids/en axes (XFUND / identity documents / FUNSD) are not
 redistributed -- their raw outputs and gold carry synthetic PII under restrictive
 licences -- so when their raw data is absent (the reviewer default) their
 aggregate scores are taken from the committed run of record
@@ -132,8 +132,8 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
     restricted forms/ids/en axes (and their forms/ids latency medians) are
     re-scored live only when their raw data is present (a from-scratch run);
     otherwise they are read from the committed run of record so no raw PII-bearing
-    field value is ever touched. MinerU's IDs FVR is the sole exception: BRIDP is
-    never redistributed, so it is always recomputed from the committed PII-free
+    field value is ever touched. MinerU's IDs FVR is the sole exception: the identity raw data
+    is never redistributed, so it is always recomputed from the committed PII-free
     hit array (:mod:`ocr_bench.mineru_ids`), not from raw field values.
     """
     forms_raw = _has_raw("forms")
@@ -190,7 +190,7 @@ def score_engine(engine: str, etype: str) -> dict[str, Any]:
             en = fresh_en
 
     # MinerU's IDs FVR + Wilson CI is recomputed from the committed PII-free hit
-    # array on both paths (BRIDP raw is never present), overriding whatever the
+    # array on both paths (its raw outputs are not redistributed), overriding whatever the
     # frozen/raw branch produced for it.
     if engine in IDS_FROM_HITS:
         ids = score_mineru_ids()

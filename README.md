@@ -20,6 +20,18 @@ per-engine outputs from scratch.
 > Kreutz, D. (2026). "Reading Brazil: A Local Cost-versus-Accuracy Benchmark of Open
 > OCR Engines on Brazilian Documents." **ENIAC 2026, Undergraduate Track.**
 
+## Erratum
+
+The paper attributes the identity-document set to BRIDP. That is an error: somewhere
+between downloading the data and writing the paper, the provenance of this set was lost,
+and the wrong dataset was cited. The 50 identity documents actually scored are the 25 CNH
+and 25 RG images of the `valid` split of
+[tech4humans/br-doc-extraction](https://huggingface.co/datasets/tech4humans/br-doc-extraction)
+(Hugging Face), whose images come from the
+[BID Dataset](https://github.com/ricardobnjunior/Brazilian-Identity-Document-Dataset).
+The results are unaffected: rebuilding the set from that source yields the paper's 354
+scored fields. `./scripts/fetch_data.sh ids` now downloads it from there.
+
 **This README is the single self-contained guide a reviewer needs.** The files under
 `docs/` (`PROTOCOL.md`, `DATASETS.md`, `ARCHITECTURE.md`) are complementary detail and
 are not required to grant the seals.
@@ -50,6 +62,7 @@ on a GPU and is optional.*
 
 | Section | What it covers |
 |---|---|
+| [Erratum](#erratum) | the identity-document set: correct source |
 | [Considered seals](#considered-seals) | why each of the four seals holds |
 | [Two reproduce paths](#two-reproduce-paths) | A (no GPU, one command, all tables) and B (GPU, from scratch) |
 | [Make targets](#make-targets) | modular entry points |
@@ -187,12 +200,12 @@ subset is committed. For license and privacy reasons (see `data/DATA-LICENSES.md
   clean (RIB) and degraded (HYB) axes under `data/rib` and
   `data/hyb` (reference transcriptions, per-engine outputs, latency manifests). The
   no-GPU path **re-scores** these live.
-- **Not redistributed:** the forms (XFUND), identity-document (BRIDP) and
+- **Not redistributed:** the forms (XFUND), identity-document and
   English-control (FUNSD) raw outputs and gold. Their gold carries
   synthetic-but-realistic PII (names, CPFs (Brazilian individual tax IDs), e-mails, addresses,
   dates of birth) under
-  restrictive licenses (XFUND CC BY-NC-SA 4.0, FUNSD research-only, BRIDP (Brazilian identity
-  documents) unstated).
+  restrictive licenses (XFUND CC BY-NC-SA 4.0, FUNSD research-only, identity documents
+  (tech4humans/br-doc-extraction, images from the BID Dataset) unstated).
   Their **aggregate scores** are committed as the run of record
   (`results/run_of_record.json`, numbers only); the no-GPU path regenerates and
   **asserts** their macros from that file. These committed scores are the run of
@@ -200,7 +213,7 @@ subset is committed. For license and privacy reasons (see `data/DATA-LICENSES.md
   per-unit arrays (`data/ids_pair_hits.json`, `data/forms_pair_hits.json`,
   `data/ids_pair_hits_surya_rapidocr.json`: only `0/1` hits and integer document
   indices; `data/hyb_pair_ned.json`: per-page NED% floats) so the paired bootstraps
-  are recomputable too. MinerU's IDs FVR ships the same way: because BRIDP is never
+  are recomputable too. MinerU's IDs FVR ships the same way: because the identity raw data is never
   redistributed, `data/ids_mineru_hits.json` records only the `0/1` per-field hit
   (date-aware match) so the no-GPU path regenerates `\idsMineru` and its Wilson CI
   offline. MinerU's RIB/HYB outputs, by contrast, are committed under `data/rib`,
@@ -348,12 +361,12 @@ numbers below are fields of the results it writes to
   need this; the no-GPU path reproduces every number offline.
 - **Execution:**
   ```bash
-  ./scripts/fetch_data.sh        # download XFUND PT, FUNSD, ESTER-Pt (BRIDP: request)
+  ./scripts/fetch_data.sh        # download XFUND PT, FUNSD, ESTER-Pt and the identity documents
   make from-scratch              # (= ./scripts/run_from_scratch.sh) serve engines, re-score, assert
   ```
   `fetch_data.sh` is idempotent and sha256-verified; it fetches XFUND (CC BY-NC-SA 4.0),
-  FUNSD (research-only) and ESTER-Pt (CC BY 4.0) from source and prints how to request
-  BRIDP (no public download). When the raw forms/ids/en data is present, the scorer
+  FUNSD (research-only), ESTER-Pt (CC BY 4.0) and the identity documents (the CNH/RG rows of
+  the `valid` split of tech4humans/br-doc-extraction on Hugging Face) from source. When the raw forms/ids/en data is present, the scorer
   re-scores those axes live instead of reading the committed run of record, so the same
   command reproduces the full run end to end.
 - **Expected time:** many hours (model downloads + 14 engines x 5 axes). **Expected
@@ -388,4 +401,5 @@ Code is **MIT**; see [LICENSE](LICENSE). Data has its own terms; see
 [data/DATA-LICENSES.md](data/DATA-LICENSES.md): the redistributed ESTER-Pt RIB/HYB run
 of record is **CC BY 4.0** (attribute the ESTER-Pt authors); the other datasets are
 fetched from source under their own licenses (XFUND CC BY-NC-SA 4.0, FUNSD research-only,
-BRIDP unstated) and are **not** redistributed here.
+identity documents unstated) and are **not** redistributed here. On the source of the
+identity documents, see the [Erratum](#erratum).

@@ -7,8 +7,7 @@
 #
 # Inputs: the not-redistributed source datasets are fetched by
 #   ./scripts/fetch_data.sh
-# (XFUND PT, FUNSD, ESTER-Pt from source; BRIDP must be requested from its
-# authors). Run it first, or place the images under $WORK_DIR/<axis>/ yourself.
+# (XFUND PT, FUNSD, ESTER-Pt and the identity documents from source). Run it first, or place the images under $WORK_DIR/<axis>/ yourself.
 # Once the raw forms/ids/en data is present, the scorer re-scores those axes live
 # instead of reading the committed run of record.
 #

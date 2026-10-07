@@ -88,7 +88,7 @@ def ned_pct(pred: str, gold: str) -> float | None:
 def date_candidates(value: str | None) -> set[str]:
     """Normalized match candidates for a gold value, expanding ISO dates.
 
-    BRIDP gold stores dates as ``YYYY-MM-DD`` while the cards print
+    The identity gold stores dates as ``YYYY-MM-DD`` while the cards print
     ``DD/MM/YYYY``; without this expansion the plain substring rule could never
     match a printed date.
     """

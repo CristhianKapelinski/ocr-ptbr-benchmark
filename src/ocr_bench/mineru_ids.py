@@ -1,6 +1,6 @@
 """MinerU IDs field-value recall from a committed PII-free hit array.
 
-BRIDP (the identity-document axis) is not redistributed and its gold carries
+The identity-document axis is not redistributed and its gold carries
 synthetic PII, so MinerU's IDs FVR cannot be re-derived from raw field values on
 the reviewer's clone. What *is* committed is ``data/ids_mineru_hits.json``: for
 every scored IDs gold field, a single ``[doc_index, hit]`` row where ``hit`` is
@@ -14,7 +14,7 @@ IDs FVR: a gold value is recovered iff any of its normalized printed-date
 variants is a substring of the normalized transcription, dropping length-<=1 gold
 values) was applied once on the GPU host to produce these hits. Here we only sum
 them back into the micro-averaged FVR and its analytic 95% Wilson interval, so
-``\\idsMineru`` and its CI reproduce offline without ever touching BRIDP data.
+``\\idsMineru`` and its CI reproduce offline without ever touching identity data.
 The 19 ID cards that returned empty MinerU output contribute their fields as
 genuine zeros (they are already 0 in the committed array).
 """
@@ -43,7 +43,7 @@ def score_ids(path: Path = HITS_FILE) -> dict[str, Any] | None:
     Mirrors :func:`ocr_bench.aggregate.score_fvr` field for field (same Wilson
     interval, same 3-dp rounding); the per-field hits were produced once with the
     identical date-aware substring rule, so the result is byte-faithful to a live
-    re-score of the BRIDP axis.
+    re-score of the identity axis.
     """
     hits, meta = load_hits(path)
     tot = len(hits)

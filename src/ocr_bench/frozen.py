@@ -1,6 +1,6 @@
 """The committed run of record for the not-redistributed axes.
 
-The forms (XFUND), identity-document (BRIDP) and English-control (FUNSD) raw
+The forms (XFUND), identity-document and English-control (FUNSD) raw
 per-engine transcriptions and gold are **not** redistributed in this repository
 for licence and privacy reasons (see ``data/DATA-LICENSES.md``): their gold
 carries synthetic-but-realistic PII (names, CPFs, e-mails, addresses, dates of

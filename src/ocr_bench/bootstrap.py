@@ -5,7 +5,7 @@ vision-language model (DeepSeek-OCR) by a margin whose 95% confidence interval
 excludes zero. Establishing that requires a *paired* test that respects the
 clustering of fields within documents, so this module reproduces the
 significance result from a PII-free run of record without ever touching the raw
-BRIDP field values.
+identity-document field values.
 
 The committed input is ``data/ids_pair_hits.json``: for every scored IDs gold
 field it stores the pair ``[surya_hit, deepseek_hit]`` (each 0/1) tagged with an

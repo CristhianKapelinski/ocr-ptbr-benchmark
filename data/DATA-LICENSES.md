@@ -32,12 +32,12 @@ path under each source's own license:
 |---|---|---|---|---|
 | forms | XFUND (PT split) | github.com/doc-analysis/XFUND release v1.0 | **CC BY-NC-SA 4.0** | yes |
 | en | FUNSD | guillaumejaume.github.io/FUNSD | **research-only** | yes |
-| ids | BRIDP | lucassfer.github.io/bridp | **unstated** (page under construction) | no -- request from authors |
+| ids | tech4humans/br-doc-extraction, `valid` split, CNH + RG rows (images from the BID Dataset) | huggingface.co/datasets/tech4humans/br-doc-extraction | **unstated** | yes |
 
 Because these are fetched under their own licenses and not redistributed here,
 this repository imposes no additional restriction on them; the user is bound by
-each source dataset's license when fetching it. BRIDP has no confirmed public
-download, so `fetch_data.sh` prints how to request it and skips it.
+each source dataset's license when fetching it. On the source of the identity axis,
+see the Erratum in `../README.md`.
 
 ## Privacy
 
@@ -47,4 +47,4 @@ numbers (latency medians, per-engine scores, and the PII-free `0/1` hit / NED%
 arrays that drive the significance tests and MinerU's IDs FVR). The no-GPU
 reproduce path reads only these and never touches forms/ids/en raw field values.
 MinerU's RIB/HYB outputs are the ESTER-Pt CC BY 4.0 transcriptions (the same
-public-domain literature already redistributed), not BRIDP.
+public-domain literature already redistributed), not identity documents.

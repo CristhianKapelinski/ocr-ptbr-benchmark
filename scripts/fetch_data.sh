@@ -3,7 +3,7 @@
 #
 # The redistributed repository ships only the clean ESTER-Pt RIB/HYB run of
 # record (CC BY 4.0, public-domain literature, no PII). The forms (XFUND),
-# identity-document (BRIDP) and English-control (FUNSD) raw inputs are NOT
+# identity-document and English-control (FUNSD) raw inputs are NOT
 # redistributed here for licence and privacy reasons; this script downloads them
 # straight from their authoritative sources so the from-scratch path needs no
 # manual data placement -- as if the data were already there.
@@ -17,16 +17,16 @@
 #   - Checksum-verified: each download is sha256-checked against scripts/data.sha256
 #     when an entry exists there; mismatches abort. Unknown checksums are recorded
 #     for first-run pinning and warned about, never silently trusted.
-#   - Honest about gaps: BRIDP has no working public download (its project page is
-#     "under construction"); the script prints how to request it from the authors
-#     and skips it rather than inventing a URL.
+#   - Identity documents: the scored set is the CNH/RG part of the ``valid`` split
+#     of tech4humans/br-doc-extraction (Hugging Face; images from the BID Dataset).
+#     See the Erratum in README.md.
 #
 # Each dataset's source is downloaded under its own licence (see data/DATA-LICENSES.md):
 #   XFUND  CC BY-NC-SA 4.0   FUNSD  research-only   ESTER-Pt  CC BY 4.0
-#   BRIDP  licence unstated  -> request from authors
+#   identity documents (tech4humans/br-doc-extraction, from BID)  licence unstated
 #
 # Usage:
-#   ./scripts/fetch_data.sh [all|xfund|funsd|ester|bridp]   (default: all)
+#   ./scripts/fetch_data.sh [all|xfund|funsd|ester|ids]   (default: all)
 # Configuration:
 #   WORK_DIR  destination root (default: $PWD/data); per-axis subdirs are created.
 set -euo pipefail
@@ -125,30 +125,32 @@ fetch_ester() {
   info "ESTER-Pt ready under $out"
 }
 
-# --- BRIDP (identity-document axis). Licence UNSTATED, no working public download.
-#     The project page https://lucassfer.github.io/bridp is "under construction"
-#     and exposes no dataset file (verified 2026-06-22). We do NOT invent a URL.
-fetch_bridp() {
-  warn "BRIDP (identity-document axis) cannot be auto-fetched."
-  cat >&2 <<'EOF'
-  BRIDP has no confirmed public download: its project page
-  (https://lucassfer.github.io/bridp) is "under construction" and its licence is
-  unstated. Request the dataset from its authors, then place the CNH/RG images
-  and their structured gold under $WORK_DIR/ids/ and re-run the from-scratch path.
-  Citation:
-    L. S. Ferreira et al., "BRIDP: a Brazilian identity-document dataset",
-    https://lucassfer.github.io/bridp
-  The committed run of record already reproduces every IDs number offline.
-EOF
+# --- Identity documents (ids axis). Source: Hugging Face dataset
+#     tech4humans/br-doc-extraction, ``valid`` split: 25 CNH + 25 RG + 25 invoices;
+#     the invoices are skipped. Its images were sampled from the BID Dataset
+#     (Soares et al., SIBGRAPI 2020). Licence unstated on both. URL verified HTTP 200
+#     on 2026-10-07; the regenerated gold yields the paper's 354 scored fields.
+#     See the Erratum in README.md.
+fetch_ids() {
+  info "identity documents (ids axis) -- tech4humans/br-doc-extraction valid split"
+  local out="$WORK_DIR/ids"
+  local pq="$out/_source/br-doc-extraction/valid-00000-of-00001.parquet"
+  fetch "https://huggingface.co/datasets/tech4humans/br-doc-extraction/resolve/main/data/valid-00000-of-00001.parquet" "$pq"
+  if python3 scripts/ids_from_parquet.py "$pq" "$out"; then
+    info "identity axis ready under $out (25 CNH + 25 RG, invoices skipped)"
+  else
+    warn "could not materialize the identity axis (pyarrow missing?); see scripts/ids_from_parquet.py"
+  fi
 }
 
 case "$WHAT" in
-  all)   fetch_xfund; fetch_funsd; fetch_ester; fetch_bridp ;;
+  all)   fetch_xfund; fetch_funsd; fetch_ester; fetch_ids ;;
   xfund) fetch_xfund ;;
   funsd) fetch_funsd ;;
   ester) fetch_ester ;;
-  bridp) fetch_bridp ;;
-  *) die "unknown target '$WHAT' (use: all|xfund|funsd|ester|bridp)" ;;
+  ids)   fetch_ids ;;
+  bridp) warn "'bridp' is now 'ids' (see the Erratum in README.md)"; fetch_ids ;;
+  *) die "unknown target '$WHAT' (use: all|xfund|funsd|ester|ids)" ;;
 esac
 
 info "done. From-scratch generation: run engines over the fetched images, then"

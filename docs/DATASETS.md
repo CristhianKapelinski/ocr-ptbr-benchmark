@@ -8,7 +8,7 @@ redistributable subset and **auto-fetches** the rest from source.
   and `data/hyb`: per-document reference transcriptions (`*.gold.txt`), the
   per-engine OCR outputs scored against them (`*.<engine>.txt`), and the per-page
   latency manifests (`_run*.json`).
-- **Not committed:** the forms (XFUND), identity-document (BRIDP) and
+- **Not committed:** the forms (XFUND), identity-document and
   English-control (FUNSD) raw outputs and gold. Their gold carries
   synthetic-but-realistic PII (names, CPFs, e-mails, addresses, dates of birth)
   under restrictive licences, so they are not redistributed here. Their
@@ -30,7 +30,7 @@ redistributable subset and **auto-fetches** the rest from source.
 | Axis (`data/` dir) | Role | n | Lang | Gold | Source license | In repo |
 |---|---|---|---|---|---|---|
 | `forms` | Forms FVR | 50 | PT-BR | image-reconstructed `*.fields.json` | CC BY-NC-SA 4.0 | fetched (XFUND) |
-| `ids` | Identity-document FVR | 50 | PT-BR | synthetic structured `*.fields.json` | unstated | request (BRIDP) |
+| `ids` | Identity-document FVR | 50 | PT-BR | synthetic structured `*.fields.json` (LLM-drafted, manually reviewed by the dataset authors) | unstated | fetched (tech4humans/br-doc-extraction) |
 | `en` | English control (VLMs only) | 30 | EN | human-annotated `*.fields.json` | research-only | fetched (FUNSD) |
 | `rib` | Clean-text NED | 200 | PT | reference transcription `*.gold.txt` | CC BY 4.0 | committed |
 | `hyb` | Degradation-stress NED | 224 | PT | reference transcription `*.gold.txt` | CC BY 4.0 | committed |
@@ -64,9 +64,11 @@ their authoritative locations (idempotent, sha256-verified against
 - **ESTER-Pt**: Zenodo record `7872951` (`ESTER-Pt.zip`, ~19.6 GB), CC BY 4.0;
   only the from-scratch path needs the images, the RIB/HYB run of record is
   committed.
-- **BRIDP**: no confirmed public download (project page under construction,
-  license unstated); the script prints how to request it from the authors and
-  skips it.
+- **Identity documents**: the 25 CNH + 25 RG rows of the `valid` split of
+  tech4humans/br-doc-extraction (Hugging Face), whose images were sampled from the
+  BID Dataset; the split's 25 invoice rows are skipped. `scripts/ids_from_parquet.py`
+  writes them in the scorer's format, and the result yields the paper's 354 scored
+  fields. See the Erratum in `../README.md`.
 
 To rebuild predictions from scratch, run `scripts/fetch_data.sh`, then run the
 engines over the fetched images and hand off to the no-GPU scoring path

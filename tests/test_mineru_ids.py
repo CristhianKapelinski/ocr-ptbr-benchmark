@@ -1,6 +1,6 @@
 """MinerU's IDs FVR reproduces from a committed PII-free hit array.
 
-BRIDP is never redistributed, so MinerU's identity-document FVR is recomputed
+The identity raw data is never redistributed, so MinerU's identity-document FVR is recomputed
 from ``data/ids_mineru_hits.json`` (a 0/1 hit per scored field, no field text)
 exactly as the other engines' IDs FVR is computed from raw values. This asserts
 the array is PII-free and that the no-GPU re-score regenerates the paper's

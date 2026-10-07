@@ -9,7 +9,7 @@ reported number is computed, so the no-GPU reproduction is auditable.
   gold field value counts as recovered iff its alphanumeric-normalized form is a
   substring of the alphanumeric-normalized transcription. Reported as the micro
   proportion (recovered / total gold values) with a 95% Wilson interval.
-  - Identity documents use **date-format-aware** matching: BRIDP gold stores
+  - Identity documents use **date-format-aware** matching: the identity gold stores
     dates as `YYYY-MM-DD` while the cards print `DD/MM/YYYY`, so an ISO gold date
     matches if any of its printed-format variants is a substring. Gold values of
     length <= 1 are dropped (a single character is recovered by chance). The 50
